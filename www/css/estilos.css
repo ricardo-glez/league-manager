@@ -1,0 +1,18 @@
+#categorias li {
+  list-style: none;
+  display: inline-block;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  stroke:1;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
