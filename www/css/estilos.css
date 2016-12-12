@@ -1,18 +1,293 @@
-#categorias li {
+font-family: 'Lato',
+sans-serif;
+font-family: 'Anton',
+sans-serif;
+font-family: 'Exo 2',
+sans-serif;
+
+/*Paleta de colores
+-------------
+#042429
+#094853
+#F16C23
+
+#F7FAFA
+#99CCCC
+#669999
+#336799
+#FFCCCC
+#D55619
+
+------------
+*/
+
+
+
+#main-nav {
+  height: 12%;
+}
+
+.navbar .categorias {
+  width: 100%;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 15%;
+}
+
+.navbar.navbar-custom {
+    font-family: 'Exo 2', sans-serif;
+    color: #F7FAFA !important;
+    border-bottom: none;
+    z-index: 100000;
+    border-radius: 0;
+    background-color: rgba(51, 103, 153, 0.3) !important;
+}
+.navbar{
+  border-bottom: 4px solid rgba(51, 103, 153, 1);
+}
+a {
+  color: #F7FAFA !important;
+}
+
+.navbar-nav > li {
+  padding: 7px 5px 0px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+}
+
+html {
+  background-color: none;
+}
+
+.navbar-custom.navbar-brand {
+  font-size: 24px !important;
+  color: #262626 !important;
+}
+
+#main-header > div:nth-child(1):hover {
+  box-shadow: inset 0 -124px 0px #D55619;
+  -webkit-transition: all .250s ease;
+  -moz-transition: all .250s ease;
+  -ms-transition: all .250s ease;
+  -o-transition: all .250s ease;
+  transition: all .250s ease;
+}
+
+ul.categorias li.activado {
+  box-shadow: inset 0 -124px 0px #D55619;
+}
+
+.titulo-t {
+  color:#f7fafa;
+  font-family: 'Exo 2', sans-serif !important;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#tabla-gral > div.row.titulo-t,
+.titulo h2 {
+  font-weight: 700;
+}
+
+#nav-jugador > ul > li:hover {
+  box-shadow: inset 0px 30px #f7fafa;
+  border-radius: 50%;
+  height: 100%;
+  -webkit-transition: all .250s ease;
+  -moz-transition: all .250s ease;
+  -ms-transition: all .250s ease;
+  -o-transition: all .250s ease;
+  transition: all .250s ease;
+}
+
+.imgs-jugador {
+  height: auto;
+  margin: 1em 15%;
+}
+
+.img-equipo {
+  height: auto;
+  margin: 1em 15%;
+}
+
+li a {
+  -webkit-transition: all .150s ease;
+  -moz-transition: all .150s ease;
+  -ms-transition: all .150s ease;
+  -o-transition: all .150s ease;
+  transition: all .150s ease;
+}
+
+table {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  color: #f7fafa;
+  background-color: rgba(255,255,255,.2) !important;
+}
+
+ tr:hover td {
+background-color: rgba(213, 86, 25, .5);
+}
+
+
+
+thead,
+.cat {
+  font-weight: 700 !important;
+}
+
+.grid {
+  stroke: #262626;
+  stroke-width: 2px;
+}
+
+#left-nav a {
+  background-color: #000000;
+  color: #000;
+}
+
+.nav-sidebar {
+  margin-right: -21px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+
+.nav-doble li {
+  font-size: 14px !important;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tabla-stats,
+.tabla-gral {
+  background: rgba(247, 250, 250, .6);
+}
+
+html {
+  height: 100%;
+  background-image: url("../data/img/fondo02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+li {
   list-style: none;
   display: inline-block;
 }
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+  text-decoration: none;
+  box-shadow: inset 0 -8px #D55619 !important;
+  background: none !important;
+}
+#main-table{
+  margin-left: -4em;
+}
+
+/*
+/////////////////Media Queries//////////////////////
+*/
+
+@media (min-width: 768px) {
+  #main-header {
+    display: block;
+    width: 100%;
+    height: 90%;
+  }
+  #left-nav {
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    z-index: -100;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #fff;
+    background-color: rgba(51, 103, 153, .3);
+  }
+  #nav-jugador > ul {
+    margin: 0 5% 0 5%;
+    padding: 0;
+  }
+  .logo-league {
+    margin-top: 4%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 4%;
+  }
+  .logo-denovoc {
+    margin: 15% 15% 0 0;
+  }
+  .navbar-nav>li>a {
+    padding: 0;
+    display: inline-flex;
+  }
+  #nav-jugador {
+    /*background: #063239;*/
+  }
+  #nav-jugador > ul > li {
+    margin: 0 2% 0 2%;
+  }
+  #left-nav h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+  }
+  img.img-responsive.img-centered {
+    top: 50%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #info-jugador {
+    margin: 20px auto 20px auto;
+    border-bottom: 2px solid #042429;
+  }
+  #info-jugador > p {
+    text-align: center;
+  }
+  .navbar-brand {
+    padding: 0px !important;
+  }
+  .navbar-header {
+    float: inherit !important;
+  }
+  .categorias {
+    display: inline;
+    font-size: 2em;
+  }
+}
+
+
+/*
+/////////////////Estilos de D3//////////////////////
+*/
 
 .axis path,
 .axis line {
   fill: none;
   stroke: black;
-  stroke:1;
+  stroke-width: 5;
   shape-rendering: crispEdges;
 }
-
+rect{
+  stroke-width:6px;
+  stroke: #fff;
+  fill: none;
+}
 .axis text {
   font-family: sans-serif;
   font-size: 11px;
 }
 
+circle {
+  stroke-width: 1;
+}
+body{
+  background:transparent !important;
+}

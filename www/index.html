@@ -3,24 +3,230 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Dashboard Analytics</title>
+		<title>League Manager</title>
+		<!--Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Lato" rel="stylesheet">
+		<!--Mis Cascadas-->
 		<link rel="stylesheet" href="/css/estilos.css">
-		<script type="text/javascript" src="/libraries/d3.min.js"></script>
-		<script type="text/javascript" src="/appscripts/d3scripting.js"></script>
+		<!--Bootstrap y glyphicons-->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+		<!--D3, Js, Bootstrap Javascripts-->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<!--Mi Script-->
+		<script type="text/javascript" src="/appscripts/tablas.js"></script>
 	</head>
 	<body>
-		<div class="someclass">
-			<h2>Sports Analytics</h2>
-			
-			<div >
-				<svg id="bar-chart">
-					
-				</svg>
+		<nav class="navbar navbar-custom">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#colapsable" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<div class="row" id="main-header">
+					<div class="col-sm-2">
+						<a class="logo-league navbar-brand " href="index.html">
+							<img class="img-responsive" src="data/logos/lm-bco.png" alt="League Manager Header">
+						</a>
+					</div>
+					<div class="col-sm-2 ">
+						<ul class="nav navbar-nav categorias">
+							<li class="activado">
+								<a href="index.html">General</a>
+							</li>
+							<li>
+								<a  href="desempeno.html">Desempeño</a>
+							</li>
+							<li>
+								<a href="analisis.html">Análisis</a>
+							</li>
+							<li>
+								<a href="equipo.html">Equipo</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div>
-				<nav id="categorias">
-				</nav>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--Inicio PRINCIPA-->
+		<div id="principal" class="container-fluid">
+			<div class="  col-sm-2 col-md-offset-1 col-md-1  sidebar " id="left-nav">
+				<div class="">
+					<img class="imgs-jugador img-circle img-centered img-nav" src="data/perfil-jugadores/01.png" width="100px" alt="Perfil Jugador">
+				</div>
+				<div id="info-jugador" class="row">
+					<p class="nombre"><strong>Nombre</strong></p>
+					<p class="numero"><strong>Número</strong></p>
+					<p class="posicion"><strong>Posición</strong></p>
+					<p class="edad"><strong>Edad</strong></p>
+				</div>
+				<div class="row">
+					<nav id="nav-jugador" >
+						<ul >
+							<li>
+								<a href="#" class="active" id="1">
+									<img src="/data/icons/num1.png" class="img-responsive" alt="#1">
+								</a>
+							</li>
+							<li>
+								<a href="#" id="2">
+									<img src="/data/icons/num2.png" class="img-responsive" alt="#2">
+								</a>
+							</li>
+							<li>
+								<a href="#" id="3">
+									<img src="/data/icons/num3.png" class="img-responsive" alt="#3">
+								</a>
+							</li>
+							<li>
+								<a href="#" id="4">
+									<img src="/data/icons/num4.png" class="img-responsive" alt="#4">
+								</a>
+							</li>
+							<li>
+								<a href="#" id="5">
+									<img src="/data/icons/num5.png" class="img-responsive" alt="#5">
+								</a>
+							</li>
+							<li>
+								<a href="#" id="6">
+									<img src="/data/icons/num6.png" class="img-responsive" alt="#6">
+								</a>
+							</li>
+							<li>
+								<a href="#" id="7">
+									<img src="/data/icons/num7.png" class="img-responsive" alt="#7">
+								</a>
+							</li>
+							<li>
+								<a href="#" id="8">
+									<img src="/data/icons/num8.png" class="img-responsive" alt="#8">
+								</a>
+							</li>
+							<li>
+								<a href="#" id="9">
+									<img src="/data/icons/num9.png" class="img-responsive" alt="#9">
+								</a>
+							</li>
+							<li>
+								<a href="#" id="10">
+									<img src="/data/icons/num10.png" class="img-responsive" alt="#10">
+								</a>
+							</li>
+							<li>
+								<a href="#" id="11">
+									<img src="/data/icons/num11.png" class="img-responsive" alt="#11">
+								</a>
+							</li>
+							
+						</ul>
+					</nav>
+					<div class=" ">
+						<img class ="img-equipo" src="data/logos/e01.png"  alt="Logo Equipo ">
+					</div>
+				</div>
 			</div>
+			<!-- Cierra el sidebar -->
 			
-		</body>
-	</html>
+			<!--Inicio Main Container-->
+			<div class="col-md-offset-2 col-md-8  col-xs-offset-1 col-xs-11 " id="main-container">
+				<!--Inicio Tabla GRAL-->
+				<div id="tabla-gral">
+					<div class="row ">
+						<h2 class="titulo-t">Datos Generales del Jugador</h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3 col-md-offset-2 col-md-8  table-responsive">
+							<table id="secondary-table" class="table table-condensed">
+								<thead>
+									<tr>
+										<th> </th>
+										<th>Partidos Iniciados</th>
+										<th>Goles</th>
+										<th>Disparos</th>
+										<th>Disparos al Arco</th>
+										<th>Faltas</th>
+										<th>Faltas Cometidas</th>
+										<th>Faltas Recibidas</th>
+										<th>Tarjetas Amarillas</th>
+										<th>Tarjetas Rojas</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr >
+										<td> </td>
+										<td id="partidos_i"></td>
+										<td id="goles"></td>
+										<td id="disp"></td>
+										<td id="disparos_a"></td>
+										<td id="faltas"></td>
+										<td id="faltas_c"></td>
+										<td id="faltas_r"></td>
+										<td id="tarjetas_a"></td>
+										<td id="tarjetas_r"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--Cierra Tabla GRAL-->
+				<!--Inicia Tabla STATS-->
+				<div id="tabla-stats">
+					<div class="row">
+						<h2 class="titulo-t">Estadisticas de desempeño por partido</h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-7 col-sm-offset-4 col-md-offset-3 col-md-7 table-responsive">
+							<table id="main-table" class="table  table-condensed">
+								<thead>
+									<tr>
+										<th></th>
+										<th>Partido 1 </th>
+										<th>Partido 2 </th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="dist">
+										<td class="cat">Distancia</td>
+										<td class="t1"></td>
+										<td class="t2"></td>
+									</tr>
+									<tr id="esf">
+										<td class="cat">Esfuerzo</td>
+										<td class="t1"></td>
+										<td class="t2"></td>
+									</tr>
+									<tr id="int">
+										<td class="cat">Intensidad</td>
+										<td class="t1"></td>
+										<td class="t2"></td>
+									</tr>
+									<tr id="vel">
+										<td class="cat">Velocidad</td>
+										<td class="t1"></td>
+										<td class="t2"></td>
+									</tr>
+									<tr id="spr">
+										<td class="cat">Sprint</td>
+										<td class="t1"></td>
+										<td class="t2"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--Cierra Tabla STATS-->
+			</div>
+			<!--Cierra Main Container-->
+		</div>
+
+	</body>
+	
+</html>
