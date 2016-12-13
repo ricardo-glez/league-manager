@@ -8,14 +8,19 @@
 		<link href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Lato" rel="stylesheet">
 		<!--Mis Cascadas-->
 		<link rel="stylesheet" href="/css/estilos.css">
-		<!--Bootstrap y glyphicons-->
+		<!--Bootstrap y Jquery UI glyphicons-->
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/jquery-ui.structure.min.css" rel="stylesheet">
+		<link href="/css/jquery-ui.min.css" rel="stylesheet">
+		<link href="/css/jquery-ui.theme.min.css" rel="stylesheet">
 		<!--D3, Js, Bootstrap Javascripts-->
 		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/appscripts/jquery-ui.min.js"></script>
 		<!--Mi Script-->
 		<script type="text/javascript" src="/appscripts/visualization.js"></script>
+		<script type="text/javascript" src="/appscripts/uiscripts.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-custom">
@@ -35,14 +40,14 @@
 					</div>
 					<div class="col-sm-2 ">
 						<ul class="nav navbar-nav categorias">
-							<li >
+							<li>
 								<a href="index.html">General</a>
 							</li>
-							<li class = "activado">
-								<a  href="desempeno.html">Desempeño</a>
+							<li class="activado">
+								<a href="desempeno.html">Desempeño</a>
 							</li>
 							<li>
-								<a href="analisis.html">Análisis</a>
+								<a href="analisis.html">Analíticos</a>
 							</li>
 							<li>
 								<a href="equipo.html">Equipo</a>
@@ -55,8 +60,8 @@
 		</nav>
 		<div class="container-fluid">
 			<div class="  col-sm-2 col-md-offset-1 col-md-1  sidebar " id="left-nav">
-				<div class="">
-					<img class="imgs-jugador img-circle img-centered img-nav" src="data/perfil-jugadores/01.png" width="100px" alt="Perfil Jugador">
+				<div class="row">
+					<img class="imgs-jugador img-circle " src="data/perfil-jugadores/01.png" width="100px" alt="Perfil Jugador">
 				</div>
 				<div id="info-jugador" class="row">
 					<p class="nombre"><strong>Nombre</strong></p>
@@ -65,8 +70,8 @@
 					<p class="edad"><strong>Edad</strong></p>
 				</div>
 				<div class="row">
-					<nav id="nav-jugador" >
-						<ul >
+					<nav id="nav-jugador">
+						<ul>
 							<li>
 								<a href="#" class="active" id="1">
 									<img src="/data/icons/num1.png" class="img-responsive" alt="#1">
@@ -122,35 +127,96 @@
 									<img src="/data/icons/num11.png" class="img-responsive" alt="#11">
 								</a>
 							</li>
-							
 						</ul>
 					</nav>
-					<div class=" ">
-						<img class ="img-equipo" src="data/logos/e01.png"  alt="Logo Equipo ">
+					<div class="row">
+						<img class="img-equipo" src="data/logos/e01.png" alt="Logo Equipo ">
 					</div>
 				</div>
 			</div>
 			<!-- Cierra el sidebar -->
-				<div class="col-sm-offset-3 col-sm-9  col-md-offset-2 col-md-10 col-xs-offset-1 col-xs-11 " id="main-container">
-					<h2 class="main-header"></h2>
-					<div class="container-fluid">
-						<div class="row ">
-							
-						</div>
-						<div class=" col-md-offset-2 col-md-7 main-vis">
-						<h2 class="titulo-t"> 
-								Trayectoria y velocidad 
-							</h2>
-							<svg id="data-vis">
-							</svg>
-						</div>
-						<div class="col-md-1">
-							
+			<div class="col-sm-offset-3 col-sm-9  col-md-offset-2 col-md-10 col-xs-offset-1 col-xs-11 " id="main-container">
+				<h2 class="main-header"></h2>
+				<div class="row">
+					<div class=" col-md-offset-2 col-md-8">
+						<div id="controles" class="col-md-offset-2 col-md-5 btn-group">
+							<button id="velocidad_C" type="button" class="btn btn-active btn-custom">Velocidad</button>
+							<button id="distancia_C" type="button" class="btn btn-custom">Distancia</button>
+							<button id="esfuerzo_C" type="button" class="btn btn-custom">Esfuerzo</button>
+							<button id="intensidad_C" type="button" class="btn btn-custom">Intensidad</button>
+							<button id="sprint_C" type="button" class="btn btn-custom">Sprint</button>
 						</div>
 					</div>
-					
+					<div class="row">
+						<div id="graficas_individuales" class="col-md-offset-2 col-md-5 ">
+							<svg id="graficas_01">
+							</svg>
+						</div>
+					</div>
+					<div class=" col-md-offset-2 col-md-5 main-vis">
+						<h2 class="text-center titulo-t">
+						Trayectoria y velocidad
+						</h2>
+						<br><br>
+						<div class="col-md-offset-2 col-md-10">
+							<div class="hidden">
+								<p id="init-amount"></p>
+								<p id="fin-amount"></p>
+							</div>
+							
+							<div id="slider-range">
+								<div id="custom-handleI" class="ui-slider-handle"></div>
+								<div id="custom-handleF" class="ui-slider-handle"></div>
+								<button id="visualizar_B" type="button" class="btn btn-active btn-visualizar btn-custom">Go</button>
+							</div>
+							
+						</div>
+						<br><br><br>
+						<svg id="data-vis">
+						</svg>
+					</div>
+				</div>
+				<div id="acot" class="col-md-offset-3 col-md-3 ">
+					<div  class="row">
+						<div class="col-md-offset-2  col-md-10">
+							<div id="col-ac0" class="col-md-offset-3 col-md-1">
+							</div>
+							<div class="text-acot col-md-7">
+								<p>
+									Lento: 2 m/s
+								</p>
+							</div>
+						</div>
+					</div>
+					<div  class="row">
+						<div class="col-md-offset-2  col-md-10">
+							
+							
+							<div id="col-ac1" class="col-md-offset-1 col-md-1">
+								
+							</div>
+							<div class="text-acot col-md-7">
+								<p>
+									Medio: 6 m/s
+								</p>
+							</div>
+						</div>
+					</div>
+					<div  class="row">
+						<div class="col-md-offset-2  col-md-10">
+							<div id="col-ac2" class="col-md-offset-1 col-md-1">
+								
+							</div>
+							<div class="text-acot col-md-7">
+								<p>
+									Rapido: 10 m/s
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
 </html>
