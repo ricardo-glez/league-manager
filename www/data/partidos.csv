@@ -1,1 +1,145 @@
-Club,Vs,GolFavor,GolContra,PosesionCl,TirosCl,TirosAGolCl,FaltasCl,CornersCl,ParadasCl,TAmarillaCl,TRojaCl,PosesionCont,TirosCont,TirosAGolCont,FaltasCont,CornersCont,ParadasCont,TAmarillaCont,TRojaCont,Tipo,Fecha,Lugar,AsistenciaEstadio,FueraJuegoCl,FueraJuegoCont,Resultado,AsistenciaEstadioPjeToluca,Necaxa,1,3,57,12,3,9,5,3,1,1,43,11,6,16,4,2,0,0,Visitante,1 de oct. 09:00 p. m.,Estadio Victoria,14967,1,2,0,58Toluca,Pumas UNAM,2,1,54,18,5,17,9,6,3,0,46,12,5,10,4,3,1,0,Local,16 de oct. 12:00 p. m.,Universitario Alberto Chivo C—rdoba,25426,4,3,1,79
+Club,Vs,GolFavor,GolContra,PosesionCl,TirosCl,TirosAGolCl,FaltasCl,CornersCl,ParadasCl,TAmarillaCl,TRojaCl,PosesionCont,TirosCont,TirosAGolCont,FaltasCont,CornersCont,ParadasCont,TAmarillaCont,TRojaCont,Tipo,Fecha,Lugar,AsistenciaEstadio,FueraJuegoCl,FueraJuegoCont,Resultado,AsistenciaEstadioPje
+Morelia,Tijuana,0,2,56,10,4,8,5,3,3,0,44,15,5,15,5,4,2,0,Visitante,15 de jul. 09:00 p. m.,Estadio Caliente,26833,0,0,0,91
+Veracruz,Queretaro,0,2,58,12,3,14,2,3,1,0,42,12,5,18,4,3,1,0,Visitante,16 de jul. 05:00 p. m.,La Corregidora,22059,0,0,0,62
+Toluca,Atlas,1,1,55,7,1,18,6,0,2,0,45,14,6,15,6,0,0,1,Visitante,16 de jul. 07:00 p. m.,Estadio Jalisco,34729,0,0,0,62
+Puebla,Monterrey,1,1,56,5,2,14,3,3,1,0,44,11,4,11,8,1,2,1,Visitante,16 de jul. 07:00 p. m.,Estadio BBVA Bancomer,48071,3,1,0,90
+Leon,Pachuca,1,5,42,15,3,14,3,4,5,1,58,17,9,15,3,2,1,0,Visitante,16 de jul. 07:06 p. m.,Estadio Hidalgo,23298,1,2,0,78
+Chiapas,America,0,2,46,15,8,5,9,5,1,0,54,15,7,9,4,8,0,0,Visitante,16 de jul. 09:00 p. m.,Azteca Stadium,23656,3,1,0,23
+Cruz Azul,Necaxa,0,0,60,12,2,12,7,2,1,0,40,7,1,13,3,2,2,0,Visitante,16 de jul. 09:00 p. m.,Estadio Victoria,21525,3,2,0,83
+Guadalajara,Pumas,0,1,60,14,4,11,10,2,2,0,40,6,2,15,1,4,3,0,Visitante,17 de jul. 12:00 p. m.,Estadio Olimpico Universitario,44505,0,0,0,65
+Tigres,Santos Laguna,0,0,60,6,2,15,8,1,0,0,40,11,1,12,8,2,1,0,Visitante,17 de jul. 06:00 p. m.,Estadio Corona,25297,2,1,0,84
+Santos Laguna,Veracruz,0,2,47,21,6,14,9,4,6,0,53,12,7,18,6,6,4,0,Visitante,22 de jul. 09:00 p. m.,Estadio Luis Pirata Fuente,16830,0,0,0,56
+Pumas,Cruz Azul,0,0,47,3,0,17,2,0,3,0,53,15,0,14,7,0,1,0,Visitante,23 de jul. 05:00 p. m.,Estadio Azul,23127,3,1,0,63
+Pachuca,Chiapas,2,0,59,23,6,16,10,1,2,0,41,13,2,11,4,4,2,0,Visitante,23 de jul. 05:00 p. m.,Estadio Victor Manuel Reyna,14854,0,0,1,50
+Queretaro,Morelia,2,2,34,19,6,15,9,3,2,0,66,14,5,15,4,3,1,0,Visitante,23 de jul. 07:00 p. m.,Estadio Morelos,21579,0,0,0,52
+Atlas,Tigres,0,0,47,10,3,13,4,8,2,0,53,18,8,11,7,3,1,1,Visitante,23 de jul. 07:00 p. m.,Estadio Universitario,41203,2,1,0,98
+Necaxa,Leon,0,0,48,8,2,25,5,2,1,0,52,12,2,19,3,2,1,0,Visitante,23 de jul. 07:06 p. m.,Estadio Leon,21118,3,2,0,68
+Toluca,America,1,3,49,10,4,14,5,1,1,0,51,16,4,13,5,3,3,0,Visitante,23 de jul. 09:00 p. m.,Azteca Stadium,33193,7,1,0,32
+Monterrey,Guadalajara,0,1,37,10,7,9,6,7,2,0,63,18,8,8,3,7,2,0,Visitante,23 de jul. 09:00 p. m.,Estadio Chivas,38810,0,0,0,78
+Tijuana,Puebla,2,3,57,16,4,12,6,1,2,0,43,10,3,11,3,2,1,0,Visitante,24 de jul. 06:00 p. m.,Estadio Cuauhtemoc,14137,3,4,0,27
+Guadalajara,Tijuana,0,4,66,10,4,16,9,1,4,0,34,10,5,13,3,4,2,0,Visitante,29 de jul. 09:00 p. m.,Estadio Caliente,27333,0,0,0,93
+Puebla,Queretaro,1,2,62,14,4,8,6,6,1,0,38,21,8,8,3,3,1,0,Visitante,30 de jul. 05:00 p. m.,La Corregidora,20349,3,2,0,57
+Veracruz,Atlas,0,1,46,5,2,18,5,3,1,1,54,13,3,18,5,2,3,0,Visitante,30 de jul. 07:00 p. m.,Estadio Jalisco,34962,0,0,0,62
+Cruz Azul,Monterrey,1,1,45,9,7,16,1,2,3,0,55,12,3,17,7,6,1,0,Visitante,30 de jul. 07:00 p. m.,Estadio BBVA Bancomer,50093,1,3,0,94
+Necaxa,Pachuca,0,1,49,14,3,22,4,5,1,0,51,10,6,20,3,3,1,0,Visitante,30 de jul. 07:06 p. m.,Estadio Hidalgo,26780,1,2,0,89
+Tigres,America,3,0,53,13,7,12,7,3,2,0,47,13,3,7,1,3,0,1,Visitante,30 de jul. 09:00 p. m.,Azteca Stadium,39046,6,2,1,38
+Leon,Pumas,0,1,46,7,2,10,4,3,1,0,54,13,4,8,6,2,3,0,Visitante,31 de jul. 12:00 p. m.,Estadio Olimpico Universitario,25231,2,2,0,37
+Toluca,Chiapas,0,1,58,15,4,14,7,4,4,0,42,15,5,17,8,4,1,0,Visitante,31 de jul. 05:00 p. m.,Estadio Victor Manuel Reyna,27858,3,3,0,93
+Morelia,Santos Laguna,4,2,54,15,6,8,2,4,4,0,46,25,6,9,5,2,3,0,Visitante,31 de jul. 06:00 p. m.,Estadio Corona,21732,0,0,1,72
+Tijuana,Cruz Azul,2,1,49,14,8,15,4,2,1,0,51,10,2,13,5,6,1,1,Visitante,6 de ago. 05:00 p. m.,Estadio Azul,17341,0,0,1,47
+Chiapas,Tigres,0,1,41,12,4,4,5,5,0,0,59,24,7,11,11,4,2,0,Visitante,6 de ago. 07:00 p. m.,Estadio Universitario,41397,0,0,0,98
+Atlas,Morelia,2,3,50,18,6,13,7,0,2,0,50,8,1,18,3,0,3,0,Visitante,6 de ago. 07:00 p. m.,Estadio Morelos,25353,0,0,0,61
+Monterrey,Leon,3,0,46,14,7,13,10,3,3,0,54,12,3,15,12,4,3,0,Visitante,6 de ago. 07:06 p. m.,Estadio Leon,26173,1,6,1,85
+Queretaro,Guadalajara,0,0,30,5,2,20,1,7,4,0,70,17,7,13,6,2,2,0,Visitante,6 de ago. 09:00 p. m.,Estadio Chivas,31610,1,1,0,63
+Pumas,Necaxa,2,2,52,8,3,15,6,3,1,0,48,12,6,16,7,1,1,0,Visitante,6 de ago. 09:00 p. m.,Estadio Victoria,22511,3,3,0,87
+America,Veracruz,4,2,53,20,9,12,8,2,1,1,47,10,4,11,3,5,1,2,Visitante,6 de ago. 09:00 p. m.,Estadio Luis Pirata Fuente,27089,3,3,1,90
+Pachuca,Toluca,0,2,51,8,3,14,4,8,3,0,49,20,10,23,7,3,3,0,Visitante,7 de ago. 12:45 p. m.,Universitario Alberto Chivo Cordoba,13476,0,0,0,42
+Santos Laguna,Puebla,0,0,45,15,5,13,7,5,2,0,55,14,6,12,9,4,2,0,Visitante,7 de ago. 06:00 p. m.,Estadio Cuauhtemoc,11809,0,0,0,23
+Leon,Tijuana,0,2,44,16,6,13,4,2,2,0,56,13,4,16,4,6,6,0,Visitante,12 de ago. 09:00 p. m.,Estadio Caliente,27333,0,0,0,93
+Cruz Azul,Queretaro,0,0,64,9,2,10,5,7,1,0,36,12,7,16,3,2,2,1,Visitante,13 de ago. 05:00 p. m.,La Corregidora,30451,1,3,0,86
+Puebla,Atlas,2,3,42,14,5,13,7,6,0,1,58,15,7,15,6,3,5,0,Visitante,13 de ago. 07:00 p. m.,Estadio Jalisco,42686,2,1,0,76
+Necaxa,Monterrey,1,2,47,8,3,23,2,4,5,0,53,20,6,13,2,2,2,0,Visitante,13 de ago. 07:00 p. m.,Estadio BBVA Bancomer,49892,3,3,0,93
+Pumas,Pachuca,0,3,46,6,1,17,2,4,3,0,54,16,7,12,4,1,2,0,Visitante,13 de ago. 07:06 p. m.,Estadio Hidalgo,25129,0,0,0,84
+Morelia,America,1,1,51,12,6,12,8,7,2,0,49,22,8,11,11,5,3,0,Visitante,13 de ago. 09:00 p. m.,Azteca Stadium,27455,1,1,0,27
+Tigres,Toluca,0,0,59,6,2,12,5,7,2,0,41,14,7,18,7,2,3,0,Visitante,14 de ago. 12:00 p. m.,Universitario Alberto Chivo Cordoba,25582,0,0,0,80
+Veracruz,Chiapas,1,1,42,9,3,15,5,4,2,0,58,22,4,15,10,2,1,0,Visitante,14 de ago. 05:00 p. m.,Estadio Victor Manuel Reyna,27349,2,2,0,91
+Guadalajara,Santos Laguna,1,0,58,14,3,16,3,3,2,0,42,14,3,21,11,2,3,2,Visitante,14 de ago. 06:00 p. m.,Estadio Corona,21734,0,0,1,72
+Toluca,Veracruz,2,2,54,10,5,11,9,2,3,0,46,8,4,19,4,2,3,1,Visitante,19 de ago. 09:00 p. m.,Estadio Luis Pirata Fuente,15233,2,1,0,51
+Santos Laguna,Cruz Azul,1,3,45,11,5,15,5,2,3,0,55,16,5,16,7,4,2,0,Visitante,20 de ago. 05:00 p. m.,Estadio Azul,11890,4,2,0,32
+Chiapas,Morelia,2,3,40,11,7,11,1,4,1,0,60,20,8,8,9,5,2,0,Visitante,20 de ago. 07:00 p. m.,Estadio Morelos,20633,1,1,0,50
+Pachuca,Tigres,2,4,54,15,4,11,6,4,2,0,46,13,8,16,7,2,1,0,Visitante,20 de ago. 07:00 p. m.,Estadio Universitario,41469,4,5,0,98
+Queretaro,Leon,1,2,49,13,4,14,0,2,2,0,51,17,4,12,0,3,3,0,Visitante,20 de ago. 07:06 p. m.,Estadio Leon,25457,3,1,0,82
+Tijuana,Necaxa,1,1,52,9,5,19,5,2,4,0,48,10,3,25,5,4,3,0,Visitante,20 de ago. 09:00 p. m.,Estadio Victoria,14349,3,3,0,55
+Atlas,Guadalajara,2,2,42,8,5,14,2,2,4,0,58,9,4,9,2,3,1,0,Visitante,20 de ago. 09:06 p. m.,Estadio Chivas,35294,0,0,0,71
+Monterrey,Pumas,3,5,60,19,9,15,8,4,4,0,40,14,9,16,3,5,1,0,Visitante,21 de ago. 12:00 p. m.,Estadio Olimpico Universitario,19650,3,5,0,28
+America,Puebla,2,2,52,14,7,11,12,1,3,1,48,18,4,8,8,5,4,1,Visitante,21 de ago. 06:00 p. m.,Estadio Cuauhtemoc,34345,0,0,0,66
+Pumas,Tijuana,0,1,46,12,3,19,4,4,5,0,54,17,5,19,6,3,4,0,Visitante,26 de ago. 09:00 p. m.,Estadio Caliente,17333,1,6,0,59
+Necaxa,Queretaro,2,1,45,11,3,14,1,2,4,0,55,13,3,18,3,1,4,0,Visitante,27 de ago. 05:00 p. m.,La Corregidora,20538,4,1,1,58
+Veracruz,Tigres,1,1,33,9,4,13,2,9,4,0,67,15,9,14,6,3,5,0,Visitante,27 de ago. 07:00 p. m.,Estadio Universitario,41436,3,1,0,98
+Cruz Azul,Atlas,1,1,55,11,3,17,4,2,1,0,45,6,3,19,3,2,1,0,Visitante,27 de ago. 07:00 p. m.,Estadio Jalisco,40295,0,0,0,72
+Monterrey,Pachuca,1,1,69,21,2,15,10,3,2,0,31,12,4,9,5,1,2,1,Visitante,27 de ago. 07:06 p. m.,Estadio Hidalgo,24780,0,0,0,83
+Guadalajara,America,3,0,46,12,6,16,4,5,6,0,54,13,5,9,6,3,7,0,Visitante,27 de ago. 09:00 p. m.,Azteca Stadium,61561,1,1,1,60
+Morelia,Toluca,2,2,53,13,4,11,3,3,2,0,47,20,5,13,6,3,3,0,Visitante,28 de ago. 12:00 p. m.,Universitario Alberto Chivo Cordoba,17140,2,1,0,54
+Puebla,Chiapas,3,0,47,13,6,15,4,2,1,0,53,12,2,13,5,3,4,0,Visitante,28 de ago. 05:00 p. m.,Estadio Victor Manuel Reyna,26280,0,0,1,88
+Leon,Santos Laguna,0,1,39,9,4,11,4,1,1,2,61,15,2,13,7,4,3,0,Visitante,28 de ago. 06:00 p. m.,Estadio Corona,17754,1,1,0,59
+Pachuca,Veracruz,0,1,50,10,1,13,4,0,1,0,50,15,4,11,4,0,2,0,Visitante,9 de sep. 09:00 p. m.,Estadio Luis Pirata Fuente,11595,1,1,0,39
+America,Cruz Azul,4,3,68,13,7,19,6,0,6,0,32,7,3,13,2,0,2,1,Visitante,10 de sep. 05:00 p. m.,Estadio Azul,28036,5,7,1,76
+Tijuana,Monterrey,0,0,34,10,4,14,2,6,4,0,66,22,6,20,9,4,4,0,Visitante,10 de sep. 07:00 p. m.,Estadio BBVA Bancomer,50045,0,0,0,94
+Tigres,Morelia,2,0,54,18,6,9,8,2,3,0,46,11,2,8,2,4,0,1,Visitante,10 de sep. 07:00 p. m.,Estadio Morelos,27812,1,3,1,67
+Atlas,Leon,1,4,55,13,4,15,3,5,1,0,45,18,8,17,6,2,0,0,Visitante,10 de sep. 07:06 p. m.,Estadio Leon,24742,0,0,0,80
+Santos Laguna,Necaxa,1,2,50,15,6,8,9,3,0,0,50,11,5,21,2,5,2,0,Visitante,10 de sep. 09:00 p. m.,Estadio Victoria,17365,0,0,0,67
+Chiapas,Guadalajara,0,2,40,7,3,9,3,10,1,0,60,26,12,11,9,3,0,0,Visitante,10 de sep. 09:06 p. m.,Estadio Chivas,27004,2,1,0,54
+Queretaro,Pumas,1,4,47,10,2,15,1,2,2,0,53,15,6,12,5,1,1,0,Visitante,11 de sep. 12:00 p. m.,Estadio Olimpico Universitario,22000,2,8,0,32
+Toluca,Puebla,2,0,41,14,7,13,3,10,3,0,59,22,10,9,9,5,3,0,Visitante,11 de sep. 06:00 p. m.,Estadio Cuauhtemoc,12782,0,0,1,25
+Morelia,Veracruz,3,1,46,16,9,10,1,0,2,0,54,17,1,16,7,0,5,0,Visitante,16 de sep. 09:00 p. m.,Estadio Luis Pirata Fuente,16321,2,2,1,54
+Guadalajara,Toluca,1,2,63,17,3,14,0,2,3,0,37,9,5,14,0,2,3,0,Visitante,17 de sep. 04:00 p. m.,Universitario Alberto Chivo Cordoba,25072,0,0,0,78
+Monterrey,Queretaro,0,1,52,17,9,17,7,6,1,1,48,17,7,19,4,7,3,0,Visitante,17 de sep. 05:00 p. m.,La Corregidora,23238,1,2,0,65
+Cruz Azul,Chiapas,3,0,38,5,3,12,0,0,2,0,62,13,4,14,0,0,2,0,Visitante,17 de sep. 07:00 p. m.,Estadio Victor Manuel Reyna,26552,0,0,1,89
+Necaxa,Atlas,0,0,39,4,0,21,1,0,4,1,61,11,0,17,5,0,5,0,Visitante,17 de sep. 07:00 p. m.,Estadio Jalisco,30457,2,1,0,54
+Puebla,Tigres,1,2,35,9,3,12,2,6,4,0,65,18,8,17,4,2,2,0,Visitante,17 de sep. 07:00 p. m.,Estadio Universitario,41534,8,3,0,98
+Tijuana,Pachuca,2,2,50,11,2,18,3,1,3,0,50,15,3,18,4,1,4,0,Visitante,17 de sep. 07:06 p. m.,Estadio Hidalgo,26345,0,0,0,88
+Leon,America,2,0,38,14,4,16,3,3,1,0,62,12,3,14,4,2,1,0,Visitante,17 de sep. 09:00 p. m.,Azteca Stadium,42981,2,6,1,42
+Pumas,Santos Laguna,1,3,69,16,5,17,8,4,2,0,31,12,7,13,5,4,2,0,Visitante,18 de sep. 06:00 p. m.,Estadio Corona,19749,2,4,0,66
+Tigres,Guadalajara,1,0,42,9,3,13,5,2,0,0,58,11,2,13,6,3,0,0,Visitante,20 de sep. 07:00 p. m.,Estadio Chivas,32018,2,3,1,64
+Toluca,Cruz Azul,1,0,49,5,1,15,0,0,1,0,51,7,3,13,0,0,0,0,Visitante,20 de sep. 07:00 p. m.,Estadio Azul,23836,6,3,1,65
+Pachuca,Morelia,5,1,52,22,8,20,9,4,3,0,48,11,5,10,4,3,2,1,Visitante,20 de sep. 07:00 p. m.,Estadio Morelos,20912,0,0,1,50
+Veracruz,Puebla,2,3,41,10,3,17,6,3,2,1,59,15,6,21,7,1,1,0,Visitante,20 de sep. 08:00 p. m.,Estadio Cuauhtemoc,15582,0,0,0,30
+America,Necaxa,1,1,50,12,5,17,3,2,1,0,50,9,3,16,2,4,1,0,Visitante,20 de sep. 09:00 p. m.,Estadio Victoria,22055,1,2,0,85
+Chiapas,Leon,0,0,60,21,3,13,1,3,2,0,40,13,3,17,15,3,0,0,Visitante,21 de sep. 07:30 p. m.,Estadio Leon,16978,0,0,0,55
+Atlas,Pumas,0,2,49,7,2,19,5,8,1,0,51,19,10,14,6,2,0,0,Visitante,21 de sep. 09:00 p. m.,Estadio Olimpico Universitario,15000,2,1,0,22
+Santos Laguna,Monterrey,2,5,49,14,5,13,5,5,4,0,51,25,9,11,4,3,3,0,Visitante,21 de sep. 09:30 p. m.,Estadio BBVA Bancomer,48430,0,0,0,91
+Queretaro,Tijuana,1,2,47,14,6,14,7,4,2,0,53,17,6,11,4,5,1,0,Visitante,21 de sep. 10:00 p. m.,Estadio Caliente,26333,1,5,0,90
+Guadalajara,Veracruz,1,0,59,16,7,18,3,3,3,0,41,11,3,17,4,6,3,0,Visitante,23 de sep. 09:00 p. m.,Estadio Luis Pirata Fuente,20031,0,0,1,67
+Necaxa,Chiapas,2,2,36,9,7,9,1,4,1,0,64,12,6,15,6,4,2,0,Visitante,24 de sep. 05:00 p. m.,Estadio Victor Manuel Reyna,17252,0,0,0,58
+Monterrey,Atlas,1,3,55,18,6,14,13,0,3,0,45,8,3,11,2,0,1,0,Visitante,24 de sep. 07:00 p. m.,Estadio Jalisco,25031,2,2,0,45
+Puebla,Morelia,3,2,40,12,3,19,3,0,2,1,60,14,7,15,4,0,2,0,Visitante,24 de sep. 07:00 p. m.,Estadio Morelos,20475,2,2,1,49
+Cruz Azul,Tigres,0,0,46,10,0,18,4,0,2,0,54,4,0,14,2,0,2,2,Visitante,24 de sep. 07:00 p. m.,Estadio Universitario,41563,3,2,0,98
+Queretaro,Pachuca,0,2,41,9,3,22,3,2,3,0,59,17,4,15,4,3,3,0,Visitante,24 de sep. 07:06 p. m.,Estadio Hidalgo,21371,1,2,0,71
+Pumas,America,1,2,62,23,7,17,11,5,2,0,38,11,7,14,4,6,3,0,Visitante,24 de sep. 09:00 p. m.,Azteca Stadium,49156,0,0,0,48
+Leon,Toluca,1,1,33,15,5,13,5,5,0,0,67,16,6,12,6,4,0,0,Visitante,25 de sep. 12:00 p. m.,Universitario Alberto Chivo Cordoba,16669,2,3,0,52
+Tijuana,Santos Laguna,2,1,56,9,4,14,1,4,3,0,44,14,5,18,5,2,2,0,Visitante,25 de sep. 06:00 p. m.,Estadio Corona,18132,2,2,1,60
+Atlas,Tijuana,0,1,55,13,3,13,0,8,0,1,45,22,10,9,0,3,1,0,Visitante,30 de sep. 09:00 p. m.,Estadio Caliente,27033,3,3,0,92
+Veracruz,Cruz Azul,3,5,40,10,6,14,8,4,2,2,60,16,10,17,6,2,2,1,Visitante,1 de oct. 05:00 p. m.,Estadio Azul,11788,3,3,0,32
+Santos Laguna,Queretaro,1,1,42,10,3,8,5,4,1,0,58,12,5,17,10,2,1,0,Visitante,1 de oct. 05:00 p. m.,La Corregidora,18176,6,1,0,51
+America,Monterrey,1,1,50,10,4,12,5,2,2,0,50,13,3,14,10,3,4,0,Visitante,1 de oct. 07:00 p. m.,Estadio BBVA Bancomer,51468,4,3,0,96
+Tigres,Leon,2,3,61,16,5,14,9,2,2,0,39,15,5,20,1,4,1,0,Visitante,1 de oct. 07:06 p. m.,Estadio Leon,25358,3,1,0,82
+Toluca,Necaxa,1,3,57,12,3,9,5,3,1,1,43,11,6,16,4,2,0,0,Visitante,1 de oct. 09:00 p. m.,Estadio Victoria,14967,1,2,0,58
+Morelia,Guadalajara,1,2,38,8,1,7,2,0,1,0,62,20,10,13,6,0,1,0,Visitante,1 de oct. 09:06 p. m.,Estadio Chivas,28569,1,2,0,57
+Chiapas,Pumas,0,1,46,6,3,12,1,3,0,0,54,20,4,12,4,3,2,0,Visitante,2 de oct. 12:00 p. m.,Estadio Olimpico Universitario,19324,1,4,0,28
+Pachuca,Puebla,1,1,58,19,5,14,6,3,3,0,42,11,5,16,6,4,4,0,Visitante,2 de oct. 06:00 p. m.,Estadio Cuauhtemoc,26166,2,2,0,51
+Leon,Veracruz,3,2,51,15,7,9,8,1,1,0,49,12,3,19,3,4,3,0,Visitante,14 de oct. 09:00 p. m.,Estadio Luis Pirata Fuente,14547,0,0,1,48
+Monterrey,Chiapas,4,1,42,15,9,22,3,4,1,0,58,14,6,15,6,5,2,0,Visitante,15 de oct. 05:00 p. m.,Estadio Victor Manuel Reyna,17653,5,4,1,59
+Cruz Azul,Morelia,1,1,48,19,9,18,14,1,2,1,52,6,2,14,4,8,1,0,Visitante,15 de oct. 07:00 p. m.,Estadio Morelos,27223,0,0,0,66
+Queretaro,Atlas,1,2,46,14,5,16,7,4,3,1,54,17,6,12,5,4,2,0,Visitante,15 de oct. 07:00 p. m.,Estadio Jalisco,24127,3,1,0,43
+Necaxa,Tigres,2,0,34,10,5,18,3,3,3,0,66,12,3,6,8,3,2,0,Visitante,15 de oct. 07:00 p. m.,Estadio Universitario,41396,1,4,1,98
+Santos Laguna,Pachuca,0,3,34,6,0,10,4,0,0,1,66,14,0,15,6,0,1,0,Visitante,15 de oct. 07:06 p. m.,Estadio Hidalgo,22608,2,3,0,75
+Tijuana,America,0,1,53,7,2,16,2,1,5,0,47,9,2,14,1,2,3,0,Visitante,15 de oct. 09:00 p. m.,Azteca Stadium,49640,4,1,0,48
+Pumas,Toluca,1,2,46,12,5,10,4,3,1,0,54,18,5,17,9,6,3,0,Visitante,16 de oct. 12:00 p. m.,Universitario Alberto Chivo Cordoba,25426,3,4,0,79
+Guadalajara,Puebla,2,0,76,23,7,14,9,4,0,0,24,5,4,10,8,5,3,1,Visitante,16 de oct. 06:00 p. m.,Estadio Cuauhtemoc,35285,0,0,1,68
+Chiapas,Tijuana,0,2,51,9,2,8,1,1,0,0,49,10,3,16,6,2,0,0,Visitante,21 de oct. 09:00 p. m.,Estadio Caliente,26333,1,4,0,90
+Puebla,Cruz Azul,2,1,47,16,6,15,4,2,1,0,53,16,3,12,8,4,5,0,Visitante,22 de oct. 05:00 p. m.,Estadio Azul,9767,3,3,1,27
+Toluca,Monterrey,1,1,52,10,1,12,3,0,1,0,48,30,8,11,9,0,2,0,Visitante,22 de oct. 07:00 p. m.,Estadio BBVA Bancomer,40966,3,2,0,77
+America,Queretaro,1,1,61,13,4,6,11,1,1,0,39,16,2,8,5,3,2,0,Visitante,22 de oct. 07:00 p. m.,La Corregidora,31162,5,2,0,88
+Veracruz,Necaxa,2,3,43,14,8,14,9,6,3,0,57,13,9,16,8,6,3,0,Visitante,22 de oct. 09:00 p. m.,Estadio Victoria,12433,1,4,0,48
+Morelia,Leon,1,3,62,12,1,16,6,0,3,0,38,23,8,24,5,0,3,0,Visitante,22 de oct. 09:00 p. m.,Estadio Leon,17814,0,0,0,58
+Tigres,Pumas,3,1,66,17,10,15,6,0,1,0,34,7,1,16,1,0,2,1,Visitante,23 de oct. 12:00 p. m.,Estadio Olimpico Universitario,34086,3,4,1,49
+Atlas,Santos Laguna,2,2,55,12,5,17,5,5,4,0,45,17,7,18,9,3,3,0,Visitante,23 de oct. 06:00 p. m.,Estadio Corona,19472,0,0,0,65
+Pachuca,Guadalajara,2,1,30,13,4,11,2,4,1,1,70,20,5,12,6,2,2,0,Visitante,23 de oct. 08:00 p. m.,Estadio Chivas,30912,0,0,1,62
+Pumas,Veracruz,4,1,52,21,15,15,4,4,1,0,48,8,5,12,4,11,0,1,Visitante,28 de oct. 09:00 p. m.,Estadio Luis Pirata Fuente,16978,1,2,1,57
+Queretaro,Chiapas,2,1,49,12,4,18,7,3,2,0,51,11,4,17,8,2,1,0,Visitante,29 de oct. 05:00 p. m.,Estadio Victor Manuel Reyna,8672,2,3,1,29
+Necaxa,Morelia,1,2,34,12,4,15,5,6,5,0,66,11,8,11,6,4,1,0,Visitante,29 de oct. 08:00 p. m.,Estadio Morelos,19707,2,1,0,47
+Monterrey,Tigres,1,1,48,18,3,18,6,2,3,0,52,8,3,17,3,2,2,0,Visitante,29 de oct. 08:00 p. m.,Estadio Universitario,41537,0,0,0,98
+Atlas,Pachuca,2,3,56,11,3,21,5,1,2,0,44,17,4,14,7,1,0,0,Visitante,29 de oct. 08:06 p. m.,Estadio Hidalgo,25044,2,2,0,83
+Santos Laguna,America,1,3,42,10,3,16,1,4,1,0,58,10,7,18,4,2,3,0,Visitante,29 de oct. 09:00 p. m.,Azteca Stadium,26046,2,2,0,25
+Cruz Azul,Guadalajara,2,3,35,12,3,11,4,5,1,0,65,19,8,11,3,1,2,0,Visitante,29 de oct. 09:06 p. m.,Estadio Chivas,37851,1,2,0,76
+Tijuana,Toluca,1,0,40,11,5,12,7,7,3,0,60,19,7,15,9,4,1,1,Visitante,30 de oct. 12:00 p. m.,Universitario Alberto Chivo Cordoba,13970,3,3,1,44
+Leon,Puebla,2,2,44,9,5,16,2,2,3,0,56,17,5,14,11,3,2,0,Visitante,30 de oct. 06:00 p. m.,Estadio Cuauhtemoc,21576,0,0,0,42
+Tigres,Tijuana,1,0,42,5,2,19,1,9,5,0,58,21,9,15,12,1,3,0,Visitante,4 de nov. 09:00 p. m.,Estadio Caliente,27333,2,1,1,93
+Toluca,Queretaro,3,2,59,17,4,25,6,3,6,0,41,11,5,20,7,1,3,0,Visitante,5 de nov. 05:00 p. m.,La Corregidora,17430,5,4,1,49
+Pachuca,Cruz Azul,1,2,53,14,5,13,6,4,4,0,47,13,6,17,4,4,3,1,Visitante,5 de nov. 05:00 p. m.,Estadio Azul,15994,0,0,0,44
+America,Atlas,1,1,43,10,2,11,3,3,4,0,57,9,4,14,4,1,4,0,Visitante,5 de nov. 07:00 p. m.,Estadio Jalisco,40760,3,4,0,73
+Veracruz,Monterrey,0,4,41,6,0,10,3,0,2,0,59,27,0,13,6,0,2,0,Visitante,5 de nov. 07:00 p. m.,Estadio BBVA Bancomer,48114,5,2,0,90
+Guadalajara,Leon,1,1,65,14,6,21,6,3,5,2,35,8,4,14,6,5,2,1,Visitante,5 de nov. 07:06 p. m.,Estadio Leon,27308,3,1,0,88
+Puebla,Necaxa,1,3,60,13,5,21,4,4,6,1,40,18,7,20,5,4,2,0,Visitante,5 de nov. 09:00 p. m.,Estadio Victoria,12980,4,4,0,50
+Morelia,Pumas,1,1,38,6,2,9,3,6,2,0,62,32,7,16,10,1,3,1,Visitante,6 de nov. 12:00 p. m.,Estadio Olimpico Universitario,27372,5,4,0,40
+Chiapas,Santos Laguna,0,2,53,11,1,12,3,0,3,0,47,14,2,14,8,0,0,0,Visitante,6 de nov. 06:00 p. m.,Estadio Corona,18181,0,0,0,61

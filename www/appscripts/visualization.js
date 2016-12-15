@@ -105,7 +105,7 @@
      cargarDatosG(5, tiempo_i, tiempo_f, "P1", 'velocidad_C');
      cargarDatosT(5, tiempo_i, tiempo_f, "P1")
      cargarDatosJugador(5);
-     //Click
+     //Seleccion de jugaador
      var itemsSelec = d3.selectAll('#left-nav a ').on('click', function() {
          //Vaciar la pantalla y los arreglos
          limpiar();
@@ -367,7 +367,7 @@
      canvasGrafs = d3.select("#graficas_01").attr('width', wG).attr('height', hG);
      //console.log('bW', barWidth);
      canvasGrafs.selectAll('rect').data(nD).enter().append('rect')
-     .attr('class', 'bars').attr('width', barWidth / 10).attr('height', function(d, i) {
+     .attr('class', 'bars') .attr('width', barWidth / 6).attr('height', function(d, i) {
          return yScale(+d.speed);
      }).attr('x', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2;
@@ -382,8 +382,8 @@
          //Remove the tooltip
          d3.select("#tooltip").remove();
      });
-     canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 8).attr('cx', function(d, i) {
-         return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 20
+     canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 4).attr('cx', function(d, i) {
+         return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 10
      }).attr('cy', function(d, i) {
          return hG - yScale(+d.speed);
      }).on("mouseover", function(d) {
@@ -414,7 +414,7 @@
      yAxis = d3.svg.axis().scale(yScaleAxis).orient("left").ticks(5);
      canvasGrafs = d3.select("#graficas_01").attr('width', wG).attr('height', hG);
      //console.log('bW', barWidth);
-     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars').attr('width', barWidth / 10).attr('height', function(d, i) {
+     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars') .attr('width', barWidth / 4).attr('height', function(d, i) {
          return yScale(+d.total_dist_diff);
      }).attr('x', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2;
@@ -429,8 +429,8 @@
          //Remove the tooltip
          d3.select("#tooltip").remove();
      });
-     canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 8).attr('cx', function(d, i) {
-         return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 20
+     canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 4).attr('cx', function(d, i) {
+         return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 10
      }).attr('cy', function(d, i) {
          return hG - yScale(+d.total_dist_diff);
      }).on("mouseover", function(d) {
@@ -461,7 +461,7 @@
      yAxis = d3.svg.axis().scale(yScaleAxis).orient("left").ticks(5);
      canvasGrafs = d3.select("#graficas_01").attr('width', wG).attr('height', hG);
      //console.log('bW', barWidth);
-     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars').attr('width', barWidth / 10).attr('height', function(d, i) {
+     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars') .attr('width', barWidth / 4).attr('height', function(d, i) {
          return yScale(+d.high_intensity_distance);
      }).attr('x', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2;
@@ -476,8 +476,8 @@
          //Remove the tooltip
          d3.select("#tooltip").remove();
      });
-     canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 8).attr('cx', function(d, i) {
-         return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 20
+     canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 4).attr('cx', function(d, i) {
+         return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 10
      }).attr('cy', function(d, i) {
          return hG - yScale(+d.high_intensity_distance);
      }).on("mouseover", function(d) {
@@ -509,7 +509,7 @@
      yAxis = d3.svg.axis().scale(yScaleAxis).orient("left").ticks(5);
      canvasGrafs = d3.select("#graficas_01").attr('width', wG).attr('height', hG);
      //console.log('bW', barWidth);
-     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars').attr('width', barWidth / 10).attr('height', function(d, i) {
+     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars') .attr('width', barWidth / 4).attr('height', function(d, i) {
          return yScale(+d.total_effort_diff);
      }).attr('x', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2;
@@ -524,8 +524,8 @@
          //Remove the tooltip
          d3.select("#tooltip").remove();
      });
-     canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 8).attr('cx', function(d, i) {
-         return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 20
+     canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 4).attr('cx', function(d, i) {
+         return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 10
      }).attr('cy', function(d, i) {
          return hG - yScale(+d.total_effort_diff);
      }).on("mouseover", function(d) {
@@ -557,7 +557,7 @@
      yAxis = d3.svg.axis().scale(yScaleAxis).orient("left").ticks(5);
      canvasGrafs = d3.select("#graficas_01").attr('width', wG).attr('height', hG);
      //console.log('bW', barWidth);
-     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars').attr('width', barWidth / 10).attr('height', function(d, i) {
+     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars') .attr('width', barWidth / 4).attr('height', function(d, i) {
          return yScale(+d.sprint_distance);
      }).attr('x', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2;
@@ -572,8 +572,8 @@
          //Remove the tooltip
          d3.select("#tooltip").remove();
      });
-     canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 8).attr('cx', function(d, i) {
-         return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 20
+     canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 4).attr('cx', function(d, i) {
+         return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 10
      }).attr('cy', function(d, i) {
          return hG - yScale(+d.sprint_distance);
      }).on("mouseover", function(d) {

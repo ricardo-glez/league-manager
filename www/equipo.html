@@ -15,7 +15,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<!--Mi Script-->
-		<script type="text/javascript" src="/appscripts/tablas.js"></script>
+		<script type="text/javascript" src="/appscripts/tablas-grales.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-custom">
@@ -35,7 +35,7 @@
 					</div>
 					<div class="col-sm-2 ">
 						<ul class="nav navbar-nav categorias">
-							<li class="activado">
+							<li >
 								<a href="index.html">General</a>
 							</li>
 							<li>
@@ -44,7 +44,7 @@
 							<li>
 								<a href="analisis.html">Analíticos</a>
 							</li>
-							<li>
+							<li class="activado">
 								<a href="equipo.html">Equipo</a>
 							</li>
 						</ul>
@@ -55,30 +55,72 @@
 		</nav>
 		<!--Inicio PRINCIPA-->
 		<div id="principal" class="container-fluid">
-			<div class="  col-sm-2 col-md-2  sidebar-partido" >
+			<div class="  col-sm-1 col-md-2 sidebar-partido" >
 				<div id="nav-partidos" class="btn-group-lg btn-group-vertical">
-					<button type="button" class=" partido_1 btn btn-active">Toluca vs Pumas</button>
-					<button type="button" class=" partido_2 btn btn-active">Toluca vs Pumas</button>
-					<button type="button" class=" partido_1 btn btn-active">Toluca vs Pumas</button>
+					<button type="button" id="0" class=" btn btn-custom btn-active"></button>
+					<button type="button" id="1" class=" btn btn-custom "></button>
+					<button type="button" id="2" class=" btn btn-custom "></button>
+					<button type="button" id="3" class=" btn-custom btn "></button>
+					<button type="button" id="4" class=" btn btn-custom "></button>
+					<button type="button" id="5" class=" btn btn-custom "></button>
+					<button type="button" id="6" class=" btn btn-custom "></button>
+					<button type="button" id="7" class=" btn btn-custom "></button>
+					<button type="button" id="8" class=" btn btn-custom "></button>
+					<button type="button" id="9" class=" btn btn-custom "></button>
+					<button type="button" id="10" class=" btn btn-custom "></button>
+					<button type="button" id="11" class=" btn btn-custom "></button>
+					<button type="button" id="12" class=" btn btn-custom "></button>
+					<button type="button" id="13" class=" btn btn-custom "></button>
 				</div>
 			</div>
 			<!-- Cierra el sidebar -->
-			
 			<!--Inicio Main Container-->
-			<div class="col-md-offset-2 col-md-8  col-xs-offset-1 col-xs-11 " id="main-container">
+			<div class=" col-md-9">
+				<div id="titulo-partido" class="row">
+					<div class="col-md-1">
+						<img id="equipo-casa" class="img-responsive" src="" alt="Casa">
+					</div>
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col-md-4">
+								<h2 id="nombre-equipo-casa"></h2>
+							</div>
+							<div class="col-md-4">
+								<h2 id="vs" class="text-center">VS</h2>
+							</div>
+							<div class="col-md-4">
+								<h2 id="nombre-equipo-visita"></h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<p id="goles-equipo-casa"></p>
+							</div>
+							<div class="col-md-4">
+								<p id="lugar" class="text-center"></p>
+								<p id="fecha" class="text-center"></p>
+							</div>
+							<div class="col-md-4">
+								<h2 id="goles-equipo-visita"></h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1">
+						<img id="equipo-visita" class="img-responsive" src="" alt="Visitante">
+					</div>
+				</div>
 				<!--Inicio Tabla GRAL-->
 				<div id="tabla-gral">
-					<div class="row ">
-						<h2 class="titulo-t">Datos Generales del Equipo</h2>
-					</div>
+					<h2 class="titulo-t">Datos Generales del Equipo</h2>
 					<div class="row">
-						<div class="col-sm-6 col-sm-offset-3 col-md-offset-2 col-md-8  table-responsive">
+						<div class=" text-center table-responsive">
 							<table id="secondary-table" class="table table-condensed">
 								<thead>
 									<tr>
-										<th>Jugadores</th>
+										<th>Numero</th>
+										<th>Nombre</th>
 										<th>Distancia</th>
-										<th>Esfuerzo</th>
+										<th>Esfuerzo</th>e
 										<th>Intensidad</th>
 										<th>Velocidad</th>
 										<th>Sprint</th>
@@ -86,21 +128,173 @@
 								</thead>
 								<tbody>
 									<tr >
-										<td id="jugadores_T"></td>
-										<td id="distancia_T"></td>
-										<td id="esfuerzo_T"></td>
-										<td id="intensidad_T"></td>
-										<td id="velocidad_T"></td>
-										<td id="sprint_T"></td>
+										<td id="J-1-numero_T"></td>
+										<td id="J-1-jugadores_T"></td>
+										<td id="J-1-distancia_T"></td>
+										<td id="J-1-esfuerzo_T"></td>
+										<td id="J-1-intensidad_T"></td>
+										<td id="J-1-velocidad_T"></td>
+										<td id="J-1-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-2-numero_T"></td>
+										<td id="J-2-jugadores_T"></td>
+										<td id="J-2-distancia_T"></td>
+										<td id="J-2-esfuerzo_T"></td>
+										<td id="J-2-intensidad_T"></td>
+										<td id="J-2-velocidad_T"></td>
+										<td id="J-2-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-3-numero_T"></td>
+										<td id="J-3-jugadores_T"></td>
+										<td id="J-3-distancia_T"></td>
+										<td id="J-3-esfuerzo_T"></td>
+										<td id="J-3-intensidad_T"></td>
+										<td id="J-3-velocidad_T"></td>
+										<td id="J-3-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-4-numero_T"></td>
+										<td id="J-4-jugadores_T"></td>
+										<td id="J-4-distancia_T"></td>
+										<td id="J-4-esfuerzo_T"></td>
+										<td id="J-4-intensidad_T"></td>
+										<td id="J-4-velocidad_T"></td>
+										<td id="J-4-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-5-numero_T"></td>
+										<td id="J-5-jugadores_T"></td>
+										<td id="J-5-distancia_T"></td>
+										<td id="J-5-esfuerzo_T"></td>
+										<td id="J-5-intensidad_T"></td>
+										<td id="J-5-velocidad_T"></td>
+										<td id="J-5-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-6-numero_T"></td>
+										<td id="J-6-jugadores_T"></td>
+										<td id="J-6-distancia_T"></td>
+										<td id="J-6-esfuerzo_T"></td>
+										<td id="J-6-intensidad_T"></td>
+										<td id="J-6-velocidad_T"></td>
+										<td id="J-6-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-7-numero_T"></td>
+										<td id="J-7-jugadores_T"></td>
+										<td id="J-7-distancia_T"></td>
+										<td id="J-7-esfuerzo_T"></td>
+										<td id="J-7-intensidad_T"></td>
+										<td id="J-7-velocidad_T"></td>
+										<td id="J-7-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-10-numero_T"></td>
+										<td id="J-10-jugadores_T"></td>
+										<td id="J-10-distancia_T"></td>
+										<td id="J-10-esfuerzo_T"></td>
+										<td id="J-10-intensidad_T"></td>
+										<td id="J-10-velocidad_T"></td>
+										<td id="J-10-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-11-numero_T"></td>
+										<td id="J-11-jugadores_T"></td>
+										<td id="J-11-distancia_T"></td>
+										<td id="J-11-esfuerzo_T"></td>
+										<td id="J-11-intensidad_T"></td>
+										<td id="J-11-velocidad_T"></td>
+										<td id="J-11-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-13-numero_T"></td>
+										<td id="J-13-jugadores_T"></td>
+										<td id="J-13-distancia_T"></td>
+										<td id="J-13-esfuerzo_T"></td>
+										<td id="J-13-intensidad_T"></td>
+										<td id="J-13-velocidad_T"></td>
+										<td id="J-13-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-14-numero_T"></td>
+										<td id="J-14-jugadores_T"></td>
+										<td id="J-14-distancia_T"></td>
+										<td id="J-14-esfuerzo_T"></td>
+										<td id="J-14-intensidad_T"></td>
+										<td id="J-14-velocidad_T"></td>
+										<td id="J-14-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-15-numero_T"></td>
+										<td id="J-15-jugadores_T"></td>
+										<td id="J-15-distancia_T"></td>
+										<td id="J-15-esfuerzo_T"></td>
+										<td id="J-15-intensidad_T"></td>
+										<td id="J-15-velocidad_T"></td>
+										<td id="J-15-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-16-numero_T"></td>
+										<td id="J-16-jugadores_T"></td>
+										<td id="J-16-distancia_T"></td>
+										<td id="J-16-esfuerzo_T"></td>
+										<td id="J-16-intensidad_T"></td>
+										<td id="J-16-velocidad_T"></td>
+										<td id="J-16-sprint_T"></td>
+									</tr>
+									<tr >
+										<td id="J-17-numero_T"></td>
+										<td id="J-17-jugadores_T"></td>
+										<td id="J-17-distancia_T"></td>
+										<td id="J-17-esfuerzo_T"></td>
+										<td id="J-17-intensidad_T"></td>
+										<td id="J-17-velocidad_T"></td>
+										<td id="J-17-sprint_T"></td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 					</div>
 				</div>
+				<div id="coparaciones">
+					<div id="golesFavor" class="row">
+						
+					</div>
+					<div id="golesContra" class="row">
+						
+					</div>
+					<div id="posesion" class="row">
+						
+					</div>
+					<div id="tiros" class="row">
+						
+					</div>
+					<div id="tirosG" class="row">
+						
+					</div>
+					<div id="faltas" class="row">
+						
+					</div>
+					<div id="corners" class="row">
+						
+					</div>
+					<div id="paradas" class="row">
+						
+					</div>
+					<div id="tarjetasA" class="row">
+						
+					</div>
+					<div id="tarjetasR" class="row">
+						
+					</div>
+					<div id="fueraJ" class="row">
+						
+					</div>
+				</div>
 				<!--Cierra Tabla GRAL-->
 			</div>
 			<!--Cierra Main Container-->
-		</div>
-	</body>
-</html>
+		</body>
+	</html>

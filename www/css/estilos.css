@@ -313,19 +313,50 @@ li {
     font-size: 2em;
   }
 }
-.text-acot{
-    font-family: 'Exo 2', sans-serif !important;
-  font-weight: 500;
-  font-size: 18px;
-  
-}
-.text-acot > p{
-    font-family: 'Exo 2', sans-serif !important;
-  font-weight: 500;
-  font-size: 18px;
-  color:#fff;
-  margin:7px 0 0 0;
 
+.text-acot {
+  font-family: 'Exo 2', sans-serif !important;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.text-acot > p {
+  font-family: 'Exo 2', sans-serif !important;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  margin: 7px 0 0 0;
+}
+
+#lugar,
+#fecha {
+  font-family: 'Exo 2', sans-serif !important;
+}
+
+#nombre-equipo-casa,
+#nombre-equipo-visita,
+#vs {
+  font-family: 'Anton', sans-serif !important;
+  font-weight: 500;
+}
+
+#titulo-partido {
+  background-color: rgba(23, 48, 65, .8);
+  color: #fff !important;
+}
+
+#equipo-casa,
+#equipo-visita {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#nombre-equipo-casa {
+  text-align: left;
+}
+
+#nombre-equipo-visita {
+  text-align: right;
 }
 
 #col-ac0,
