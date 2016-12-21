@@ -7,7 +7,7 @@
  var xScaleT;
  var radio;
  var radioScale;
- var svgCanvas;
+ var canvasCancha;
  var canvasGrafs;
  var selectedItems = []
  var padding = 50;
@@ -17,10 +17,8 @@
      bottom: 50,
      left: 50
  };
- var h = 400;
- var w = 720;
- var hG = 300;
- var wG = 720;
+ var hT, wT;
+ var hG, wG;
  var radio = [];
  var position_x = [];
  var position_y = [];
@@ -74,39 +72,24 @@
      }
      //Nueva variable de datos para resguardar la original
      datos = data;
-     //Escalar los datos de x para la cancha
-     xScaleT = d3.scale.linear().domain([-5, 110]).range([0, w]);
-     //xAxis = d3.svg.axis().scale(xScale).orient("bottom").ticks(5);
-     yScaleT = d3.scale.linear().domain([-5, 73]).range([h, 0]);
-     //yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(5);
      radioScale = d3.scale.linear().domain([0, d3.max(datos, function(d, i) {
          return radio[i];
      })]).range([5, 20]);
+     cancha('#data-vis');
      colorScale0 = d3.scale.linear().domain([0, 3]).range(['#c62828', '#FFE766']);
      colorScale1 = d3.scale.linear().domain([4, 9]).range(['#FFE766', '#00CF36']);
-     svgCanvas = d3.select("#data-vis").attr('width', w).attr('height', h);
-     cancha();
+     canvasCancha = d3.select("#data-vis").attr('width', wT).attr('height', hT);
      wich = 5;
      cual = 'velocidad_C';
      tiempo_i = 0;
      tiempo_f = 300;
-     //Sliders 
-     var slider = d3.selectAll('#slider-range ').on('click', function() {
-         tiempo_i = $('#init-amount').text();
-         tiempo_f = $('#fin-amount').text();
-         console.log('tiempos', tiempo_i, tiempo_f)
-     });
-     var slider = d3.selectAll('#slider-range > span').on('click', function() {
-         tiempo_i = $('#init-amount').text();
-         tiempo_f = $('#fin-amount').text();
-         console.log('tiempos', tiempo_i, tiempo_f)
-     });
      //console.log('d5', data_5_min)
+     limpiarG();
      cargarDatosG(5, tiempo_i, tiempo_f, "P1", 'velocidad_C');
-     cargarDatosT(5, tiempo_i, tiempo_f, "P1")
+     cargarDatosT(5, tiempo_i, tiempo_f, "P1");
      cargarDatosJugador(5);
      //Seleccion de jugaador
-     var itemsSelec = d3.selectAll('#left-nav a ').on('click', function() {
+     var jugadorSelec = d3.selectAll('#left-nav a ').on('click', function() {
          //Vaciar la pantalla y los arreglos
          limpiar();
          limpiarG();
@@ -116,35 +99,49 @@
          cargarDatosJugador(wich);
      });
      //Seleccionar Categoria de Grafica
-     var catSelec = d3.selectAll('#controles button').on('click', function() {
+     var categoriaSelec = d3.selectAll('#controles button').on('click', function() {
          $('button').removeClass('btn-active');
          d3.select(this).attr('class', ' btn btn-active btn-custom');
-         //Vaciar la pantalla y los arreglos
+         //Vaciar la pantalla de la grafica y los arreglos
          limpiarG();
          cual = this.id;
-         console.log('cual', cual)
+         //console.log('cual', cual)
          cargarDatosG(wich, tiempo_i, tiempo_f, "P1", cual);
-         //cargarDatosT(wich, 1000, 2000, "P1");
-         //cargarDatosJugador(wich)
      });
-     //Click
+     // Enviar datos de Sliders al dar click en el slider 
+     var slider = d3.selectAll('#slider-range ').on('click', function() {
+         tiempo_i = $('#init-amount').text();
+         tiempo_f = $('#fin-amount').text();
+         //console.log('tiempos', tiempo_i, tiempo_f)
+     });
+     // Enviar datos de Sliders al dar click en el handler
+     var handler = d3.selectAll('#slider-range > span').on('click', function() {
+         tiempo_i = $('#init-amount').text();
+         tiempo_f = $('#fin-amount').text();
+         //console.log('tiempos', tiempo_i, tiempo_f)
+     });
+     //Ejecutar la visualizacion de la trayectoria, por seleccion del slider
      var visualizarB = d3.selectAll('#visualizar_B').on('click', function() {
-         //Vaciar la pantalla y los arreglos
-         console.log('Visualizar_B')
+         //Vaciar la pantalla de la cancha y los arreglos
+         tiempo_i = $('#init-amount').text();
+         tiempo_f = $('#fin-amount').text();
          limpiar();
-         //cargarDatosG(wich, tiempo_i, tiempo_f, "P1", cual);
          cargarDatosT(wich, tiempo_i, tiempo_f, "P1");
          cargarDatosJugador(wich);
      });
  });
  //Dibujar cancha 
- function cancha() {
-     svgCanvas.append('rect').attr('class', 'grid').attr('x', w / 2).attr('y', 0).attr('width', w / 2).attr('height', h).style('fill', '#009B09').style('fill-opacity', '0.2').style('stroke', '#fff').style('stroke-width', '5');
-     svgCanvas.append('rect').attr('class', 'grid').attr('x', 0).attr('y', 0).attr('width', w / 2).attr('height', h).style('fill', '#009B09').style('fill-opacity', '0.2').style('stroke', '#fff').style('stroke-width', '5');
-     svgCanvas.append('rect').attr('class', 'grid').attr('x', 0).attr('y', h / 4 + h / 16).attr('width', w / 8).attr('height', h / 2 - h / 8).style('fill', '#fff').style('fill-opacity', '0.2').style('stroke', '#fff').style('stroke-width', '5');
-     svgCanvas.append('rect').attr('class', 'grid').attr('x', 0).attr('y', h / 4 + h / 8).attr('width', w / 16).attr('height', h / 2 - h / 4).style('fill', 'none').style('stroke', '#fff').style('stroke-width', '1');
-     svgCanvas.append('rect').attr('class', 'grid').attr('x', w - w / 8).attr('y', h / 4 + h / 16).attr('width', w / 8).attr('height', h / 2 - h / 8).style('fill', '#fff').style('fill-opacity', '0.2').style('stroke', '#fff').style('stroke-width', '5');
-     svgCanvas.append('rect').attr('class', 'grid').attr('x', w - w / 16).attr('y', h / 4 + h / 8).attr('width', w / 16).attr('height', h / 2 - h / 4).style('fill', 'none').style('stroke', '#fff').style('stroke-width', '1');
+ function cancha(idDiv) {
+     wT = $(idDiv).width();
+     hT = $(idDiv).height();
+     canvasCancha = d3.select(idDiv)
+         //console.log('cancha', wT, hT)
+     canvasCancha.append('rect').attr('class', 'grid').attr('x', wT / 2).attr('y', 0).attr('width', wT / 2).attr('height', hT).style('fill', '#165718').style('fill-opacity', '0.8').style('stroke', '#fff').style('stroke-width', '5');
+     canvasCancha.append('rect').attr('class', 'grid').attr('x', 0).attr('y', 0).attr('width', wT / 2).attr('height', hT).style('fill', '#165718').style('fill-opacity', '0.8').style('stroke', '#fff').style('stroke-width', '5');
+     canvasCancha.append('rect').attr('class', 'grid').attr('x', 0).attr('y', hT / 4 + hT / 16).attr('width', wT / 8).attr('height', hT / 2 - hT / 8).style('fill', '#fff').style('fill-opacity', '0.2').style('stroke', '#fff').style('stroke-width', '5');
+     canvasCancha.append('rect').attr('class', 'grid').attr('x', 0).attr('y', hT / 4 + hT / 8).attr('width', wT / 16).attr('height', hT / 2 - hT / 4).style('fill', 'none').style('stroke', '#fff').style('stroke-width', '1');
+     canvasCancha.append('rect').attr('class', 'grid').attr('x', wT - wT / 8).attr('y', hT / 4 + hT / 16).attr('width', wT / 8).attr('height', hT / 2 - hT / 8).style('fill', '#fff').style('fill-opacity', '0.2').style('stroke', '#fff').style('stroke-width', '5');
+     canvasCancha.append('rect').attr('class', 'grid').attr('x', wT - wT / 16).attr('y', hT / 4 + hT / 8).attr('width', wT / 16).attr('height', hT / 2 - hT / 4).style('fill', 'none').style('stroke', '#fff').style('stroke-width', '1');
  }
  //Inicio de Carga de Datos de Graficas
  function cargarDatosG(jugador, i_seg, f_seg, p, cu) {
@@ -169,7 +166,7 @@
          });
          switch (cu) {
              case 'velocidad_C':
-                 draw_grafs_V(newD, i_seg, f_seg, jugador);
+                 draw_grafs_V(newD, i_seg, f_seg, jugador,'#graficas_01');
                  break;
              case 'distancia_C':
                  draw_grafs_D(newD, i_seg, f_seg, jugador);
@@ -189,6 +186,7 @@
  //Inicio de Carga de Datos de Trayecto
  function cargarDatosT(jugador, i_seg, f_seg, p) {
      newDT = [];
+     console.log('Datos Jugador: ', jugador, i_seg, f_seg, p)
      limpiar();
      var contador = 0;
      var csv_T = d3.csv("data/base_final.csv", function(error, data) {
@@ -207,14 +205,15 @@
                  energiaT[contador] = +d.total_energy_diff;
                  velocidadT[contador] = +d.speed;
                  intensidadT[contador] = +d.high_intensity_distance;
-                 //        console.log('Con', contador);
+                 //console.log('Con', contador);
                  contador++;
-             }
+             } 
          });
-         //console.log('positions', position_x.length, newDT);
-         draw_trayectoria_LT(newDT, jugador);
-         //draw_trayectoria_LD(newDT, jugador);
-         //draw_grafs_S(newD, i_seg, f_seg, jugador);
+         if( newDT.length == 0){
+              console.log('No hay Datos Disponibles')
+             }
+         console.log('newDT', newDT.length);
+         draw_trayectoria_LT(newDT, jugador, '#data-vis');
      });
      //console.log('NEWDT', newDT)
  }
@@ -223,7 +222,6 @@
      var csv_jugadores = d3.csv("/data/toluca_jugadores.csv", function(error, data) {
          data.forEach(function(d, i) {
              if ((d.numero == jugador)) {
-                 //console.log('Encontrados', d)
                  nombreJug = d.nombre;
                  numeroJug = +d.numero;
                  posicionJug = d.posicion;
@@ -237,12 +235,9 @@
                  faltasRecibidasJug = +d.faltas_recibidas;
                  tarjetasAmarillasJug = +d.tarjetas_amarillas;
                  tarjetasRojasJug = +d.tarjetas_rojas;
-                 //console.log('seleccionado', d.nombre)
-                 //var distp1 = d3.selectAll('#main-container .distancia').data(selectedItems).enter().append('p').text("funcio");
              }
          });
          datosJugadores = data;
-         //console.log('select', datosJugadores, 'data/perfil-jugadores/' + numeroJug + '.jpg')
          //Información General del Jugador
          var imgJ = d3.select('#left-nav > div:nth-child(1) > img').data(datosJugadores).attr('src', 'data/perfil-jugadores/' + numeroJug + '.jpg').enter();
          var nomJ = d3.select('#info-jugador > p.nombre > strong').data(datosJugadores).text(nombreJug).enter();
@@ -262,15 +257,21 @@
      });
  }
  //Dibujar trayectoria con circulos
- function draw_trayectoria_C(nD, j) {
-     //Borrar Circulos de la pantalla
-     //console.log('circulos', circulos)
-     //console.log('New Data', nD)
-     circulos = svgCanvas.selectAll('circle').transition().duration(100).attr('r', 0).remove();
-     var lines = svgCanvas.selectAll('line').transition().duration(150).attr('stroke-width', 0).remove()
-         //console.log('circulos borrados', circulos)
+ function draw_trayectoria_C(nD, j, idDiv) {
+     hT = $(idDiv).height();
+     wT = $(idDiv).width();
+     hT = hT - margin.bottom - margin.top;
+     wT = wT - margin.left - margin.right;
+     //Escalar los datos de x para la cancha
+     xScaleT = d3.scale.linear().domain([-5, 110]).range([0, wT]);
+     //xAxis = d3.svg.axis().scale(xScale).orient("bottom").ticks(5);
+     yScaleT = d3.scale.linear().domain([-5, 73]).range([hT, 0]);
+     //yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(5);
+     canvasCancha = d3.select(idDiv);
+     circulos = canvasCancha.selectAll('circle').transition().duration(100).attr('r', 0).remove();
+     //console.log('circulos borrados', circulos)
      circulos = [];
-     var newCirculos = svgCanvas.selectAll('circle line').data(nD).enter().append('circle').transition().delay(function(d, i) {
+     var newCirculos = canvasCancha.selectAll('circle').data(nD).enter().append('circle').transition().delay(function(d, i) {
              return i / nD.length * 7000;
          }).attr('cx', function(d, i) {
              return xScaleT(position_x[i]);
@@ -298,10 +299,18 @@
          }).attr('opacity', .8);
  }
  //Dibujar Trayectoria con Lineas
- function draw_trayectoria_LT(nD, j) {
-     //console.log('Trayectoria Lineas', nD.length, position_x.length);
-     //Dibujar las lineas de la trayectoria
-     var lines_trayecto = svgCanvas.selectAll('line').data(nD).enter().append('line').attr('class', 'positionPath').style('stroke', function(d, i) {
+ function draw_trayectoria_LT(nD, j, idDiv) {
+     hT = $(idDiv).height();
+     wT = $(idDiv).width();
+     hT = hT - margin.bottom - margin.top;
+     wT = wT - margin.left - margin.right;
+     //Escalar los datos de x para la cancha
+     xScaleT = d3.scale.linear().domain([-5, 110]).range([0, wT]);
+     //xAxis = d3.svg.axis().scale(xScale).orient("bottom").ticks(5);
+     yScaleT = d3.scale.linear().domain([-5, 73]).range([hT, 0]);
+     //yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(5);
+     canvasCancha = d3.select(idDiv);
+     var lines_trayecto = canvasCancha.selectAll('line').data(nD).enter().append('line').attr('class', 'positionPath').style('stroke', function(d, i) {
          if (color0[i] <= 4) {
              return colorScale0(color0[i]);
          } else if (color0[i] > 4) {
@@ -311,40 +320,54 @@
          return radio[i];
      }).transition().delay(function(d, i) {
          return i / nD.length * 7000;
-     }).attr('y1', function(d, i) {
-         return yScaleT(position_y[i]);
      }).attr('x1', function(d, i) {
          return xScaleT(position_x[i]);
-     }).attr('y2', function(d, i) {
-         if (i != nD.length) {
-             return yScaleT(position_y[i + 1]);
-         } else {
-             return yScaleT(position_y[i - 10]);
-         }
+     }).attr('y1', function(d, i) {
+         return yScaleT(position_y[i]);
      }).attr('x2', function(d, i) {
-         if (i != nD.length) {
-             return xScaleT(position_x[i + 1]);
+         if (i < nD.length-1) {
+             return xScaleT(position_x[i +1]);
          } else {
-             return xScaleT(position_x[i - 10]);
+             return xScaleT(position_x[i-1]);
+         }
+     }).attr('y2', function(d, i) {
+         if (i < nD.length-1) {
+             return yScaleT(position_y[i +1]);
+         } else {
+             return yScaleT(position_y[i-1]);
          }
      });
  }
  //Dibujar la Dirección de la Trayectoria
- function draw_trayectoria_LD(nD, j) {
-     //Borrar Circulos de la pantalla
-     //console.log('circulos', circulos)
-     //console.log('New Data', nD)
-     //Dibujar Dirección de la trayectoria
-     var lineas_direccion = svgCanvas.selectAll('line').data(nD).enter().append('line').attr('class', 'directionPath').transition().delay(function(d, i) {
+ function draw_trayectoria_LD(nD, j, idDiv) {
+     hT = $(idDiv).height();
+     wT = $(idDiv).width();
+     hT = hT ;
+     wT = wT ;
+     //Escalar los datos de x para la cancha
+     xScaleT = d3.scale.linear().domain([-5, 110]).range([0, wT]);
+     //xAxis = d3.svg.axis().scale(xScale).orient("bottom").ticks(5);
+     yScaleT = d3.scale.linear().domain([-5, 73]).range([hT, 0]);
+     //yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(5);
+     canvasCancha = d3.select(idDiv);
+     var lineas_direccion = canvasCancha.selectAll('line').data(nD).enter().append('line').attr('class', 'directionPath').transition().delay(function(d, i) {
          return i / nD.length * 7000;
-     }).attr('class', 'positionPath').attr('y2', function(d, i) {
-         return yScaleT(position_y[i]) - radDir * Math.sin(direccion[i]);
-     }).attr('x2', function(d, i) {
-         return xScaleT(position_x[i]) - radDir * Math.cos(direccion[i]);
-     }).attr('y1', function(d, i) {
-         return yScaleT(position_y[i]);
      }).attr('x1', function(d, i) {
          return xScaleT(position_x[i]);
+     }).attr('y1', function(d, i) {
+         return yScaleT(position_y[i]);
+     }).attr('x2', function(d, i) {
+         if (i < nD.length-1) {
+          return xScaleT(position_x[i]) - radDir * Math.cos(direccion[i]);
+       } else{
+        return xScaleT(position_x[i]) - radDir * Math.cos(direccion[i]);
+       }
+     }).attr('y2', function(d, i) {
+         if (i < nD.length-1) {
+             return yScaleT(position_y[i+1]) - radDir * Math.sin(direccion[i]);
+         } else{
+          return yScaleT(position_y[i-1]) - radDir * Math.sin(direccion[i]);
+        }
      }).style('stroke', function(d, i) {
          if (color0[i] <= 4) {
              return colorScale0(color0[i]);
@@ -354,38 +377,45 @@
      }).style('stroke-width', 1);
  }
  //Dibujar la Grafica de Velocidad
- function draw_grafs_V(nD, i_seg, f_seg, j) {
+ function draw_grafs_V(nD, i_seg, f_seg, j, idDiv) {
+     wG = $(idDiv).width();
+     hG = $(idDiv).height();
+     wG = wG ;
+     hG = hG ;
+     canvasGrafs = d3.select(idDiv);
      barWidth = wG / nD.length;
      //Escalar los datos de x de la grafica
-     //console.log('NEW', margin.left )
      xScaleAxis = d3.scale.linear().domain([0, nD.length]).range([0, wG - padding * 2]);
      xAxis = d3.svg.axis().scale(xScaleAxis).orient("bottom").ticks(10);
-     yScale = d3.scale.linear().domain([d3.max(velocidad), d3.min(velocidad)]).range([hG - padding, 0]);
+     yScale = d3.scale.linear().domain([d3.max(velocidad), d3.min(velocidad)]).range([hG, margin.top+10]);
      //console.log('max', d3.max(costoS));
-     yScaleAxis = d3.scale.linear().domain([d3.max(velocidad), d3.min(velocidad)]).range([hG, padding * 2]);
+     yScaleAxis = d3.scale.linear().domain([d3.max(velocidad), d3.min(velocidad)]).range([hG]);
      yAxis = d3.svg.axis().scale(yScaleAxis).orient("left").ticks(5);
-     canvasGrafs = d3.select("#graficas_01").attr('width', wG).attr('height', hG);
+     canvasGrafs.attr('width', wG).attr('height', hG);
      //console.log('bW', barWidth);
-     canvasGrafs.selectAll('rect').data(nD).enter().append('rect')
-     .attr('class', 'bars') .attr('width', barWidth / 6).attr('height', function(d, i) {
-         return yScale(+d.speed);
+     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars').attr('width', barWidth / 6).attr('height', function(d, i) {
+         return yScale(+d.speed) ;
      }).attr('x', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2;
      }).attr('y', function(d, i) {
-         return hG - yScale(+d.speed);
-     }).on("mouseover", function(d) {
+         return hG - yScale(+d.speed) +margin.top;
+     }).on("mouseover", function(d, i) {
          //Get this bar's x/y values, then augment for the tooltip
          var xPosition = parseFloat(d3.select(this).attr("x")) + barWidth / 8;
          var yPosition = parseFloat(d3.select(this).attr("y")) - 20;
-         canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.speed + " m/s");
+        $('#tit-info').text('Minuto ' + d.segundos / 60 );
+        $('#info-p').text('Vel Max: '+d.speed+' m/s');
+         //canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.speed + " m/s");
      }).on("mouseout", function() {
          //Remove the tooltip
-         d3.select("#tooltip").remove();
+        $("#tit-info").text();
+        $('#info-p').text();
+         //d3.select("#tooltip").remove();
      });
      canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 4).attr('cx', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 10
      }).attr('cy', function(d, i) {
-         return hG - yScale(+d.speed);
+         return hG - yScale(+d.speed) +margin.top;
      }).on("mouseover", function(d) {
          //Get this bar's x/y values, then augment for the tooltip
          var xPosition = parseFloat(d3.select(this).attr("x")) + barWidth / 8;
@@ -408,39 +438,47 @@
      //console.log('NEW', margin.left)
      xScaleAxis = d3.scale.linear().domain([0, nD.length]).range([0, wG - padding * 2]);
      xAxis = d3.svg.axis().scale(xScaleAxis).orient("bottom").ticks(10);
-     yScale = d3.scale.linear().domain([d3.max(distancia), d3.min(distancia)]).range([hG - padding, 0]);
+     yScale = d3.scale.linear().domain([d3.max(distancia), d3.min(distancia)]).range([hG, margin.top+10]);
      //console.log('max', d3.max(costoS));
      yScaleAxis = d3.scale.linear().domain([d3.max(distancia), d3.min(distancia)]).range([hG, padding * 2]);
      yAxis = d3.svg.axis().scale(yScaleAxis).orient("left").ticks(5);
      canvasGrafs = d3.select("#graficas_01").attr('width', wG).attr('height', hG);
      //console.log('bW', barWidth);
-     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars') .attr('width', barWidth / 4).attr('height', function(d, i) {
+     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars').attr('width', barWidth / 4).attr('height', function(d, i) {
          return yScale(+d.total_dist_diff);
      }).attr('x', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2;
      }).attr('y', function(d, i) {
-         return hG - yScale(+d.total_dist_diff);
-     }).on("mouseover", function(d) {
+         return hG - yScale(+d.total_dist_diff) +margin.top;
+     }).on("mouseover", function(d, i) {
          //Get this bar's x/y values, then augment for the tooltip
          var xPosition = parseFloat(d3.select(this).attr("x")) + barWidth / 8;
          var yPosition = parseFloat(d3.select(this).attr("y")) - 20;
-         canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.total_dist_diff + " mts");
+         $('#tit-info').text('Minuto ' + d.segundos / 60 );
+        $('#info-p').text('Dist Max: '+d.total_dist_diff+' mts');
+         //canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.speed + " m/s");
      }).on("mouseout", function() {
          //Remove the tooltip
-         d3.select("#tooltip").remove();
+          $("#tit-info").text();
+        $('#info-p').text();
+         //d3.select("#tooltip").remove();
      });
      canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 4).attr('cx', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 10
      }).attr('cy', function(d, i) {
-         return hG - yScale(+d.total_dist_diff);
-     }).on("mouseover", function(d) {
+         return hG - yScale(+d.total_dist_diff) +margin.top;
+     }).on("mouseover", function(d, i) {
          //Get this bar's x/y values, then augment for the tooltip
          var xPosition = parseFloat(d3.select(this).attr("x")) + barWidth / 8;
          var yPosition = parseFloat(d3.select(this).attr("y")) - 20;
-         canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.total_dist_diff + " mts");
+         $('#tit-info').text('Minuto ' + d.segundos / 60 );
+        $('#info-p').text('Vel Max: '+d.speed+' m/s');
+         //canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.speed + " m/s");
      }).on("mouseout", function() {
          //Remove the tooltip
-         d3.select("#tooltip").remove();
+        $("#tit-info").text();
+        $('#info-p').text();
+         //d3.select("#tooltip").remove();
      });
      canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 4);
      canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 2);
@@ -455,31 +493,35 @@
      //console.log('NEW', margin.left )
      xScaleAxis = d3.scale.linear().domain([0, nD.length]).range([0, wG - padding * 2]);
      xAxis = d3.svg.axis().scale(xScaleAxis).orient("bottom").ticks(10);
-     yScale = d3.scale.linear().domain([d3.max(intensidad), d3.min(intensidad)]).range([hG - padding, 0]);
+     yScale = d3.scale.linear().domain([d3.max(intensidad), d3.min(intensidad)]).range([hG , margin.top + 10]);
      //console.log('max', d3.max(costoS));
      yScaleAxis = d3.scale.linear().domain([d3.max(intensidad), d3.min(intensidad)]).range([hG, padding * 2]);
      yAxis = d3.svg.axis().scale(yScaleAxis).orient("left").ticks(5);
      canvasGrafs = d3.select("#graficas_01").attr('width', wG).attr('height', hG);
      //console.log('bW', barWidth);
-     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars') .attr('width', barWidth / 4).attr('height', function(d, i) {
+     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars').attr('width', barWidth / 4).attr('height', function(d, i) {
          return yScale(+d.high_intensity_distance);
      }).attr('x', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2;
      }).attr('y', function(d, i) {
-         return hG - yScale(+d.high_intensity_distance);
-     }).on("mouseover", function(d) {
+         return hG - yScale(+d.high_intensity_distance)+ margin.top ;
+     }).on("mouseover", function(d, i) {
          //Get this bar's x/y values, then augment for the tooltip
          var xPosition = parseFloat(d3.select(this).attr("x")) + barWidth / 8;
          var yPosition = parseFloat(d3.select(this).attr("y")) - 20;
-         canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.high_intensity_distance + " mts");
+         $('#tit-info').text('Minuto ' + d.segundos / 60 );
+        $('#info-p').text('Intensidad Max: '+d.high_intensity_distance+' mts');
+         //canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.speed + " m/s");
      }).on("mouseout", function() {
          //Remove the tooltip
-         d3.select("#tooltip").remove();
+          $("#tit-info").text();
+        $('#info-p').text();
+         //d3.select("#tooltip").remove();
      });
      canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 4).attr('cx', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 10
      }).attr('cy', function(d, i) {
-         return hG - yScale(+d.high_intensity_distance);
+         return hG - yScale(+d.high_intensity_distance) +margin.top ;
      }).on("mouseover", function(d) {
          //Get this bar's x/y values, then augment for the tooltip
          var xPosition = parseFloat(d3.select(this).attr("x")) + barWidth / 8;
@@ -503,31 +545,35 @@
      //console.log('NEW', margin.left )
      xScaleAxis = d3.scale.linear().domain([0, nD.length]).range([0, wG - padding * 2]);
      xAxis = d3.svg.axis().scale(xScaleAxis).orient("bottom").ticks(10);
-     yScale = d3.scale.linear().domain([d3.max(esfuerzo), d3.min(esfuerzo)]).range([hG - padding, 0]);
+     yScale = d3.scale.linear().domain([d3.max(esfuerzo), d3.min(esfuerzo)]).range([hG , margin.top ]);
      //console.log('max', d3.max(costoS));
      yScaleAxis = d3.scale.linear().domain([d3.max(esfuerzo), d3.min(esfuerzo)]).range([hG, padding * 2]);
      yAxis = d3.svg.axis().scale(yScaleAxis).orient("left").ticks(5);
      canvasGrafs = d3.select("#graficas_01").attr('width', wG).attr('height', hG);
      //console.log('bW', barWidth);
-     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars') .attr('width', barWidth / 4).attr('height', function(d, i) {
-         return yScale(+d.total_effort_diff);
+     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars').attr('width', barWidth / 4).attr('height', function(d, i) {
+         return yScale(+d.total_effort_diff) ;
      }).attr('x', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2;
      }).attr('y', function(d, i) {
-         return hG - yScale(+d.total_effort_diff);
-     }).on("mouseover", function(d) {
+         return hG - yScale(+d.total_effort_diff) +margin.top ;
+     }).on("mouseover", function(d, i) {
          //Get this bar's x/y values, then augment for the tooltip
          var xPosition = parseFloat(d3.select(this).attr("x")) + barWidth / 8;
          var yPosition = parseFloat(d3.select(this).attr("y")) - 20;
-         canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.total_effort_diff);
+         $('#tit-info').text('Minuto ' + d.segundos / 60 );
+        $('#info-p').text('Esfuerzo Max: '+d.total_effort_diff+' mts');
+         //canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.speed + " m/s");
      }).on("mouseout", function() {
          //Remove the tooltip
-         d3.select("#tooltip").remove();
+          $("#tit-info").text();
+        $('#info-p').text();
+         //d3.select("#tooltip").remove();
      });
      canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 4).attr('cx', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 10
      }).attr('cy', function(d, i) {
-         return hG - yScale(+d.total_effort_diff);
+         return hG - yScale(+d.total_effort_diff) +margin.top ;
      }).on("mouseover", function(d) {
          //Get this bar's x/y values, then augment for the tooltip
          var xPosition = parseFloat(d3.select(this).attr("x")) + barWidth / 8;
@@ -551,31 +597,35 @@
      //console.log('NEW', margin.left )
      xScaleAxis = d3.scale.linear().domain([0, nD.length]).range([0, wG - padding * 2]);
      xAxis = d3.svg.axis().scale(xScaleAxis).orient("bottom").ticks(10);
-     yScale = d3.scale.linear().domain([d3.max(sprint), d3.min(sprint)]).range([hG - padding, 0]);
+     yScale = d3.scale.linear().domain([d3.max(sprint), d3.min(sprint)]).range([hG , margin.top ]);
      //console.log('max', d3.max(costoS));
      yScaleAxis = d3.scale.linear().domain([d3.max(sprint), d3.min(sprint)]).range([hG, padding * 2]);
      yAxis = d3.svg.axis().scale(yScaleAxis).orient("left").ticks(5);
      canvasGrafs = d3.select("#graficas_01").attr('width', wG).attr('height', hG);
      //console.log('bW', barWidth);
-     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars') .attr('width', barWidth / 4).attr('height', function(d, i) {
-         return yScale(+d.sprint_distance);
+     canvasGrafs.selectAll('rect').data(nD).enter().append('rect').attr('class', 'bars').attr('width', barWidth / 4).attr('height', function(d, i) {
+         return yScale(+d.sprint_distance) ;
      }).attr('x', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2;
      }).attr('y', function(d, i) {
-         return hG - yScale(+d.sprint_distance);
-     }).on("mouseover", function(d) {
+         return hG - yScale(+d.sprint_distance) +margin.top ;
+     }).on("mouseover", function(d, i) {
          //Get this bar's x/y values, then augment for the tooltip
          var xPosition = parseFloat(d3.select(this).attr("x")) + barWidth / 8;
          var yPosition = parseFloat(d3.select(this).attr("y")) - 20;
-         canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.sprint_distance + 'mts');
+         $('#tit-info').text('Minuto ' + d.segundos / 60 );
+        $('#info-p').text('Vel Max: '+d.sprint_distance+' mts');
+         //canvasGrafs.append("text").attr("id", "tooltip").attr("x", xPosition).attr("y", yPosition).attr("text-anchor", "middle").attr("font-family", "sans-serif").attr("font-size", "14px").attr("font-weight", "bold").attr("fill", "#fff").text(+d.speed + " m/s");
      }).on("mouseout", function() {
          //Remove the tooltip
-         d3.select("#tooltip").remove();
+          $("#tit-info").text();
+        $('#info-p').text();
+         //d3.select("#tooltip").remove();
      });
      canvasGrafs.selectAll('circle').data(nD).enter().append('circle').attr('class', 'bars').attr('r', barWidth / 4).attr('cx', function(d, i) {
          return xScaleAxis(i) + margin.left + barWidth / 2 + barWidth / 10
      }).attr('cy', function(d, i) {
-         return hG - yScale(+d.sprint_distance);
+         return hG - yScale(+d.sprint_distance) +margin.top ;
      }).on("mouseover", function(d) {
          //Get this bar's x/y values, then augment for the tooltip
          var xPosition = parseFloat(d3.select(this).attr("x")) + barWidth / 8;
@@ -585,7 +635,7 @@
          //Remove the tooltip
          d3.select("#tooltip").remove();
      });
-     canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 4);
+    canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 4);
      canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 2);
      canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 4 - hG / 2);
      canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', 0);

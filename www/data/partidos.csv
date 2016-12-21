@@ -1,145 +1,331 @@
-Club,Vs,GolFavor,GolContra,PosesionCl,TirosCl,TirosAGolCl,FaltasCl,CornersCl,ParadasCl,TAmarillaCl,TRojaCl,PosesionCont,TirosCont,TirosAGolCont,FaltasCont,CornersCont,ParadasCont,TAmarillaCont,TRojaCont,Tipo,Fecha,Lugar,AsistenciaEstadio,FueraJuegoCl,FueraJuegoCont,Resultado,AsistenciaEstadioPje
-Morelia,Tijuana,0,2,56,10,4,8,5,3,3,0,44,15,5,15,5,4,2,0,Visitante,15 de jul. 09:00 p. m.,Estadio Caliente,26833,0,0,0,91
-Veracruz,Queretaro,0,2,58,12,3,14,2,3,1,0,42,12,5,18,4,3,1,0,Visitante,16 de jul. 05:00 p. m.,La Corregidora,22059,0,0,0,62
-Toluca,Atlas,1,1,55,7,1,18,6,0,2,0,45,14,6,15,6,0,0,1,Visitante,16 de jul. 07:00 p. m.,Estadio Jalisco,34729,0,0,0,62
-Puebla,Monterrey,1,1,56,5,2,14,3,3,1,0,44,11,4,11,8,1,2,1,Visitante,16 de jul. 07:00 p. m.,Estadio BBVA Bancomer,48071,3,1,0,90
-Leon,Pachuca,1,5,42,15,3,14,3,4,5,1,58,17,9,15,3,2,1,0,Visitante,16 de jul. 07:06 p. m.,Estadio Hidalgo,23298,1,2,0,78
-Chiapas,America,0,2,46,15,8,5,9,5,1,0,54,15,7,9,4,8,0,0,Visitante,16 de jul. 09:00 p. m.,Azteca Stadium,23656,3,1,0,23
-Cruz Azul,Necaxa,0,0,60,12,2,12,7,2,1,0,40,7,1,13,3,2,2,0,Visitante,16 de jul. 09:00 p. m.,Estadio Victoria,21525,3,2,0,83
-Guadalajara,Pumas,0,1,60,14,4,11,10,2,2,0,40,6,2,15,1,4,3,0,Visitante,17 de jul. 12:00 p. m.,Estadio Olimpico Universitario,44505,0,0,0,65
-Tigres,Santos Laguna,0,0,60,6,2,15,8,1,0,0,40,11,1,12,8,2,1,0,Visitante,17 de jul. 06:00 p. m.,Estadio Corona,25297,2,1,0,84
-Santos Laguna,Veracruz,0,2,47,21,6,14,9,4,6,0,53,12,7,18,6,6,4,0,Visitante,22 de jul. 09:00 p. m.,Estadio Luis Pirata Fuente,16830,0,0,0,56
-Pumas,Cruz Azul,0,0,47,3,0,17,2,0,3,0,53,15,0,14,7,0,1,0,Visitante,23 de jul. 05:00 p. m.,Estadio Azul,23127,3,1,0,63
-Pachuca,Chiapas,2,0,59,23,6,16,10,1,2,0,41,13,2,11,4,4,2,0,Visitante,23 de jul. 05:00 p. m.,Estadio Victor Manuel Reyna,14854,0,0,1,50
-Queretaro,Morelia,2,2,34,19,6,15,9,3,2,0,66,14,5,15,4,3,1,0,Visitante,23 de jul. 07:00 p. m.,Estadio Morelos,21579,0,0,0,52
-Atlas,Tigres,0,0,47,10,3,13,4,8,2,0,53,18,8,11,7,3,1,1,Visitante,23 de jul. 07:00 p. m.,Estadio Universitario,41203,2,1,0,98
-Necaxa,Leon,0,0,48,8,2,25,5,2,1,0,52,12,2,19,3,2,1,0,Visitante,23 de jul. 07:06 p. m.,Estadio Leon,21118,3,2,0,68
-Toluca,America,1,3,49,10,4,14,5,1,1,0,51,16,4,13,5,3,3,0,Visitante,23 de jul. 09:00 p. m.,Azteca Stadium,33193,7,1,0,32
-Monterrey,Guadalajara,0,1,37,10,7,9,6,7,2,0,63,18,8,8,3,7,2,0,Visitante,23 de jul. 09:00 p. m.,Estadio Chivas,38810,0,0,0,78
-Tijuana,Puebla,2,3,57,16,4,12,6,1,2,0,43,10,3,11,3,2,1,0,Visitante,24 de jul. 06:00 p. m.,Estadio Cuauhtemoc,14137,3,4,0,27
-Guadalajara,Tijuana,0,4,66,10,4,16,9,1,4,0,34,10,5,13,3,4,2,0,Visitante,29 de jul. 09:00 p. m.,Estadio Caliente,27333,0,0,0,93
-Puebla,Queretaro,1,2,62,14,4,8,6,6,1,0,38,21,8,8,3,3,1,0,Visitante,30 de jul. 05:00 p. m.,La Corregidora,20349,3,2,0,57
-Veracruz,Atlas,0,1,46,5,2,18,5,3,1,1,54,13,3,18,5,2,3,0,Visitante,30 de jul. 07:00 p. m.,Estadio Jalisco,34962,0,0,0,62
-Cruz Azul,Monterrey,1,1,45,9,7,16,1,2,3,0,55,12,3,17,7,6,1,0,Visitante,30 de jul. 07:00 p. m.,Estadio BBVA Bancomer,50093,1,3,0,94
-Necaxa,Pachuca,0,1,49,14,3,22,4,5,1,0,51,10,6,20,3,3,1,0,Visitante,30 de jul. 07:06 p. m.,Estadio Hidalgo,26780,1,2,0,89
-Tigres,America,3,0,53,13,7,12,7,3,2,0,47,13,3,7,1,3,0,1,Visitante,30 de jul. 09:00 p. m.,Azteca Stadium,39046,6,2,1,38
-Leon,Pumas,0,1,46,7,2,10,4,3,1,0,54,13,4,8,6,2,3,0,Visitante,31 de jul. 12:00 p. m.,Estadio Olimpico Universitario,25231,2,2,0,37
-Toluca,Chiapas,0,1,58,15,4,14,7,4,4,0,42,15,5,17,8,4,1,0,Visitante,31 de jul. 05:00 p. m.,Estadio Victor Manuel Reyna,27858,3,3,0,93
-Morelia,Santos Laguna,4,2,54,15,6,8,2,4,4,0,46,25,6,9,5,2,3,0,Visitante,31 de jul. 06:00 p. m.,Estadio Corona,21732,0,0,1,72
-Tijuana,Cruz Azul,2,1,49,14,8,15,4,2,1,0,51,10,2,13,5,6,1,1,Visitante,6 de ago. 05:00 p. m.,Estadio Azul,17341,0,0,1,47
-Chiapas,Tigres,0,1,41,12,4,4,5,5,0,0,59,24,7,11,11,4,2,0,Visitante,6 de ago. 07:00 p. m.,Estadio Universitario,41397,0,0,0,98
-Atlas,Morelia,2,3,50,18,6,13,7,0,2,0,50,8,1,18,3,0,3,0,Visitante,6 de ago. 07:00 p. m.,Estadio Morelos,25353,0,0,0,61
-Monterrey,Leon,3,0,46,14,7,13,10,3,3,0,54,12,3,15,12,4,3,0,Visitante,6 de ago. 07:06 p. m.,Estadio Leon,26173,1,6,1,85
-Queretaro,Guadalajara,0,0,30,5,2,20,1,7,4,0,70,17,7,13,6,2,2,0,Visitante,6 de ago. 09:00 p. m.,Estadio Chivas,31610,1,1,0,63
-Pumas,Necaxa,2,2,52,8,3,15,6,3,1,0,48,12,6,16,7,1,1,0,Visitante,6 de ago. 09:00 p. m.,Estadio Victoria,22511,3,3,0,87
-America,Veracruz,4,2,53,20,9,12,8,2,1,1,47,10,4,11,3,5,1,2,Visitante,6 de ago. 09:00 p. m.,Estadio Luis Pirata Fuente,27089,3,3,1,90
-Pachuca,Toluca,0,2,51,8,3,14,4,8,3,0,49,20,10,23,7,3,3,0,Visitante,7 de ago. 12:45 p. m.,Universitario Alberto Chivo Cordoba,13476,0,0,0,42
-Santos Laguna,Puebla,0,0,45,15,5,13,7,5,2,0,55,14,6,12,9,4,2,0,Visitante,7 de ago. 06:00 p. m.,Estadio Cuauhtemoc,11809,0,0,0,23
-Leon,Tijuana,0,2,44,16,6,13,4,2,2,0,56,13,4,16,4,6,6,0,Visitante,12 de ago. 09:00 p. m.,Estadio Caliente,27333,0,0,0,93
-Cruz Azul,Queretaro,0,0,64,9,2,10,5,7,1,0,36,12,7,16,3,2,2,1,Visitante,13 de ago. 05:00 p. m.,La Corregidora,30451,1,3,0,86
-Puebla,Atlas,2,3,42,14,5,13,7,6,0,1,58,15,7,15,6,3,5,0,Visitante,13 de ago. 07:00 p. m.,Estadio Jalisco,42686,2,1,0,76
-Necaxa,Monterrey,1,2,47,8,3,23,2,4,5,0,53,20,6,13,2,2,2,0,Visitante,13 de ago. 07:00 p. m.,Estadio BBVA Bancomer,49892,3,3,0,93
-Pumas,Pachuca,0,3,46,6,1,17,2,4,3,0,54,16,7,12,4,1,2,0,Visitante,13 de ago. 07:06 p. m.,Estadio Hidalgo,25129,0,0,0,84
-Morelia,America,1,1,51,12,6,12,8,7,2,0,49,22,8,11,11,5,3,0,Visitante,13 de ago. 09:00 p. m.,Azteca Stadium,27455,1,1,0,27
-Tigres,Toluca,0,0,59,6,2,12,5,7,2,0,41,14,7,18,7,2,3,0,Visitante,14 de ago. 12:00 p. m.,Universitario Alberto Chivo Cordoba,25582,0,0,0,80
-Veracruz,Chiapas,1,1,42,9,3,15,5,4,2,0,58,22,4,15,10,2,1,0,Visitante,14 de ago. 05:00 p. m.,Estadio Victor Manuel Reyna,27349,2,2,0,91
-Guadalajara,Santos Laguna,1,0,58,14,3,16,3,3,2,0,42,14,3,21,11,2,3,2,Visitante,14 de ago. 06:00 p. m.,Estadio Corona,21734,0,0,1,72
-Toluca,Veracruz,2,2,54,10,5,11,9,2,3,0,46,8,4,19,4,2,3,1,Visitante,19 de ago. 09:00 p. m.,Estadio Luis Pirata Fuente,15233,2,1,0,51
-Santos Laguna,Cruz Azul,1,3,45,11,5,15,5,2,3,0,55,16,5,16,7,4,2,0,Visitante,20 de ago. 05:00 p. m.,Estadio Azul,11890,4,2,0,32
-Chiapas,Morelia,2,3,40,11,7,11,1,4,1,0,60,20,8,8,9,5,2,0,Visitante,20 de ago. 07:00 p. m.,Estadio Morelos,20633,1,1,0,50
-Pachuca,Tigres,2,4,54,15,4,11,6,4,2,0,46,13,8,16,7,2,1,0,Visitante,20 de ago. 07:00 p. m.,Estadio Universitario,41469,4,5,0,98
-Queretaro,Leon,1,2,49,13,4,14,0,2,2,0,51,17,4,12,0,3,3,0,Visitante,20 de ago. 07:06 p. m.,Estadio Leon,25457,3,1,0,82
-Tijuana,Necaxa,1,1,52,9,5,19,5,2,4,0,48,10,3,25,5,4,3,0,Visitante,20 de ago. 09:00 p. m.,Estadio Victoria,14349,3,3,0,55
-Atlas,Guadalajara,2,2,42,8,5,14,2,2,4,0,58,9,4,9,2,3,1,0,Visitante,20 de ago. 09:06 p. m.,Estadio Chivas,35294,0,0,0,71
-Monterrey,Pumas,3,5,60,19,9,15,8,4,4,0,40,14,9,16,3,5,1,0,Visitante,21 de ago. 12:00 p. m.,Estadio Olimpico Universitario,19650,3,5,0,28
-America,Puebla,2,2,52,14,7,11,12,1,3,1,48,18,4,8,8,5,4,1,Visitante,21 de ago. 06:00 p. m.,Estadio Cuauhtemoc,34345,0,0,0,66
-Pumas,Tijuana,0,1,46,12,3,19,4,4,5,0,54,17,5,19,6,3,4,0,Visitante,26 de ago. 09:00 p. m.,Estadio Caliente,17333,1,6,0,59
-Necaxa,Queretaro,2,1,45,11,3,14,1,2,4,0,55,13,3,18,3,1,4,0,Visitante,27 de ago. 05:00 p. m.,La Corregidora,20538,4,1,1,58
-Veracruz,Tigres,1,1,33,9,4,13,2,9,4,0,67,15,9,14,6,3,5,0,Visitante,27 de ago. 07:00 p. m.,Estadio Universitario,41436,3,1,0,98
-Cruz Azul,Atlas,1,1,55,11,3,17,4,2,1,0,45,6,3,19,3,2,1,0,Visitante,27 de ago. 07:00 p. m.,Estadio Jalisco,40295,0,0,0,72
-Monterrey,Pachuca,1,1,69,21,2,15,10,3,2,0,31,12,4,9,5,1,2,1,Visitante,27 de ago. 07:06 p. m.,Estadio Hidalgo,24780,0,0,0,83
-Guadalajara,America,3,0,46,12,6,16,4,5,6,0,54,13,5,9,6,3,7,0,Visitante,27 de ago. 09:00 p. m.,Azteca Stadium,61561,1,1,1,60
-Morelia,Toluca,2,2,53,13,4,11,3,3,2,0,47,20,5,13,6,3,3,0,Visitante,28 de ago. 12:00 p. m.,Universitario Alberto Chivo Cordoba,17140,2,1,0,54
-Puebla,Chiapas,3,0,47,13,6,15,4,2,1,0,53,12,2,13,5,3,4,0,Visitante,28 de ago. 05:00 p. m.,Estadio Victor Manuel Reyna,26280,0,0,1,88
-Leon,Santos Laguna,0,1,39,9,4,11,4,1,1,2,61,15,2,13,7,4,3,0,Visitante,28 de ago. 06:00 p. m.,Estadio Corona,17754,1,1,0,59
-Pachuca,Veracruz,0,1,50,10,1,13,4,0,1,0,50,15,4,11,4,0,2,0,Visitante,9 de sep. 09:00 p. m.,Estadio Luis Pirata Fuente,11595,1,1,0,39
-America,Cruz Azul,4,3,68,13,7,19,6,0,6,0,32,7,3,13,2,0,2,1,Visitante,10 de sep. 05:00 p. m.,Estadio Azul,28036,5,7,1,76
-Tijuana,Monterrey,0,0,34,10,4,14,2,6,4,0,66,22,6,20,9,4,4,0,Visitante,10 de sep. 07:00 p. m.,Estadio BBVA Bancomer,50045,0,0,0,94
-Tigres,Morelia,2,0,54,18,6,9,8,2,3,0,46,11,2,8,2,4,0,1,Visitante,10 de sep. 07:00 p. m.,Estadio Morelos,27812,1,3,1,67
-Atlas,Leon,1,4,55,13,4,15,3,5,1,0,45,18,8,17,6,2,0,0,Visitante,10 de sep. 07:06 p. m.,Estadio Leon,24742,0,0,0,80
-Santos Laguna,Necaxa,1,2,50,15,6,8,9,3,0,0,50,11,5,21,2,5,2,0,Visitante,10 de sep. 09:00 p. m.,Estadio Victoria,17365,0,0,0,67
-Chiapas,Guadalajara,0,2,40,7,3,9,3,10,1,0,60,26,12,11,9,3,0,0,Visitante,10 de sep. 09:06 p. m.,Estadio Chivas,27004,2,1,0,54
-Queretaro,Pumas,1,4,47,10,2,15,1,2,2,0,53,15,6,12,5,1,1,0,Visitante,11 de sep. 12:00 p. m.,Estadio Olimpico Universitario,22000,2,8,0,32
-Toluca,Puebla,2,0,41,14,7,13,3,10,3,0,59,22,10,9,9,5,3,0,Visitante,11 de sep. 06:00 p. m.,Estadio Cuauhtemoc,12782,0,0,1,25
-Morelia,Veracruz,3,1,46,16,9,10,1,0,2,0,54,17,1,16,7,0,5,0,Visitante,16 de sep. 09:00 p. m.,Estadio Luis Pirata Fuente,16321,2,2,1,54
-Guadalajara,Toluca,1,2,63,17,3,14,0,2,3,0,37,9,5,14,0,2,3,0,Visitante,17 de sep. 04:00 p. m.,Universitario Alberto Chivo Cordoba,25072,0,0,0,78
-Monterrey,Queretaro,0,1,52,17,9,17,7,6,1,1,48,17,7,19,4,7,3,0,Visitante,17 de sep. 05:00 p. m.,La Corregidora,23238,1,2,0,65
-Cruz Azul,Chiapas,3,0,38,5,3,12,0,0,2,0,62,13,4,14,0,0,2,0,Visitante,17 de sep. 07:00 p. m.,Estadio Victor Manuel Reyna,26552,0,0,1,89
-Necaxa,Atlas,0,0,39,4,0,21,1,0,4,1,61,11,0,17,5,0,5,0,Visitante,17 de sep. 07:00 p. m.,Estadio Jalisco,30457,2,1,0,54
-Puebla,Tigres,1,2,35,9,3,12,2,6,4,0,65,18,8,17,4,2,2,0,Visitante,17 de sep. 07:00 p. m.,Estadio Universitario,41534,8,3,0,98
-Tijuana,Pachuca,2,2,50,11,2,18,3,1,3,0,50,15,3,18,4,1,4,0,Visitante,17 de sep. 07:06 p. m.,Estadio Hidalgo,26345,0,0,0,88
-Leon,America,2,0,38,14,4,16,3,3,1,0,62,12,3,14,4,2,1,0,Visitante,17 de sep. 09:00 p. m.,Azteca Stadium,42981,2,6,1,42
-Pumas,Santos Laguna,1,3,69,16,5,17,8,4,2,0,31,12,7,13,5,4,2,0,Visitante,18 de sep. 06:00 p. m.,Estadio Corona,19749,2,4,0,66
-Tigres,Guadalajara,1,0,42,9,3,13,5,2,0,0,58,11,2,13,6,3,0,0,Visitante,20 de sep. 07:00 p. m.,Estadio Chivas,32018,2,3,1,64
-Toluca,Cruz Azul,1,0,49,5,1,15,0,0,1,0,51,7,3,13,0,0,0,0,Visitante,20 de sep. 07:00 p. m.,Estadio Azul,23836,6,3,1,65
-Pachuca,Morelia,5,1,52,22,8,20,9,4,3,0,48,11,5,10,4,3,2,1,Visitante,20 de sep. 07:00 p. m.,Estadio Morelos,20912,0,0,1,50
-Veracruz,Puebla,2,3,41,10,3,17,6,3,2,1,59,15,6,21,7,1,1,0,Visitante,20 de sep. 08:00 p. m.,Estadio Cuauhtemoc,15582,0,0,0,30
-America,Necaxa,1,1,50,12,5,17,3,2,1,0,50,9,3,16,2,4,1,0,Visitante,20 de sep. 09:00 p. m.,Estadio Victoria,22055,1,2,0,85
-Chiapas,Leon,0,0,60,21,3,13,1,3,2,0,40,13,3,17,15,3,0,0,Visitante,21 de sep. 07:30 p. m.,Estadio Leon,16978,0,0,0,55
-Atlas,Pumas,0,2,49,7,2,19,5,8,1,0,51,19,10,14,6,2,0,0,Visitante,21 de sep. 09:00 p. m.,Estadio Olimpico Universitario,15000,2,1,0,22
-Santos Laguna,Monterrey,2,5,49,14,5,13,5,5,4,0,51,25,9,11,4,3,3,0,Visitante,21 de sep. 09:30 p. m.,Estadio BBVA Bancomer,48430,0,0,0,91
-Queretaro,Tijuana,1,2,47,14,6,14,7,4,2,0,53,17,6,11,4,5,1,0,Visitante,21 de sep. 10:00 p. m.,Estadio Caliente,26333,1,5,0,90
-Guadalajara,Veracruz,1,0,59,16,7,18,3,3,3,0,41,11,3,17,4,6,3,0,Visitante,23 de sep. 09:00 p. m.,Estadio Luis Pirata Fuente,20031,0,0,1,67
-Necaxa,Chiapas,2,2,36,9,7,9,1,4,1,0,64,12,6,15,6,4,2,0,Visitante,24 de sep. 05:00 p. m.,Estadio Victor Manuel Reyna,17252,0,0,0,58
-Monterrey,Atlas,1,3,55,18,6,14,13,0,3,0,45,8,3,11,2,0,1,0,Visitante,24 de sep. 07:00 p. m.,Estadio Jalisco,25031,2,2,0,45
-Puebla,Morelia,3,2,40,12,3,19,3,0,2,1,60,14,7,15,4,0,2,0,Visitante,24 de sep. 07:00 p. m.,Estadio Morelos,20475,2,2,1,49
-Cruz Azul,Tigres,0,0,46,10,0,18,4,0,2,0,54,4,0,14,2,0,2,2,Visitante,24 de sep. 07:00 p. m.,Estadio Universitario,41563,3,2,0,98
-Queretaro,Pachuca,0,2,41,9,3,22,3,2,3,0,59,17,4,15,4,3,3,0,Visitante,24 de sep. 07:06 p. m.,Estadio Hidalgo,21371,1,2,0,71
-Pumas,America,1,2,62,23,7,17,11,5,2,0,38,11,7,14,4,6,3,0,Visitante,24 de sep. 09:00 p. m.,Azteca Stadium,49156,0,0,0,48
-Leon,Toluca,1,1,33,15,5,13,5,5,0,0,67,16,6,12,6,4,0,0,Visitante,25 de sep. 12:00 p. m.,Universitario Alberto Chivo Cordoba,16669,2,3,0,52
-Tijuana,Santos Laguna,2,1,56,9,4,14,1,4,3,0,44,14,5,18,5,2,2,0,Visitante,25 de sep. 06:00 p. m.,Estadio Corona,18132,2,2,1,60
-Atlas,Tijuana,0,1,55,13,3,13,0,8,0,1,45,22,10,9,0,3,1,0,Visitante,30 de sep. 09:00 p. m.,Estadio Caliente,27033,3,3,0,92
-Veracruz,Cruz Azul,3,5,40,10,6,14,8,4,2,2,60,16,10,17,6,2,2,1,Visitante,1 de oct. 05:00 p. m.,Estadio Azul,11788,3,3,0,32
-Santos Laguna,Queretaro,1,1,42,10,3,8,5,4,1,0,58,12,5,17,10,2,1,0,Visitante,1 de oct. 05:00 p. m.,La Corregidora,18176,6,1,0,51
-America,Monterrey,1,1,50,10,4,12,5,2,2,0,50,13,3,14,10,3,4,0,Visitante,1 de oct. 07:00 p. m.,Estadio BBVA Bancomer,51468,4,3,0,96
-Tigres,Leon,2,3,61,16,5,14,9,2,2,0,39,15,5,20,1,4,1,0,Visitante,1 de oct. 07:06 p. m.,Estadio Leon,25358,3,1,0,82
-Toluca,Necaxa,1,3,57,12,3,9,5,3,1,1,43,11,6,16,4,2,0,0,Visitante,1 de oct. 09:00 p. m.,Estadio Victoria,14967,1,2,0,58
-Morelia,Guadalajara,1,2,38,8,1,7,2,0,1,0,62,20,10,13,6,0,1,0,Visitante,1 de oct. 09:06 p. m.,Estadio Chivas,28569,1,2,0,57
-Chiapas,Pumas,0,1,46,6,3,12,1,3,0,0,54,20,4,12,4,3,2,0,Visitante,2 de oct. 12:00 p. m.,Estadio Olimpico Universitario,19324,1,4,0,28
-Pachuca,Puebla,1,1,58,19,5,14,6,3,3,0,42,11,5,16,6,4,4,0,Visitante,2 de oct. 06:00 p. m.,Estadio Cuauhtemoc,26166,2,2,0,51
-Leon,Veracruz,3,2,51,15,7,9,8,1,1,0,49,12,3,19,3,4,3,0,Visitante,14 de oct. 09:00 p. m.,Estadio Luis Pirata Fuente,14547,0,0,1,48
-Monterrey,Chiapas,4,1,42,15,9,22,3,4,1,0,58,14,6,15,6,5,2,0,Visitante,15 de oct. 05:00 p. m.,Estadio Victor Manuel Reyna,17653,5,4,1,59
-Cruz Azul,Morelia,1,1,48,19,9,18,14,1,2,1,52,6,2,14,4,8,1,0,Visitante,15 de oct. 07:00 p. m.,Estadio Morelos,27223,0,0,0,66
-Queretaro,Atlas,1,2,46,14,5,16,7,4,3,1,54,17,6,12,5,4,2,0,Visitante,15 de oct. 07:00 p. m.,Estadio Jalisco,24127,3,1,0,43
-Necaxa,Tigres,2,0,34,10,5,18,3,3,3,0,66,12,3,6,8,3,2,0,Visitante,15 de oct. 07:00 p. m.,Estadio Universitario,41396,1,4,1,98
-Santos Laguna,Pachuca,0,3,34,6,0,10,4,0,0,1,66,14,0,15,6,0,1,0,Visitante,15 de oct. 07:06 p. m.,Estadio Hidalgo,22608,2,3,0,75
-Tijuana,America,0,1,53,7,2,16,2,1,5,0,47,9,2,14,1,2,3,0,Visitante,15 de oct. 09:00 p. m.,Azteca Stadium,49640,4,1,0,48
-Pumas,Toluca,1,2,46,12,5,10,4,3,1,0,54,18,5,17,9,6,3,0,Visitante,16 de oct. 12:00 p. m.,Universitario Alberto Chivo Cordoba,25426,3,4,0,79
-Guadalajara,Puebla,2,0,76,23,7,14,9,4,0,0,24,5,4,10,8,5,3,1,Visitante,16 de oct. 06:00 p. m.,Estadio Cuauhtemoc,35285,0,0,1,68
-Chiapas,Tijuana,0,2,51,9,2,8,1,1,0,0,49,10,3,16,6,2,0,0,Visitante,21 de oct. 09:00 p. m.,Estadio Caliente,26333,1,4,0,90
-Puebla,Cruz Azul,2,1,47,16,6,15,4,2,1,0,53,16,3,12,8,4,5,0,Visitante,22 de oct. 05:00 p. m.,Estadio Azul,9767,3,3,1,27
-Toluca,Monterrey,1,1,52,10,1,12,3,0,1,0,48,30,8,11,9,0,2,0,Visitante,22 de oct. 07:00 p. m.,Estadio BBVA Bancomer,40966,3,2,0,77
-America,Queretaro,1,1,61,13,4,6,11,1,1,0,39,16,2,8,5,3,2,0,Visitante,22 de oct. 07:00 p. m.,La Corregidora,31162,5,2,0,88
-Veracruz,Necaxa,2,3,43,14,8,14,9,6,3,0,57,13,9,16,8,6,3,0,Visitante,22 de oct. 09:00 p. m.,Estadio Victoria,12433,1,4,0,48
-Morelia,Leon,1,3,62,12,1,16,6,0,3,0,38,23,8,24,5,0,3,0,Visitante,22 de oct. 09:00 p. m.,Estadio Leon,17814,0,0,0,58
-Tigres,Pumas,3,1,66,17,10,15,6,0,1,0,34,7,1,16,1,0,2,1,Visitante,23 de oct. 12:00 p. m.,Estadio Olimpico Universitario,34086,3,4,1,49
-Atlas,Santos Laguna,2,2,55,12,5,17,5,5,4,0,45,17,7,18,9,3,3,0,Visitante,23 de oct. 06:00 p. m.,Estadio Corona,19472,0,0,0,65
-Pachuca,Guadalajara,2,1,30,13,4,11,2,4,1,1,70,20,5,12,6,2,2,0,Visitante,23 de oct. 08:00 p. m.,Estadio Chivas,30912,0,0,1,62
-Pumas,Veracruz,4,1,52,21,15,15,4,4,1,0,48,8,5,12,4,11,0,1,Visitante,28 de oct. 09:00 p. m.,Estadio Luis Pirata Fuente,16978,1,2,1,57
-Queretaro,Chiapas,2,1,49,12,4,18,7,3,2,0,51,11,4,17,8,2,1,0,Visitante,29 de oct. 05:00 p. m.,Estadio Victor Manuel Reyna,8672,2,3,1,29
-Necaxa,Morelia,1,2,34,12,4,15,5,6,5,0,66,11,8,11,6,4,1,0,Visitante,29 de oct. 08:00 p. m.,Estadio Morelos,19707,2,1,0,47
-Monterrey,Tigres,1,1,48,18,3,18,6,2,3,0,52,8,3,17,3,2,2,0,Visitante,29 de oct. 08:00 p. m.,Estadio Universitario,41537,0,0,0,98
-Atlas,Pachuca,2,3,56,11,3,21,5,1,2,0,44,17,4,14,7,1,0,0,Visitante,29 de oct. 08:06 p. m.,Estadio Hidalgo,25044,2,2,0,83
-Santos Laguna,America,1,3,42,10,3,16,1,4,1,0,58,10,7,18,4,2,3,0,Visitante,29 de oct. 09:00 p. m.,Azteca Stadium,26046,2,2,0,25
-Cruz Azul,Guadalajara,2,3,35,12,3,11,4,5,1,0,65,19,8,11,3,1,2,0,Visitante,29 de oct. 09:06 p. m.,Estadio Chivas,37851,1,2,0,76
-Tijuana,Toluca,1,0,40,11,5,12,7,7,3,0,60,19,7,15,9,4,1,1,Visitante,30 de oct. 12:00 p. m.,Universitario Alberto Chivo Cordoba,13970,3,3,1,44
-Leon,Puebla,2,2,44,9,5,16,2,2,3,0,56,17,5,14,11,3,2,0,Visitante,30 de oct. 06:00 p. m.,Estadio Cuauhtemoc,21576,0,0,0,42
-Tigres,Tijuana,1,0,42,5,2,19,1,9,5,0,58,21,9,15,12,1,3,0,Visitante,4 de nov. 09:00 p. m.,Estadio Caliente,27333,2,1,1,93
-Toluca,Queretaro,3,2,59,17,4,25,6,3,6,0,41,11,5,20,7,1,3,0,Visitante,5 de nov. 05:00 p. m.,La Corregidora,17430,5,4,1,49
-Pachuca,Cruz Azul,1,2,53,14,5,13,6,4,4,0,47,13,6,17,4,4,3,1,Visitante,5 de nov. 05:00 p. m.,Estadio Azul,15994,0,0,0,44
-America,Atlas,1,1,43,10,2,11,3,3,4,0,57,9,4,14,4,1,4,0,Visitante,5 de nov. 07:00 p. m.,Estadio Jalisco,40760,3,4,0,73
-Veracruz,Monterrey,0,4,41,6,0,10,3,0,2,0,59,27,0,13,6,0,2,0,Visitante,5 de nov. 07:00 p. m.,Estadio BBVA Bancomer,48114,5,2,0,90
-Guadalajara,Leon,1,1,65,14,6,21,6,3,5,2,35,8,4,14,6,5,2,1,Visitante,5 de nov. 07:06 p. m.,Estadio Leon,27308,3,1,0,88
-Puebla,Necaxa,1,3,60,13,5,21,4,4,6,1,40,18,7,20,5,4,2,0,Visitante,5 de nov. 09:00 p. m.,Estadio Victoria,12980,4,4,0,50
-Morelia,Pumas,1,1,38,6,2,9,3,6,2,0,62,32,7,16,10,1,3,1,Visitante,6 de nov. 12:00 p. m.,Estadio Olimpico Universitario,27372,5,4,0,40
-Chiapas,Santos Laguna,0,2,53,11,1,12,3,0,3,0,47,14,2,14,8,0,0,0,Visitante,6 de nov. 06:00 p. m.,Estadio Corona,18181,0,0,0,61
+Club,Vs,GolFavor,GolContra,PosesionCl,TirosCl,TirosAGolCl,FaltasCl,CornersCl,ParadasCl,FueraJuegoCl,TAmarillaCl,TRojaCl,PosesionCont,TirosCont,TirosAGolCont,FaltasCont,CornersCont,ParadasCont,FueraJuegoCont,TAmarillaCont,TRojaCont,Tipo,Fecha,Lugar,AsistenciaEstadio,Resultado,AsistenciaEstadioPje,key,Ataque,Defensa
+Queretaro,Atlas,1,3,52,15,3,16,3,3,3,2,0,48,10,6,16,3,2,1,2,0,Local,8 de ene. 07:30 p. m.,La Corregidora,30753,0,86,Queretaro Local,1.385207354,0.971839273
+Atlas,Queretaro,3,1,48,10,6,16,3,2,1,2,0,52,15,3,16,3,3,3,2,0,Visitante,8 de ene. 07:30 p. m.,La Corregidora,30753,1,86,Atlas Visitante,1.246633321,0.731840038
+Tijuana,Pachuca,1,1,52,15,6,16,4,3,2,2,0,48,9,4,15,9,4,2,2,1,Local,8 de ene. 09:30 p. m.,Estadio Caliente,26733,0,91,Tijuana Local,1.206284737,1.397953415
+Pachuca,Tijuana,1,1,48,9,4,15,9,4,2,2,1,52,15,6,16,4,3,2,2,0,Visitante,8 de ene. 09:30 p. m.,Estadio Caliente,26733,0,91,Pachuca Visitante,0.646402462,1.490785263
+America,Puebla,0,0,48,13,3,10,6,6,1,0,0,52,17,6,12,6,3,3,2,0,Local,9 de ene. 05:00 p. m.,Azteca Stadium,37726,0,37,America Local,1.385207354,1.121353007
+Puebla,America,0,0,52,17,6,12,6,3,3,2,0,48,13,3,10,6,6,1,0,0,Visitante,9 de ene. 05:00 p. m.,Azteca Stadium,37726,0,37,Puebla Visitante,1.163524432,0.609866699
+Monterrey,Pumas,1,0,53,20,6,17,5,1,1,2,0,47,7,1,8,7,5,3,2,0,Local,9 de ene. 07:00 p. m.,Estadio BBVA Bancomer,49170,1,92,Monterrey Local,1.058144506,1.461912068
+Pumas,Monterrey,0,1,47,7,1,8,7,5,3,2,0,53,20,6,17,5,1,1,2,0,Visitante,9 de ene. 07:00 p. m.,Estadio BBVA Bancomer,49170,0,92,Pumas Visitante,1.200461716,0.542103732
+Leon,Santos Laguna,2,0,54,15,8,16,6,5,0,4,0,46,11,5,12,5,6,0,2,1,Local,9 de ene. 08:06 p. m.,Estadio Leon,17943,1,58,Leon Local,0.79360838,0.822325538
+Santos Laguna,Leon,0,2,46,11,5,12,5,6,0,2,1,54,15,8,16,6,5,0,4,0,Visitante,9 de ene. 08:06 p. m.,Estadio Leon,17943,0,58,Santos Laguna Visitante,0.997306656,0.670853368
+Morelia,Cruz Azul,2,2,61,21,5,12,9,2,1,0,0,39,10,4,10,3,3,4,1,0,Local,9 de ene. 08:30 p. m.,Estadio Morelos,27744,0,67,Morelia Local,0.872969218,1.027906923
+Cruz Azul,Morelia,2,2,39,10,4,10,3,3,4,1,0,61,21,5,12,9,2,1,0,0,Visitante,9 de ene. 08:30 p. m.,Estadio Morelos,27744,0,67,Cruz Azul Visitante,1.200461716,1.016444498
+Chiapas,Dorados,1,0,60,19,0,13,2,0,0,3,0,40,8,0,25,3,0,0,4,0,Local,9 de ene. 09:00 p. m.,Estadio Victor Manuel Reyna,13556,1,45,Chiapas Local,0.39680419,1.130697615
+Dorados,Chiapas,0,1,40,8,0,25,3,0,0,4,0,60,19,0,13,2,0,0,3,0,Visitante,9 de ene. 09:00 p. m.,Estadio Victor Manuel Reyna,13556,0,45,Dorados Visitante,0.83108888,1.084207464
+Toluca,Tigres,1,0,43,13,4,14,7,2,1,1,0,57,7,2,12,1,3,1,1,0,Local,10 de ene. 12:00 p. m.,Estadio Nemesio Diez Riega,15109,1,56,Toluca Local,1.015818726,0.822325538
+Tigres,Toluca,0,1,57,7,2,12,1,3,1,1,0,43,13,4,14,7,2,1,1,0,Visitante,10 de ene. 12:00 p. m.,Estadio Nemesio Diez Riega,15109,0,56,Tigres Visitante,2.039945434,0.665309126
+Guadalajara,Veracruz,2,2,76,18,7,13,9,3,0,2,0,24,9,5,13,3,6,0,0,1,Local,10 de ene. 05:00 p. m.,Estadio Chivas,39612,0,79,Guadalajara Local,0.555525866,1.747441769
+Veracruz,Guadalajara,2,2,24,9,5,13,3,6,0,0,1,76,18,7,13,9,3,0,2,0,Visitante,10 de ene. 05:00 p. m.,Estadio Chivas,39612,0,79,Veracruz Visitante,1.015775298,1.287496364
+Veracruz,Leon,1,3,53,12,3,14,0,2,0,2,1,47,11,5,16,0,2,0,2,0,Local,15 de ene. 07:30 p. m.,Estadio Luis Pirata Fuente,24590,0,82,Veracruz Local,0.775972638,1.736020581
+Leon,Veracruz,3,1,47,11,5,16,0,2,0,2,0,53,12,3,14,0,2,0,2,1,Visitante,15 de ene. 07:30 p. m.,Estadio Luis Pirata Fuente,24590,1,82,Leon Visitante,1.0388611,0.609866699
+Santos Laguna,Chiapas,1,0,41,13,0,8,0,0,2,3,0,59,2,0,18,0,0,2,4,0,Local,15 de ene. 09:30 p. m.,Estadio Corona,21282,1,71,Santos Laguna Local,0.761864044,0.904558092
+Chiapas,Santos Laguna,0,1,59,2,0,18,0,0,2,4,0,41,13,0,8,0,0,2,3,0,Visitante,15 de ene. 09:30 p. m.,Estadio Corona,21282,0,71,Chiapas Visitante,0.51943055,0.838566711
+Cruz Azul,Guadalajara,1,1,42,16,6,17,8,4,2,2,0,58,11,5,12,3,5,1,0,0,Local,16 de ene. 05:00 p. m.,Estadio Azul,27025,0,74,Cruz Azul Local,0.917058572,1.370542564
+Guadalajara,Cruz Azul,1,1,58,11,5,12,3,5,1,0,0,42,16,6,17,8,4,2,2,0,Visitante,16 de ene. 05:00 p. m.,Estadio Azul,27025,0,74,Guadalajara Visitante,0.72720277,1.295966735
+Tigres,Morelia,2,0,65,16,6,17,11,1,0,3,0,35,6,1,12,2,4,0,2,0,Local,16 de ene. 07:00 p. m.,Estadio Universitario,41250,1,98,Tigres Local,1.558358273,0.897082406
+Morelia,Tigres,0,2,35,6,1,12,2,4,0,2,0,65,16,6,17,11,1,0,3,0,Visitante,16 de ene. 07:00 p. m.,Estadio Universitario,41250,0,98,Morelia Visitante,1.14274721,0.762333373
+Pachuca,Queretaro,1,0,51,14,5,14,9,3,0,0,0,49,9,3,18,3,5,0,1,0,Local,16 de ene. 08:06 p. m.,Estadio Hidalgo,24931,1,83,Pachuca Local,0.49380077,2.010129094
+Queretaro,Pachuca,0,1,49,9,3,18,3,5,0,1,0,51,14,5,14,9,3,0,0,0,Visitante,16 de ene. 08:06 p. m.,Estadio Hidalgo,24931,0,83,Queretaro Visitante,1.81328483,0.720751553
+Atlas,America,0,3,52,8,0,15,4,0,2,1,0,48,8,0,15,6,0,2,1,1,Local,16 de ene. 08:30 p. m.,Estadio Jalisco,51032,0,91,Atlas Local,0.952330056,0.986790646
+America,Atlas,3,0,48,8,0,15,6,0,2,1,1,52,8,0,15,4,0,2,1,0,Visitante,16 de ene. 08:30 p. m.,Estadio Jalisco,51032,1,91,America Visitante,1.81328483,0.831636407
+Dorados,Tijuana,0,1,62,9,1,26,8,3,0,3,0,38,9,5,15,3,1,0,1,0,Local,16 de ene. 09:00 p. m.,Estadio Banorte,17333,0,75,Dorados Local,0.634886704,1.461912068
+Tijuana,Dorados,1,0,38,9,5,15,3,1,0,1,0,62,9,1,26,8,3,0,3,0,Visitante,16 de ene. 09:00 p. m.,Estadio Banorte,17333,1,75,Tijuana Visitante,1.579068873,1.036773388
+Pumas,Toluca,3,2,52,14,7,12,6,4,1,1,0,48,23,7,23,6,4,1,4,0,Local,17 de ene. 12:00 p. m.,Estadio Olimpico Universitario,21890,1,32,Pumas Local,0.917058572,0.730956034
+Toluca,Pumas,2,3,48,23,7,23,6,4,1,4,0,52,14,7,12,6,4,1,1,0,Visitante,17 de ene. 12:00 p. m.,Estadio Olimpico Universitario,21890,0,32,Toluca Visitante,1.329742209,0.609866699
+Puebla,Monterrey,1,3,65,8,2,7,3,5,3,3,0,35,16,8,17,7,1,4,0,0,Local,17 de ene. 05:00 p. m.,Estadio Cuauhtemoc,32125,0,62,Puebla Local,0.888841385,0.822325538
+Monterrey,Puebla,3,1,35,16,8,17,7,1,4,0,0,65,8,2,7,3,5,3,3,0,Visitante,17 de ene. 05:00 p. m.,Estadio Cuauhtemoc,32125,1,62,Monterrey Visitante,1.385148134,1.084207464
+Queretaro,Dorados,3,0,34,9,4,23,3,3,0,3,0,66,14,3,15,3,1,0,1,0,Local,22 de ene. 07:30 p. m.,La Corregidora,19418,1,55,Queretaro Local,1.385207354,0.971839273
+Dorados,Queretaro,0,3,66,14,3,15,3,1,0,1,0,34,9,4,23,3,3,0,3,0,Visitante,22 de ene. 07:30 p. m.,La Corregidora,19418,0,55,Dorados Visitante,0.83108888,1.084207464
+Tijuana,Santos Laguna,1,3,61,14,4,14,6,4,0,3,0,39,14,7,11,2,3,0,3,0,Local,22 de ene. 09:30 p. m.,Estadio Caliente,27333,0,93,Tijuana Local,1.206284737,1.397953415
+Santos Laguna,Tijuana,3,1,39,14,7,11,2,3,0,3,0,61,14,4,14,6,4,0,3,0,Visitante,22 de ene. 09:30 p. m.,Estadio Caliente,27333,1,93,Santos Laguna Visitante,0.997306656,0.670853368
+America,Pachuca,1,4,60,20,5,14,6,3,2,3,0,40,9,6,26,3,3,3,6,0,Local,23 de ene. 05:00 p. m.,Azteca Stadium,34885,0,34,America Local,1.385207354,1.121353007
+Pachuca,America,4,1,40,9,6,26,3,3,3,6,0,60,20,5,14,6,3,2,3,0,Visitante,23 de ene. 05:00 p. m.,Azteca Stadium,34885,1,34,Pachuca Visitante,0.646402462,1.490785263
+Monterrey,Atlas,1,0,56,17,3,17,9,4,2,2,0,44,14,4,19,4,2,2,5,0,Local,23 de ene. 07:00 p. m.,Estadio BBVA Bancomer,50053,1,94,Monterrey Local,1.058144506,1.461912068
+Atlas,Monterrey,0,1,44,14,4,19,4,2,2,5,0,56,17,3,17,9,4,2,2,0,Visitante,23 de ene. 07:00 p. m.,Estadio BBVA Bancomer,50053,0,94,Atlas Visitante,1.246633321,0.731840038
+Leon,Cruz Azul,3,2,50,13,5,9,3,6,0,2,0,50,18,9,20,8,2,0,5,0,Local,23 de ene. 08:06 p. m.,Estadio Leon,25047,1,81,Leon Local,0.79360838,0.822325538
+Cruz Azul,Leon,2,3,50,18,9,20,8,2,0,5,0,50,13,5,9,3,6,0,2,0,Visitante,23 de ene. 08:06 p. m.,Estadio Leon,25047,0,81,Cruz Azul Visitante,1.200461716,1.016444498
+Morelia,Toluca,1,1,60,15,3,9,7,3,3,1,0,40,13,4,23,7,3,5,4,0,Local,23 de ene. 08:30 p. m.,Estadio Morelos,23248,0,56,Morelia Local,0.872969218,1.027906923
+Toluca,Morelia,1,1,40,13,4,23,7,3,5,4,0,60,15,3,9,7,3,3,1,0,Visitante,23 de ene. 08:30 p. m.,Estadio Morelos,23248,0,56,Toluca Visitante,1.329742209,0.609866699
+Chiapas,Veracruz,1,1,59,12,4,16,8,1,0,3,0,41,8,2,16,8,3,0,2,0,Local,23 de ene. 09:00 p. m.,Estadio Cuauhtemoc,11872,0,23,Chiapas Local,0.39680419,1.130697615
+Veracruz,Chiapas,1,1,41,8,2,16,8,3,0,2,0,59,12,4,16,8,1,0,3,0,Visitante,23 de ene. 09:00 p. m.,Estadio Cuauhtemoc,11872,0,23,Veracruz Visitante,1.015775298,1.287496364
+Pumas,Puebla,0,1,48,23,5,13,12,1,1,0,0,52,12,2,11,3,5,2,1,1,Local,24 de ene. 12:00 p. m.,Estadio Olimpico Universitario,20428,0,30,Pumas Local,0.917058572,0.730956034
+Puebla,Pumas,1,0,52,12,2,11,3,5,2,1,1,48,23,5,13,12,1,1,0,0,Visitante,24 de ene. 12:00 p. m.,Estadio Olimpico Universitario,20428,1,30,Puebla Visitante,1.163524432,0.609866699
+Guadalajara,Tigres,2,2,47,12,6,11,3,2,0,2,0,53,14,4,16,2,4,0,4,0,Local,24 de ene. 05:00 p. m.,Estadio Chivas,38992,0,78,Guadalajara Local,0.555525866,1.747441769
+Tigres,Guadalajara,2,2,53,14,4,16,2,4,0,4,0,47,12,6,11,3,2,0,2,0,Visitante,24 de ene. 05:00 p. m.,Estadio Chivas,38992,0,78,Tigres Visitante,2.039945434,0.665309126
+Santos Laguna,Queretaro,2,0,54,14,6,6,4,1,0,0,0,46,9,1,11,3,4,0,1,0,Local,29 de ene. 09:30 p. m.,Estadio Corona,20994,1,70,Santos Laguna Local,0.761864044,0.904558092
+Queretaro,Santos Laguna,0,2,46,9,1,11,3,4,0,1,0,54,14,6,6,4,1,0,0,0,Visitante,29 de ene. 09:30 p. m.,Estadio Corona,20994,0,70,Queretaro Visitante,1.81328483,0.720751553
+Veracruz,Tijuana,2,2,66,14,5,14,10,1,1,2,0,34,7,3,12,2,3,1,3,1,Local,29 de ene. 09:30 p. m.,Estadio Luis Pirata Fuente,19535,0,65,Veracruz Local,0.775972638,1.736020581
+Tijuana,Veracruz,2,2,34,7,3,12,2,3,1,3,1,66,14,5,14,10,1,1,2,0,Visitante,29 de ene. 09:30 p. m.,Estadio Luis Pirata Fuente,19535,0,65,Tijuana Visitante,1.579068873,1.036773388
+Cruz Azul,Chiapas,2,1,46,17,4,11,2,5,4,2,1,54,11,6,17,7,2,4,2,0,Local,30 de ene. 05:00 p. m.,Estadio Azul,18438,1,50,Cruz Azul Local,0.917058572,1.370542564
+Chiapas,Cruz Azul,1,2,54,11,6,17,7,2,4,2,0,46,17,4,11,2,5,4,2,1,Visitante,30 de ene. 05:00 p. m.,Estadio Azul,18438,0,50,Chiapas Visitante,0.51943055,0.838566711
+Morelia,Guadalajara,2,0,44,16,4,12,2,4,2,3,0,56,15,4,17,11,2,3,2,1,Local,30 de ene. 06:30 p. m.,Estadio Morelos,29240,1,70,Morelia Local,0.872969218,1.027906923
+Guadalajara,Morelia,0,2,56,15,4,17,11,2,3,2,1,44,16,4,12,2,4,2,3,0,Visitante,30 de ene. 06:30 p. m.,Estadio Morelos,29240,0,70,Guadalajara Visitante,0.72720277,1.295966735
+Tigres,Leon,3,1,54,23,12,17,9,3,2,1,0,46,14,4,19,3,9,5,4,0,Local,30 de ene. 07:00 p. m.,Estadio Universitario,41427,1,98,Tigres Local,1.558358273,0.897082406
+Leon,Tigres,1,3,46,14,4,19,3,9,5,4,0,54,23,12,17,9,3,2,1,0,Visitante,30 de ene. 07:00 p. m.,Estadio Universitario,41427,0,98,Leon Visitante,1.0388611,0.609866699
+Pachuca,Monterrey,3,1,50,16,9,18,5,2,5,2,1,50,11,4,18,4,6,3,3,1,Local,30 de ene. 08:06 p. m.,Estadio Hidalgo,24567,1,82,Pachuca Local,0.49380077,2.010129094
+Monterrey,Pachuca,1,3,50,11,4,18,4,6,3,3,1,50,16,9,18,5,2,5,2,1,Visitante,30 de ene. 08:06 p. m.,Estadio Hidalgo,24567,0,82,Monterrey Visitante,1.385148134,1.084207464
+Atlas,Pumas,1,1,41,13,5,17,7,5,4,4,1,59,14,7,8,4,3,3,2,0,Local,30 de ene. 08:30 p. m.,Estadio Jalisco,43752,0,78,Atlas Local,0.952330056,0.986790646
+Pumas,Atlas,1,1,59,14,7,8,4,3,3,2,0,41,13,5,17,7,5,4,4,1,Visitante,30 de ene. 08:30 p. m.,Estadio Jalisco,43752,0,78,Pumas Visitante,1.200461716,0.542103732
+Dorados,America,0,3,51,11,5,14,4,5,1,3,0,49,17,8,27,4,5,3,4,0,Local,30 de ene. 09:00 p. m.,Estadio Banorte,18933,0,82,Dorados Local,0.634886704,1.461912068
+America,Dorados,3,0,49,17,8,27,4,5,3,4,0,51,11,5,14,4,5,1,3,0,Visitante,30 de ene. 09:00 p. m.,Estadio Banorte,18933,1,82,America Visitante,1.81328483,0.831636407
+Toluca,Puebla,1,1,45,13,6,18,2,4,2,1,0,55,11,5,15,7,4,4,3,0,Local,31 de ene. 12:00 p. m.,Estadio Nemesio Diez Riega,14221,0,53,Toluca Local,1.015818726,0.822325538
+Puebla,Toluca,1,1,55,11,5,15,7,4,4,3,0,45,13,6,18,2,4,2,1,0,Visitante,31 de ene. 12:00 p. m.,Estadio Nemesio Diez Riega,14221,0,53,Puebla Visitante,1.163524432,0.609866699
+Queretaro,Veracruz,2,1,54,15,5,22,6,3,0,3,0,46,16,5,13,6,2,0,5,0,Local,5 de feb. 07:30 p. m.,La Corregidora,19287,1,54,Queretaro Local,1.385207354,0.971839273
+Veracruz,Queretaro,1,2,46,16,5,13,6,2,0,5,0,54,15,5,22,6,3,0,3,0,Visitante,5 de feb. 07:30 p. m.,La Corregidora,19287,0,54,Veracruz Visitante,1.015775298,1.287496364
+Chiapas,Tigres,1,3,29,8,3,10,1,4,5,2,2,71,20,7,16,3,2,6,3,0,Local,5 de feb. 09:00 p. m.,Estadio Cuauhtemoc,17573,0,34,Chiapas Local,0.39680419,1.130697615
+Tigres,Chiapas,3,1,71,20,7,16,3,2,6,3,0,29,8,3,10,1,4,5,2,2,Visitante,5 de feb. 09:00 p. m.,Estadio Cuauhtemoc,17573,1,34,Tigres Visitante,2.039945434,0.665309126
+Tijuana,Cruz Azul,1,1,52,11,3,13,2,1,0,4,0,48,10,2,18,8,2,0,3,1,Local,5 de feb. 09:30 p. m.,Estadio Caliente,27333,0,93,Tijuana Local,1.206284737,1.397953415
+Cruz Azul,Tijuana,1,1,48,10,2,18,8,2,0,3,1,52,11,3,13,2,1,0,4,0,Visitante,5 de feb. 09:30 p. m.,Estadio Caliente,27333,0,93,Cruz Azul Visitante,1.200461716,1.016444498
+America,Santos Laguna,2,0,62,18,5,17,6,1,2,2,0,38,10,1,17,8,4,3,3,0,Local,6 de feb. 05:00 p. m.,Azteca Stadium,29851,1,29,America Local,1.385207354,1.121353007
+Santos Laguna,America,0,2,38,10,1,17,8,4,3,3,0,62,18,5,17,6,1,2,2,0,Visitante,6 de feb. 05:00 p. m.,Azteca Stadium,29851,0,29,Santos Laguna Visitante,0.997306656,0.670853368
+Puebla,Atlas,4,1,42,10,4,12,2,6,0,4,0,58,17,8,11,13,1,0,3,0,Local,6 de feb. 07:00 p. m.,Estadio Cuauhtemoc,42554,1,82,Puebla Local,0.888841385,0.822325538
+Atlas,Puebla,1,4,58,17,8,11,13,1,0,3,0,42,10,4,12,2,6,0,4,0,Visitante,6 de feb. 07:00 p. m.,Estadio Cuauhtemoc,42554,0,82,Atlas Visitante,1.246633321,0.731840038
+Monterrey,Dorados,3,0,58,12,7,21,8,2,4,5,0,42,9,2,15,5,4,4,2,0,Local,6 de feb. 07:00 p. m.,Estadio BBVA Bancomer,50268,1,94,Monterrey Local,1.058144506,1.461912068
+Dorados,Monterrey,0,3,42,9,2,15,5,4,4,2,0,58,12,7,21,8,2,4,5,0,Visitante,6 de feb. 07:00 p. m.,Estadio BBVA Bancomer,50268,0,94,Dorados Visitante,0.83108888,1.084207464
+Leon,Morelia,1,2,48,16,3,11,7,2,3,1,0,52,9,4,10,2,2,6,3,0,Local,6 de feb. 08:06 p. m.,Estadio Leon,15465,0,50,Leon Local,0.79360838,0.822325538
+Morelia,Leon,2,1,52,9,4,10,2,2,6,3,0,48,16,3,11,7,2,3,1,0,Visitante,6 de feb. 08:06 p. m.,Estadio Leon,15465,1,50,Morelia Visitante,1.14274721,0.762333373
+Guadalajara,Toluca,1,1,60,20,6,14,10,3,0,1,0,40,15,4,12,7,6,0,2,1,Local,6 de feb. 09:00 p. m.,Estadio Chivas,37610,0,75,Guadalajara Local,0.555525866,1.747441769
+Toluca,Guadalajara,1,1,40,15,4,12,7,6,0,2,1,60,20,6,14,10,3,0,1,0,Visitante,6 de feb. 09:00 p. m.,Estadio Chivas,37610,0,75,Toluca Visitante,1.329742209,0.609866699
+Pumas,Pachuca,1,1,56,11,4,16,5,2,0,2,0,44,13,3,20,4,3,0,4,0,Local,7 de feb. 12:00 p. m.,Estadio Olimpico Universitario,19105,0,28,Pumas Local,0.917058572,0.730956034
+Pachuca,Pumas,1,1,44,13,3,20,4,3,0,4,0,56,11,4,16,5,2,0,2,0,Visitante,7 de feb. 12:00 p. m.,Estadio Olimpico Universitario,19105,0,28,Pachuca Visitante,0.646402462,1.490785263
+Veracruz,America,1,1,43,18,6,12,1,6,2,3,1,57,16,8,18,4,5,1,5,0,Local,12 de feb. 07:30 p. m.,Estadio Luis Pirata Fuente,28150,0,94,Veracruz Local,0.775972638,1.736020581
+America,Veracruz,1,1,57,16,8,18,4,5,1,5,0,43,18,6,12,1,6,2,3,1,Visitante,12 de feb. 07:30 p. m.,Estadio Luis Pirata Fuente,28150,0,94,America Visitante,1.81328483,0.831636407
+Toluca,Atlas,1,1,60,12,2,9,1,5,0,3,0,40,14,6,12,7,1,0,5,0,Local,12 de feb. 08:30 p. m.,Estadio Nemesio Diez Riega,15700,0,58,Toluca Local,1.015818726,0.822325538
+Atlas,Toluca,1,1,40,14,6,12,7,1,0,5,0,60,12,2,9,1,5,0,3,0,Visitante,12 de feb. 08:30 p. m.,Estadio Nemesio Diez Riega,15700,0,58,Atlas Visitante,1.246633321,0.731840038
+Santos Laguna,Monterrey,1,2,54,11,4,16,8,4,9,3,0,46,13,6,16,4,3,1,4,0,Local,12 de feb. 09:30 p. m.,Estadio Corona,25681,0,86,Santos Laguna Local,0.761864044,0.904558092
+Monterrey,Santos Laguna,2,1,46,13,6,16,4,3,1,4,0,54,11,4,16,8,4,9,3,0,Visitante,12 de feb. 09:30 p. m.,Estadio Corona,25681,1,86,Monterrey Visitante,1.385148134,1.084207464
+Cruz Azul,Queretaro,2,1,55,9,4,11,5,6,0,2,0,45,18,7,19,5,2,0,2,0,Local,13 de feb. 05:00 p. m.,Estadio Azul,15904,1,43,Cruz Azul Local,0.917058572,1.370542564
+Queretaro,Cruz Azul,1,2,45,18,7,19,5,2,0,2,0,55,9,4,11,5,6,0,2,0,Visitante,13 de feb. 05:00 p. m.,Estadio Azul,15904,0,43,Queretaro Visitante,1.81328483,0.720751553
+Tigres,Tijuana,1,2,66,15,4,18,5,4,2,4,1,34,12,6,8,3,3,1,1,0,Local,13 de feb. 07:00 p. m.,Estadio Universitario,41493,0,98,Tigres Local,1.558358273,0.897082406
+Tijuana,Tigres,2,1,34,12,6,8,3,3,1,1,0,66,15,4,18,5,4,2,4,1,Visitante,13 de feb. 07:00 p. m.,Estadio Universitario,41493,1,98,Tijuana Visitante,1.579068873,1.036773388
+Dorados,Pumas,2,3,52,22,6,16,6,3,1,1,0,48,15,6,16,3,4,3,1,0,Local,13 de feb. 09:00 p. m.,Estadio Banorte,16933,0,74,Dorados Local,0.634886704,1.461912068
+Pumas,Dorados,3,2,48,15,6,16,3,4,3,1,0,52,22,6,16,6,3,1,1,0,Visitante,13 de feb. 09:00 p. m.,Estadio Banorte,16933,1,74,Pumas Visitante,1.200461716,0.542103732
+Guadalajara,Leon,0,1,61,4,2,16,5,3,3,5,1,39,11,4,22,5,2,2,3,0,Local,14 de feb. 12:00 p. m.,Estadio Chivas,38050,0,76,Guadalajara Local,0.555525866,1.747441769
+Leon,Guadalajara,1,0,39,11,4,22,5,2,2,3,0,61,4,2,16,5,3,3,5,1,Visitante,14 de feb. 12:00 p. m.,Estadio Chivas,38050,1,76,Leon Visitante,1.0388611,0.609866699
+Pachuca,Puebla,5,2,55,24,10,11,10,3,0,1,0,45,14,5,10,4,6,0,1,0,Local,14 de feb. 07:00 p. m.,Estadio Hidalgo,22031,1,73,Pachuca Local,0.49380077,2.010129094
+Puebla,Pachuca,2,5,45,14,5,10,4,6,0,1,0,55,24,10,11,10,3,0,1,0,Visitante,14 de feb. 07:00 p. m.,Estadio Hidalgo,22031,0,73,Puebla Visitante,1.163524432,0.609866699
+Queretaro,Tigres,2,2,40,8,3,17,2,5,3,1,1,60,23,7,17,8,1,1,4,0,Local,19 de feb. 07:30 p. m.,La Corregidora,29175,0,82,Queretaro Local,1.385207354,0.971839273
+Tigres,Queretaro,2,2,60,23,7,17,8,1,1,4,0,40,8,3,17,2,5,3,1,1,Visitante,19 de feb. 07:30 p. m.,La Corregidora,29175,0,82,Tigres Visitante,2.039945434,0.665309126
+Tijuana,Morelia,1,1,45,18,8,13,13,4,3,5,0,55,10,5,9,4,5,2,2,0,Local,19 de feb. 09:30 p. m.,Estadio Caliente,27333,0,93,Tijuana Local,1.206284737,1.397953415
+Morelia,Tijuana,1,1,55,10,5,9,4,5,2,2,0,45,18,8,13,13,4,3,5,0,Visitante,19 de feb. 09:30 p. m.,Estadio Caliente,27333,0,93,Morelia Visitante,1.14274721,0.762333373
+America,Cruz Azul,3,3,44,15,7,14,3,2,0,3,2,56,12,5,13,4,4,0,4,1,Local,20 de feb. 05:00 p. m.,Azteca Stadium,69442,0,67,America Local,1.385207354,1.121353007
+Cruz Azul,America,3,3,56,12,5,13,4,4,0,4,1,44,15,7,14,3,2,0,3,2,Visitante,20 de feb. 05:00 p. m.,Azteca Stadium,69442,0,67,Cruz Azul Visitante,1.200461716,1.016444498
+Monterrey,Veracruz,5,1,64,17,5,11,3,4,0,0,0,36,18,6,16,9,1,0,2,0,Local,20 de feb. 07:00 p. m.,Estadio BBVA Bancomer,50302,1,94,Monterrey Local,1.058144506,1.461912068
+Veracruz,Monterrey,1,5,36,18,6,16,9,1,0,2,0,64,17,5,11,3,4,0,0,0,Visitante,20 de feb. 07:00 p. m.,Estadio BBVA Bancomer,50302,0,94,Veracruz Visitante,1.015775298,1.287496364
+Leon,Toluca,5,1,52,18,7,11,2,1,1,3,0,48,10,2,17,4,2,3,4,1,Local,20 de feb. 08:06 p. m.,Estadio Leon,21458,1,69,Leon Local,0.79360838,0.822325538
+Toluca,Leon,1,5,48,10,2,17,4,2,3,4,1,52,18,7,11,2,1,1,3,0,Visitante,20 de feb. 08:06 p. m.,Estadio Leon,21458,0,69,Toluca Visitante,1.329742209,0.609866699
+Atlas,Pachuca,1,0,40,10,5,24,2,2,1,3,0,60,11,2,15,3,4,3,2,0,Local,20 de feb. 08:30 p. m.,Estadio Jalisco,29918,1,53,Atlas Local,0.952330056,0.986790646
+Pachuca,Atlas,0,1,60,11,2,15,3,4,3,2,0,40,10,5,24,2,2,1,3,0,Visitante,20 de feb. 08:30 p. m.,Estadio Jalisco,29918,0,53,Pachuca Visitante,0.646402462,1.490785263
+Chiapas,Guadalajara,1,1,47,12,6,16,6,3,0,2,0,53,17,4,16,5,5,0,2,0,Local,20 de feb. 09:00 p. m.,Estadio Victor Manuel Reyna,24290,0,81,Chiapas Local,0.39680419,1.130697615
+Guadalajara,Chiapas,1,1,53,17,4,16,5,5,0,2,0,47,12,6,16,6,3,0,2,0,Visitante,20 de feb. 09:00 p. m.,Estadio Victor Manuel Reyna,24290,0,81,Guadalajara Visitante,0.72720277,1.295966735
+Pumas,Santos Laguna,1,1,51,21,7,15,8,3,3,0,0,49,11,4,15,4,6,7,0,0,Local,21 de feb. 12:00 p. m.,Estadio Olimpico Universitario,18381,0,27,Pumas Local,0.917058572,0.730956034
+Santos Laguna,Pumas,1,1,49,11,4,15,4,6,7,0,0,51,21,7,15,8,3,3,0,0,Visitante,21 de feb. 12:00 p. m.,Estadio Olimpico Universitario,18381,0,27,Santos Laguna Visitante,0.997306656,0.670853368
+Puebla,Dorados,3,2,59,13,6,12,6,3,4,2,0,41,12,5,8,4,3,2,1,0,Local,21 de feb. 05:00 p. m.,Estadio Cuauhtemoc,47201,1,91,Puebla Local,0.888841385,0.822325538
+Dorados,Puebla,2,3,41,12,5,8,4,3,2,1,0,59,13,6,12,6,3,4,2,0,Visitante,21 de feb. 05:00 p. m.,Estadio Cuauhtemoc,47201,0,91,Dorados Visitante,0.83108888,1.084207464
+Veracruz,Pumas,0,0,44,14,0,10,6,0,0,2,0,56,12,0,7,5,0,0,1,0,Local,26 de feb. 09:30 p. m.,Estadio Luis Pirata Fuente,20564,0,69,Veracruz Local,0.775972638,1.736020581
+Pumas,Veracruz,0,0,56,12,0,7,5,0,0,1,0,44,14,0,10,6,0,0,2,0,Visitante,26 de feb. 09:30 p. m.,Estadio Luis Pirata Fuente,20564,0,69,Pumas Visitante,1.200461716,0.542103732
+Cruz Azul,Monterrey,4,0,46,16,7,15,5,7,2,4,1,54,10,7,13,7,3,2,6,0,Local,27 de feb. 05:00 p. m.,Estadio Azul,23631,1,64,Cruz Azul Local,0.917058572,1.370542564
+Monterrey,Cruz Azul,0,4,54,10,7,13,7,3,2,6,0,46,16,7,15,5,7,2,4,1,Visitante,27 de feb. 05:00 p. m.,Estadio Azul,23631,0,64,Monterrey Visitante,1.385148134,1.084207464
+Santos Laguna,Puebla,1,1,62,26,9,12,11,0,1,2,0,38,5,1,10,1,0,1,1,1,Local,27 de feb. 07:00 p. m.,Estadio Corona,23119,0,77,Santos Laguna Local,0.761864044,0.904558092
+Puebla,Santos Laguna,1,1,38,5,1,10,1,0,1,1,1,62,26,9,12,11,0,1,2,0,Visitante,27 de feb. 07:00 p. m.,Estadio Corona,23119,0,77,Puebla Visitante,1.163524432,0.609866699
+Tigres,America,4,1,62,14,7,13,2,2,4,2,0,38,7,3,17,5,3,6,1,2,Local,27 de feb. 07:00 p. m.,Estadio Universitario,41351,1,98,Tigres Local,1.558358273,0.897082406
+America,Tigres,1,4,38,7,3,17,5,3,6,1,2,62,14,7,13,2,2,4,2,0,Visitante,27 de feb. 07:00 p. m.,Estadio Universitario,41351,0,98,America Visitante,1.81328483,0.831636407
+Leon,Chiapas,1,3,55,21,9,12,6,0,1,2,0,45,6,3,19,1,0,4,4,0,Local,27 de feb. 08:06 p. m.,Estadio Leon,18768,0,61,Leon Local,0.79360838,0.822325538
+Chiapas,Leon,3,1,45,6,3,19,1,0,4,4,0,55,21,9,12,6,0,1,2,0,Visitante,27 de feb. 08:06 p. m.,Estadio Leon,18768,1,61,Chiapas Visitante,0.51943055,0.838566711
+Morelia,Queretaro,1,1,66,19,5,15,11,4,0,2,0,34,13,5,24,2,5,0,4,0,Local,27 de feb. 08:30 p. m.,Estadio Morelos,18406,0,44,Morelia Local,0.872969218,1.027906923
+Queretaro,Morelia,1,1,34,13,5,24,2,5,0,4,0,66,19,5,15,11,4,0,2,0,Visitante,27 de feb. 08:30 p. m.,Estadio Morelos,18406,0,44,Queretaro Visitante,1.81328483,0.720751553
+Toluca,Pachuca,0,1,61,26,4,17,12,2,0,2,0,39,14,3,20,3,3,0,2,0,Local,27 de feb. 09:00 p. m.,Estadio Nemesio Diez Riega,12127,0,45,Toluca Local,1.015818726,0.822325538
+Pachuca,Toluca,1,0,39,14,3,20,3,3,0,2,0,61,26,4,17,12,2,0,2,0,Visitante,27 de feb. 09:00 p. m.,Estadio Nemesio Diez Riega,12127,1,45,Pachuca Visitante,0.646402462,1.490785263
+Dorados,Atlas,2,1,47,7,2,19,5,0,2,1,0,53,8,1,19,3,0,6,2,0,Local,27 de feb. 09:00 p. m.,Estadio Banorte,16333,1,71,Dorados Local,0.634886704,1.461912068
+Atlas,Dorados,1,2,53,8,1,19,3,0,6,2,0,47,7,2,19,5,0,2,1,0,Visitante,27 de feb. 09:00 p. m.,Estadio Banorte,16333,0,71,Atlas Visitante,1.246633321,0.731840038
+Guadalajara,Tijuana,1,1,64,17,7,16,6,1,4,3,0,36,4,1,15,3,6,1,2,1,Local,28 de feb. 05:00 p. m.,Estadio Chivas,30277,0,61,Guadalajara Local,0.555525866,1.747441769
+Tijuana,Guadalajara,1,1,36,4,1,15,3,6,1,2,1,64,17,7,16,6,1,4,3,0,Visitante,28 de feb. 05:00 p. m.,Estadio Chivas,30277,0,61,Tijuana Visitante,1.579068873,1.036773388
+Tijuana,Leon,0,0,43,21,7,15,0,2,2,2,0,57,11,2,11,0,7,2,1,0,Local,4 de mar. 09:30 p. m.,Estadio Caliente,27333,0,93,Tijuana Local,1.206284737,1.397953415
+Leon,Tijuana,0,0,57,11,2,11,0,7,2,1,0,43,21,7,15,0,2,2,2,0,Visitante,4 de mar. 09:30 p. m.,Estadio Caliente,27333,0,93,Leon Visitante,1.0388611,0.609866699
+America,Morelia,4,1,49,22,8,12,6,1,2,0,0,51,8,2,4,9,4,2,2,1,Local,5 de mar. 05:00 p. m.,Azteca Stadium,67420,1,65,America Local,1.385207354,1.121353007
+Morelia,America,1,4,51,8,2,4,9,4,2,2,1,49,22,8,12,6,1,2,0,0,Visitante,5 de mar. 05:00 p. m.,Azteca Stadium,67420,0,65,Morelia Visitante,1.14274721,0.762333373
+Queretaro,Guadalajara,0,2,41,8,1,10,2,2,0,1,0,59,17,4,13,4,1,0,2,0,Local,5 de mar. 06:30 p. m.,La Corregidora,30627,0,86,Queretaro Local,1.385207354,0.971839273
+Guadalajara,Queretaro,2,0,59,17,4,13,4,1,0,2,0,41,8,1,10,2,2,0,1,0,Visitante,5 de mar. 06:30 p. m.,La Corregidora,30627,1,86,Guadalajara Visitante,0.72720277,1.295966735
+Monterrey,Tigres,1,0,39,7,2,9,3,1,3,2,1,61,10,1,11,3,1,5,2,1,Local,5 de mar. 07:00 p. m.,Estadio BBVA Bancomer,52815,1,99,Monterrey Local,1.058144506,1.461912068
+Tigres,Monterrey,0,1,61,10,1,11,3,1,5,2,1,39,7,2,9,3,1,3,2,1,Visitante,5 de mar. 07:00 p. m.,Estadio BBVA Bancomer,52815,0,99,Tigres Visitante,2.039945434,0.665309126
+Pachuca,Dorados,2,2,56,30,9,20,11,3,0,2,0,44,10,5,18,4,7,0,4,0,Local,5 de mar. 08:06 p. m.,Estadio Hidalgo,20809,0,69,Pachuca Local,0.49380077,2.010129094
+Dorados,Pachuca,2,2,44,10,5,18,4,7,0,4,0,56,30,9,20,11,3,0,2,0,Visitante,5 de mar. 08:06 p. m.,Estadio Hidalgo,20809,0,69,Dorados Visitante,0.83108888,1.084207464
+Atlas,Santos Laguna,1,2,42,13,5,17,4,2,1,3,1,58,17,4,9,3,4,3,2,0,Local,5 de mar. 08:30 p. m.,Estadio Jalisco,27827,0,50,Atlas Local,0.952330056,0.986790646
+Santos Laguna,Atlas,2,1,58,17,4,9,3,4,3,2,0,42,13,5,17,4,2,1,3,1,Visitante,5 de mar. 08:30 p. m.,Estadio Jalisco,27827,1,50,Santos Laguna Visitante,0.997306656,0.670853368
+Chiapas,Toluca,3,2,53,13,5,12,3,1,3,1,1,47,9,2,13,1,2,5,1,0,Local,5 de mar. 09:00 p. m.,Estadio Victor Manuel Reyna,21632,1,72,Chiapas Local,0.39680419,1.130697615
+Toluca,Chiapas,2,3,47,9,2,13,1,2,5,1,0,53,13,5,12,3,1,3,1,1,Visitante,5 de mar. 09:00 p. m.,Estadio Victor Manuel Reyna,21632,0,72,Toluca Visitante,1.329742209,0.609866699
+Pumas,Cruz Azul,2,2,42,12,5,19,7,3,4,2,0,58,15,5,11,4,3,4,0,1,Local,6 de mar. 12:00 p. m.,Estadio Olimpico Universitario,35284,0,51,Pumas Local,0.917058572,0.730956034
+Cruz Azul,Pumas,2,2,58,15,5,11,4,3,4,0,1,42,12,5,19,7,3,4,2,0,Visitante,6 de mar. 12:00 p. m.,Estadio Olimpico Universitario,35284,0,51,Cruz Azul Visitante,1.200461716,1.016444498
+Puebla,Veracruz,1,1,49,12,3,17,5,2,0,1,0,51,10,3,11,5,2,0,3,1,Local,6 de mar. 05:00 p. m.,Estadio Cuauhtemoc,39443,0,76,Puebla Local,0.888841385,0.822325538
+Veracruz,Puebla,1,1,51,10,3,11,5,2,0,3,1,49,12,3,17,5,2,0,1,0,Visitante,6 de mar. 05:00 p. m.,Estadio Cuauhtemoc,39443,0,76,Veracruz Visitante,1.015775298,1.287496364
+Santos Laguna,Pachuca,3,2,44,12,6,13,5,1,0,3,0,56,10,3,14,3,3,0,0,0,Local,11 de mar. 09:30 p. m.,Estadio Corona,19265,1,64,Santos Laguna Local,0.761864044,0.904558092
+Pachuca,Santos Laguna,2,3,56,10,3,14,3,3,0,0,0,44,12,6,13,5,1,0,3,0,Visitante,11 de mar. 09:30 p. m.,Estadio Corona,19265,0,64,Pachuca Visitante,0.646402462,1.490785263
+Veracruz,Atlas,3,2,48,17,6,17,7,1,3,2,0,52,7,3,21,4,3,3,4,0,Local,11 de mar. 09:30 p. m.,Estadio Luis Pirata Fuente,17157,1,57,Veracruz Local,0.775972638,1.736020581
+Atlas,Veracruz,2,3,52,7,3,21,4,3,3,4,0,48,17,6,17,7,1,3,2,0,Visitante,11 de mar. 09:30 p. m.,Estadio Luis Pirata Fuente,17157,0,57,Atlas Visitante,1.246633321,0.731840038
+Cruz Azul,Puebla,1,1,55,13,5,18,8,6,2,2,0,45,11,7,16,2,4,2,3,1,Local,12 de mar. 05:00 p. m.,Estadio Azul,21825,0,59,Cruz Azul Local,0.917058572,1.370542564
+Puebla,Cruz Azul,1,1,45,11,7,16,2,4,2,3,1,55,13,5,18,8,6,2,2,0,Visitante,12 de mar. 05:00 p. m.,Estadio Azul,21825,0,59,Puebla Visitante,1.163524432,0.609866699
+Tigres,Pumas,0,0,61,14,4,7,7,1,2,0,0,39,9,1,15,4,4,5,3,0,Local,12 de mar. 07:00 p. m.,Estadio Universitario,41437,0,98,Tigres Local,1.558358273,0.897082406
+Pumas,Tigres,0,0,39,9,1,15,4,4,5,3,0,61,14,4,7,7,1,2,0,0,Visitante,12 de mar. 07:00 p. m.,Estadio Universitario,41437,0,98,Pumas Visitante,1.200461716,0.542103732
+Leon,Queretaro,2,0,54,12,4,19,6,6,1,1,0,46,12,6,17,5,2,3,7,0,Local,12 de mar. 08:06 p. m.,Estadio Leon,13690,1,44,Leon Local,0.79360838,0.822325538
+Queretaro,Leon,0,2,46,12,6,17,5,2,3,7,0,54,12,4,19,6,6,1,1,0,Visitante,12 de mar. 08:06 p. m.,Estadio Leon,13690,0,44,Queretaro Visitante,1.81328483,0.720751553
+Morelia,Monterrey,1,3,68,25,7,6,13,0,6,2,0,32,12,3,12,2,0,3,3,0,Local,12 de mar. 08:30 p. m.,Estadio Morelos,21064,0,51,Morelia Local,0.872969218,1.027906923
+Monterrey,Morelia,3,1,32,12,3,12,2,0,3,3,0,68,25,7,6,13,0,6,2,0,Visitante,12 de mar. 08:30 p. m.,Estadio Morelos,21064,1,51,Monterrey Visitante,1.385148134,1.084207464
+Chiapas,Tijuana,1,2,60,12,6,15,10,2,1,2,0,40,11,4,10,4,5,4,0,0,Local,12 de mar. 09:00 p. m.,Estadio Victor Manuel Reyna,18361,0,61,Chiapas Local,0.39680419,1.130697615
+Tijuana,Chiapas,2,1,40,11,4,10,4,5,4,0,0,60,12,6,15,10,2,1,2,0,Visitante,12 de mar. 09:00 p. m.,Estadio Victor Manuel Reyna,18361,1,61,Tijuana Visitante,1.579068873,1.036773388
+Toluca,Dorados,3,0,51,23,7,11,4,2,1,3,0,49,15,2,13,5,4,2,3,1,Local,13 de mar. 12:00 p. m.,Estadio Nemesio Diez Riega,12180,1,45,Toluca Local,1.015818726,0.822325538
+Dorados,Toluca,0,3,49,15,2,13,5,4,2,3,1,51,23,7,11,4,2,1,3,0,Visitante,13 de mar. 12:00 p. m.,Estadio Nemesio Diez Riega,12180,0,45,Dorados Visitante,0.83108888,1.084207464
+Guadalajara,America,1,2,54,19,7,11,9,0,0,2,1,46,9,2,27,4,0,0,4,1,Local,13 de mar. 07:30 p. m.,Estadio Chivas,44716,0,90,Guadalajara Local,0.555525866,1.747441769
+America,Guadalajara,2,1,46,9,2,27,4,0,0,4,1,54,19,7,11,9,0,0,2,1,Visitante,13 de mar. 07:30 p. m.,Estadio Chivas,44716,1,90,America Visitante,1.81328483,0.831636407
+Queretaro,Chiapas,1,1,42,23,6,10,3,3,3,1,0,58,7,4,15,4,5,1,2,0,Local,18 de mar. 07:30 p. m.,La Corregidora,23329,0,66,Queretaro Local,1.385207354,0.971839273
+Chiapas,Queretaro,1,1,58,7,4,15,4,5,1,2,0,42,23,6,10,3,3,3,1,0,Visitante,18 de mar. 07:30 p. m.,La Corregidora,23329,0,66,Chiapas Visitante,0.51943055,0.838566711
+Tijuana,Toluca,0,0,56,23,3,15,6,5,2,1,0,44,14,6,14,5,3,1,2,0,Local,18 de mar. 09:30 p. m.,Estadio Caliente,27333,0,93,Tijuana Local,1.206284737,1.397953415
+Toluca,Tijuana,0,0,44,14,6,14,5,3,1,2,0,56,23,3,15,6,5,2,1,0,Visitante,18 de mar. 09:30 p. m.,Estadio Caliente,27333,0,93,Toluca Visitante,1.329742209,0.609866699
+America,Leon,2,1,50,12,5,12,6,4,2,1,0,50,14,5,14,10,3,2,3,0,Local,19 de mar. 05:00 p. m.,Azteca Stadium,32692,1,32,America Local,1.385207354,1.121353007
+Leon,America,1,2,50,14,5,14,10,3,2,3,0,50,12,5,12,6,4,2,1,0,Visitante,19 de mar. 05:00 p. m.,Azteca Stadium,32692,0,32,Leon Visitante,1.0388611,0.609866699
+Monterrey,Guadalajara,1,3,49,14,6,19,2,4,0,3,0,51,13,7,15,4,4,0,1,0,Local,19 de mar. 07:00 p. m.,Estadio BBVA Bancomer,52101,0,97,Monterrey Local,1.058144506,1.461912068
+Guadalajara,Monterrey,3,1,51,13,7,15,4,4,0,1,0,49,14,6,19,2,4,0,3,0,Visitante,19 de mar. 07:00 p. m.,Estadio BBVA Bancomer,52101,1,97,Guadalajara Visitante,0.72720277,1.295966735
+Pachuca,Veracruz,6,0,68,19,11,15,4,2,0,2,0,32,5,2,12,4,5,0,1,1,Local,19 de mar. 08:06 p. m.,Estadio Hidalgo,25426,1,85,Pachuca Local,0.49380077,2.010129094
+Veracruz,Pachuca,0,6,32,5,2,12,4,5,0,1,1,68,19,11,15,4,2,0,2,0,Visitante,19 de mar. 08:06 p. m.,Estadio Hidalgo,25426,0,85,Veracruz Visitante,1.015775298,1.287496364
+Atlas,Cruz Azul,0,2,64,19,6,10,10,0,1,1,0,36,6,2,12,5,0,1,2,0,Local,19 de mar. 08:30 p. m.,Estadio Jalisco,45845,0,82,Atlas Local,0.952330056,0.986790646
+Cruz Azul,Atlas,2,0,36,6,2,12,5,0,1,2,0,64,19,6,10,10,0,1,1,0,Visitante,19 de mar. 08:30 p. m.,Estadio Jalisco,45845,1,82,Cruz Azul Visitante,1.200461716,1.016444498
+Dorados,Santos Laguna,3,1,41,21,8,16,6,2,1,2,0,59,12,3,20,6,5,1,4,0,Local,19 de mar. 09:00 p. m.,Estadio Banorte,16333,1,71,Dorados Local,0.634886704,1.461912068
+Santos Laguna,Dorados,1,3,59,12,3,20,6,5,1,4,0,41,21,8,16,6,2,1,2,0,Visitante,19 de mar. 09:00 p. m.,Estadio Banorte,16333,0,71,Santos Laguna Visitante,0.997306656,0.670853368
+Puebla,Tigres,0,0,40,14,2,9,2,1,5,4,1,60,17,1,14,4,2,1,4,0,Local,20 de mar. 05:00 p. m.,Estadio Cuauhtemoc,43516,0,84,Puebla Local,0.888841385,0.822325538
+Tigres,Puebla,0,0,60,17,1,14,4,2,1,4,0,40,14,2,9,2,1,5,4,1,Visitante,20 de mar. 05:00 p. m.,Estadio Cuauhtemoc,43516,0,84,Tigres Visitante,2.039945434,0.665309126
+Pumas,Morelia,4,2,46,14,5,12,4,1,4,0,0,54,16,3,7,3,3,2,1,0,Local,20 de mar. 06:00 p. m.,Estadio Olimpico Universitario,22277,1,32,Pumas Local,0.917058572,0.730956034
+Morelia,Pumas,2,4,54,16,3,7,3,3,2,1,0,46,14,5,12,4,1,4,0,0,Visitante,20 de mar. 06:00 p. m.,Estadio Olimpico Universitario,22277,0,32,Morelia Visitante,1.14274721,0.762333373
+Morelia,Chiapas,2,0,58,9,4,9,8,2,2,2,0,42,7,2,15,5,2,1,1,2,Local,26 de mar. 08:30 p. m.,Estadio Morelos,18027,1,43,Morelia Local,0.872969218,1.027906923
+Chiapas,Morelia,0,2,42,7,2,15,5,2,1,1,2,58,9,4,9,8,2,2,2,0,Visitante,26 de mar. 08:30 p. m.,Estadio Morelos,18027,0,43,Chiapas Visitante,0.51943055,0.838566711
+Toluca,Santos Laguna,0,0,59,17,3,10,6,5,4,0,0,41,20,5,18,1,3,2,4,0,Local,1 de abr. 08:30 p. m.,Estadio Nemesio Diez Riega,13520,0,50,Toluca Local,1.015818726,0.822325538
+Santos Laguna,Toluca,0,0,41,20,5,18,1,3,2,4,0,59,17,3,10,6,5,4,0,0,Visitante,1 de abr. 08:30 p. m.,Estadio Nemesio Diez Riega,13520,0,50,Santos Laguna Visitante,0.997306656,0.670853368
+Tijuana,Queretaro,2,4,46,14,6,15,4,2,3,1,1,54,16,6,20,4,4,3,3,0,Local,1 de abr. 09:30 p. m.,Estadio Caliente,26333,0,90,Tijuana Local,1.206284737,1.397953415
+Queretaro,Tijuana,4,2,54,16,6,20,4,4,3,3,0,46,14,6,15,4,2,3,1,1,Visitante,1 de abr. 09:30 p. m.,Estadio Caliente,26333,1,90,Queretaro Visitante,1.81328483,0.720751553
+Veracruz,Dorados,0,0,56,14,3,16,8,7,1,0,0,44,20,7,16,5,2,5,3,0,Local,1 de abr. 09:30 p. m.,Estadio Luis Pirata Fuente,16850,0,56,Veracruz Local,0.775972638,1.736020581
+Dorados,Veracruz,0,0,44,20,7,16,5,2,5,3,0,56,14,3,16,8,7,1,0,0,Visitante,1 de abr. 09:30 p. m.,Estadio Luis Pirata Fuente,16850,0,56,Dorados Visitante,0.83108888,1.084207464
+Cruz Azul,Pachuca,0,0,48,8,4,10,8,2,2,3,1,52,12,2,14,4,4,4,5,0,Local,2 de abr. 05:00 p. m.,Estadio Azul,26783,0,73,Cruz Azul Local,0.917058572,1.370542564
+Pachuca,Cruz Azul,0,0,52,12,2,14,4,4,4,5,0,48,8,4,10,8,2,2,3,1,Visitante,2 de abr. 05:00 p. m.,Estadio Azul,26783,0,73,Pachuca Visitante,0.646402462,1.490785263
+Tigres,Atlas,2,2,51,17,6,13,7,1,0,2,0,49,8,3,18,4,4,0,3,0,Local,2 de abr. 07:00 p. m.,Estadio Universitario,41230,0,98,Tigres Local,1.558358273,0.897082406
+Atlas,Tigres,2,2,49,8,3,18,4,4,0,3,0,51,17,6,13,7,1,0,2,0,Visitante,2 de abr. 07:00 p. m.,Estadio Universitario,41230,0,98,Atlas Visitante,1.246633321,0.731840038
+Leon,Monterrey,1,2,58,18,4,13,9,7,4,2,0,42,18,9,12,4,3,1,1,2,Local,2 de abr. 08:06 p. m.,Estadio Leon,23546,0,76,Leon Local,0.79360838,0.822325538
+Monterrey,Leon,2,1,42,18,9,12,4,3,1,1,2,58,18,4,13,9,7,4,2,0,Visitante,2 de abr. 08:06 p. m.,Estadio Leon,23546,1,76,Monterrey Visitante,1.385148134,1.084207464
+Morelia,Puebla,2,0,43,10,4,19,4,4,1,4,0,57,9,4,7,2,2,2,3,1,Local,2 de abr. 08:30 p. m.,Estadio Morelos,17286,1,42,Morelia Local,0.872969218,1.027906923
+Puebla,Morelia,0,2,57,9,4,7,2,2,2,3,1,43,10,4,19,4,4,1,4,0,Visitante,2 de abr. 08:30 p. m.,Estadio Morelos,17286,0,42,Puebla Visitante,1.163524432,0.609866699
+Chiapas,America,0,2,45,12,3,8,10,5,4,2,0,55,15,7,15,2,3,2,1,0,Local,2 de abr. 09:00 p. m.,Estadio Victor Manuel Reyna,21559,0,72,Chiapas Local,0.39680419,1.130697615
+America,Chiapas,2,0,55,15,7,15,2,3,2,1,0,45,12,3,8,10,5,4,2,0,Visitante,2 de abr. 09:00 p. m.,Estadio Victor Manuel Reyna,21559,1,72,America Visitante,1.81328483,0.831636407
+Guadalajara,Pumas,4,0,60,14,8,15,2,4,0,1,0,40,13,4,18,4,4,0,4,0,Local,3 de abr. 08:30 p. m.,Estadio Chivas,39477,1,79,Guadalajara Local,0.555525866,1.747441769
+Pumas,Guadalajara,0,4,40,13,4,18,4,4,0,4,0,60,14,8,15,2,4,0,1,0,Visitante,3 de abr. 08:30 p. m.,Estadio Chivas,39477,0,79,Pumas Visitante,1.200461716,0.542103732
+Queretaro,Toluca,0,0,51,16,4,17,3,5,2,2,0,49,12,5,17,6,4,3,3,0,Local,8 de abr. 07:30 p. m.,La Corregidora,19775,0,56,Queretaro Local,1.385207354,0.971839273
+Toluca,Queretaro,0,0,49,12,5,17,6,4,3,3,0,51,16,4,17,3,5,2,2,0,Visitante,8 de abr. 07:30 p. m.,La Corregidora,19775,0,56,Toluca Visitante,1.329742209,0.609866699
+Santos Laguna,Veracruz,2,0,57,17,5,13,4,6,0,0,0,43,13,6,13,3,3,0,1,0,Local,8 de abr. 09:30 p. m.,Estadio Corona,18892,1,63,Santos Laguna Local,0.761864044,0.904558092
+Veracruz,Santos Laguna,0,2,43,13,6,13,3,3,0,1,0,57,17,5,13,4,6,0,0,0,Visitante,8 de abr. 09:30 p. m.,Estadio Corona,18892,0,63,Veracruz Visitante,1.015775298,1.287496364
+America,Tijuana,6,1,64,19,11,13,5,5,2,2,0,36,10,7,9,3,5,1,3,0,Local,9 de abr. 05:00 p. m.,Azteca Stadium,28611,1,28,America Local,1.385207354,1.121353007
+Tijuana,America,1,6,36,10,7,9,3,5,1,3,0,64,19,11,13,5,5,2,2,0,Visitante,9 de abr. 05:00 p. m.,Azteca Stadium,28611,0,28,Tijuana Visitante,1.579068873,1.036773388
+Monterrey,Chiapas,6,0,59,12,7,9,3,3,3,2,0,41,9,3,10,3,1,3,2,0,Local,9 de abr. 07:00 p. m.,Estadio BBVA Bancomer,50612,1,95,Monterrey Local,1.058144506,1.461912068
+Chiapas,Monterrey,0,6,41,9,3,10,3,1,3,2,0,59,12,7,9,3,3,3,2,0,Visitante,9 de abr. 07:00 p. m.,Estadio BBVA Bancomer,50612,0,95,Chiapas Visitante,0.51943055,0.838566711
+Pachuca,Tigres,2,1,51,10,4,20,5,1,3,5,0,49,6,2,21,3,2,2,5,0,Local,9 de abr. 08:06 p. m.,Estadio Hidalgo,27230,1,91,Pachuca Local,0.49380077,2.010129094
+Tigres,Pachuca,1,2,49,6,2,21,3,2,2,5,0,51,10,4,20,5,1,3,5,0,Visitante,9 de abr. 08:06 p. m.,Estadio Hidalgo,27230,0,91,Tigres Visitante,2.039945434,0.665309126
+Atlas,Morelia,1,2,60,15,7,12,9,4,2,0,0,40,12,6,5,2,6,3,1,0,Local,9 de abr. 08:30 p. m.,Estadio Jalisco,25225,0,45,Atlas Local,0.952330056,0.986790646
+Morelia,Atlas,2,1,40,12,6,5,2,6,3,1,0,60,15,7,12,9,4,2,0,0,Visitante,9 de abr. 08:30 p. m.,Estadio Jalisco,25225,1,45,Morelia Visitante,1.14274721,0.762333373
+Dorados,Cruz Azul,3,0,46,11,5,20,5,2,0,1,0,54,8,2,22,5,2,0,1,0,Local,9 de abr. 09:00 p. m.,Estadio Banorte,18333,1,80,Dorados Local,0.634886704,1.461912068
+Cruz Azul,Dorados,0,3,54,8,2,22,5,2,0,1,0,46,11,5,20,5,2,0,1,0,Visitante,9 de abr. 09:00 p. m.,Estadio Banorte,18333,0,80,Cruz Azul Visitante,1.200461716,1.016444498
+Puebla,Guadalajara,0,3,44,7,2,13,0,2,0,3,2,56,24,5,13,0,2,0,2,0,Local,10 de abr. 05:00 p. m.,Estadio Cuauhtemoc,45527,0,88,Puebla Local,0.888841385,0.822325538
+Guadalajara,Puebla,3,0,56,24,5,13,0,2,0,2,0,44,7,2,13,0,2,0,3,2,Visitante,10 de abr. 05:00 p. m.,Estadio Cuauhtemoc,45527,1,88,Guadalajara Visitante,0.72720277,1.295966735
+Pumas,Leon,1,2,54,7,4,13,4,4,4,0,0,46,11,6,9,5,3,1,1,0,Local,10 de abr. 06:30 p. m.,Estadio Olimpico Universitario,22459,0,33,Pumas Local,0.917058572,0.730956034
+Leon,Pumas,2,1,46,11,6,9,5,3,1,1,0,54,7,4,13,4,4,4,0,0,Visitante,10 de abr. 06:30 p. m.,Estadio Olimpico Universitario,22459,1,33,Leon Visitante,1.0388611,0.609866699
+Queretaro,America,1,0,40,15,4,10,7,3,2,2,0,60,23,3,16,6,3,1,2,0,Local,15 de abr. 07:30 p. m.,La Corregidora,30718,1,86,Queretaro Local,1.385207354,0.971839273
+America,Queretaro,0,1,60,23,3,16,6,3,1,2,0,40,15,4,10,7,3,2,2,0,Visitante,15 de abr. 07:30 p. m.,La Corregidora,30718,0,86,America Visitante,1.81328483,0.831636407
+Tijuana,Monterrey,1,2,48,10,3,9,9,2,8,2,0,52,14,4,18,6,2,1,4,0,Local,15 de abr. 09:30 p. m.,Estadio Caliente,27133,0,92,Tijuana Local,1.206284737,1.397953415
+Monterrey,Tijuana,2,1,52,14,4,18,6,2,1,4,0,48,10,3,9,9,2,8,2,0,Visitante,15 de abr. 09:30 p. m.,Estadio Caliente,27133,1,92,Monterrey Visitante,1.385148134,1.084207464
+Toluca,Veracruz,4,2,54,26,8,12,3,5,4,1,0,46,13,7,7,5,4,1,2,0,Local,16 de abr. 12:45 p. m.,Estadio Nemesio Diez Riega,13479,1,50,Toluca Local,1.015818726,0.822325538
+Veracruz,Toluca,2,4,46,13,7,7,5,4,1,2,0,54,26,8,12,3,5,4,1,0,Visitante,16 de abr. 12:45 p. m.,Estadio Nemesio Diez Riega,13479,0,50,Veracruz Visitante,1.015775298,1.287496364
+Cruz Azul,Santos Laguna,0,1,61,12,4,11,13,1,3,2,1,39,7,2,10,7,4,5,3,0,Local,16 de abr. 05:00 p. m.,Estadio Azul,14603,0,40,Cruz Azul Local,0.917058572,1.370542564
+Santos Laguna,Cruz Azul,1,0,39,7,2,10,7,4,5,3,0,61,12,4,11,13,1,3,2,1,Visitante,16 de abr. 05:00 p. m.,Estadio Azul,14603,1,40,Santos Laguna Visitante,0.997306656,0.670853368
+Tigres,Dorados,5,2,71,20,10,10,7,1,5,2,0,29,4,3,15,1,5,1,3,1,Local,16 de abr. 07:00 p. m.,Estadio Universitario,41435,1,98,Tigres Local,1.558358273,0.897082406
+Dorados,Tigres,2,5,29,4,3,15,1,5,1,3,1,71,20,10,10,7,1,5,2,0,Visitante,16 de abr. 07:00 p. m.,Estadio Universitario,41435,0,98,Dorados Visitante,0.83108888,1.084207464
+Leon,Puebla,4,1,44,28,12,13,5,6,1,2,0,56,13,7,11,6,8,3,2,0,Local,16 de abr. 08:06 p. m.,Estadio Leon,17719,1,57,Leon Local,0.79360838,0.822325538
+Puebla,Leon,1,4,56,13,7,11,6,8,3,2,0,44,28,12,13,5,6,1,2,0,Visitante,16 de abr. 08:06 p. m.,Estadio Leon,17719,0,57,Puebla Visitante,1.163524432,0.609866699
+Morelia,Pachuca,1,0,52,13,4,14,2,5,0,2,0,48,18,6,21,8,3,0,4,0,Local,16 de abr. 08:30 p. m.,Estadio Morelos,22372,1,54,Morelia Local,0.872969218,1.027906923
+Pachuca,Morelia,0,1,48,18,6,21,8,3,0,4,0,52,13,4,14,2,5,0,2,0,Visitante,16 de abr. 08:30 p. m.,Estadio Morelos,22372,0,54,Pachuca Visitante,0.646402462,1.490785263
+Chiapas,Pumas,1,2,59,16,5,16,6,3,3,0,1,41,10,5,17,6,3,5,0,0,Local,16 de abr. 09:00 p. m.,Estadio Victor Manuel Reyna,14685,0,49,Chiapas Local,0.39680419,1.130697615
+Pumas,Chiapas,2,1,41,10,5,17,6,3,5,0,0,59,16,5,16,6,3,3,0,1,Visitante,16 de abr. 09:00 p. m.,Estadio Victor Manuel Reyna,14685,1,49,Pumas Visitante,1.200461716,0.542103732
+Guadalajara,Atlas,1,0,54,16,4,14,4,4,3,0,0,46,14,4,16,6,3,3,3,0,Local,17 de abr. 05:00 p. m.,Estadio Chivas,39979,1,80,Guadalajara Local,0.555525866,1.747441769
+Atlas,Guadalajara,0,1,46,14,4,16,6,3,3,3,0,54,16,4,14,4,4,3,0,0,Visitante,17 de abr. 05:00 p. m.,Estadio Chivas,39979,0,80,Atlas Visitante,1.246633321,0.731840038
+Pumas,Tijuana,3,1,52,15,11,20,2,5,2,1,0,48,18,6,6,6,8,1,3,0,Local,22 de abr. 08:00 p. m.,Estadio Olimpico Universitario,20134,1,29,Pumas Local,0.917058572,0.730956034
+Tijuana,Pumas,1,3,48,18,6,6,6,8,1,3,0,52,15,11,20,2,5,2,1,0,Visitante,22 de abr. 08:00 p. m.,Estadio Olimpico Universitario,20134,0,29,Tijuana Visitante,1.579068873,1.036773388
+Veracruz,Cruz Azul,2,1,38,12,3,16,2,2,0,2,0,62,12,3,10,6,1,0,3,0,Local,22 de abr. 09:30 p. m.,Estadio Luis Pirata Fuente,27630,1,92,Veracruz Local,0.775972638,1.736020581
+Cruz Azul,Veracruz,1,2,62,12,3,10,6,1,0,3,0,38,12,3,16,2,2,0,2,0,Visitante,22 de abr. 09:30 p. m.,Estadio Luis Pirata Fuente,27630,0,92,Cruz Azul Visitante,1.200461716,1.016444498
+America,Toluca,0,1,63,17,6,20,10,5,0,2,0,37,11,5,12,3,6,0,3,0,Local,23 de abr. 05:00 p. m.,Azteca Stadium,30325,0,29,America Local,1.385207354,1.121353007
+Toluca,America,1,0,37,11,5,12,3,6,0,3,0,63,17,6,20,10,5,0,2,0,Visitante,23 de abr. 05:00 p. m.,Azteca Stadium,30325,1,29,Toluca Visitante,1.329742209,0.609866699
+Santos Laguna,Tigres,2,1,34,8,2,13,1,0,4,3,0,66,17,7,17,10,0,2,1,0,Local,23 de abr. 07:00 p. m.,Estadio Corona,29356,1,98,Santos Laguna Local,0.761864044,0.904558092
+Tigres,Santos Laguna,1,2,66,17,7,17,10,0,2,1,0,34,8,2,13,1,0,4,3,0,Visitante,23 de abr. 07:00 p. m.,Estadio Corona,29356,0,98,Tigres Visitante,2.039945434,0.665309126
+Monterrey,Queretaro,3,2,49,14,9,12,6,2,2,2,1,51,17,4,17,5,6,4,4,0,Local,23 de abr. 07:00 p. m.,Estadio BBVA Bancomer,49570,1,93,Monterrey Local,1.058144506,1.461912068
+Queretaro,Monterrey,2,3,51,17,4,17,5,6,4,4,0,49,14,9,12,6,2,2,2,1,Visitante,23 de abr. 07:00 p. m.,Estadio BBVA Bancomer,49570,0,93,Queretaro Visitante,1.81328483,0.720751553
+Pachuca,Guadalajara,1,1,45,9,1,21,3,0,0,1,1,55,11,3,17,1,0,0,3,1,Local,23 de abr. 08:06 p. m.,Estadio Hidalgo,27230,0,91,Pachuca Local,0.49380077,2.010129094
+Guadalajara,Pachuca,1,1,55,11,3,17,1,0,0,3,1,45,9,1,21,3,0,0,1,1,Visitante,23 de abr. 08:06 p. m.,Estadio Hidalgo,27230,0,91,Guadalajara Visitante,0.72720277,1.295966735
+Atlas,Leon,1,1,45,7,2,14,3,4,4,2,0,55,16,5,11,5,1,2,1,0,Local,23 de abr. 08:30 p. m.,Estadio Jalisco,27207,0,48,Atlas Local,0.952330056,0.986790646
+Leon,Atlas,1,1,55,16,5,11,5,1,2,1,0,45,7,2,14,3,4,4,2,0,Visitante,23 de abr. 08:30 p. m.,Estadio Jalisco,27207,0,48,Leon Visitante,1.0388611,0.609866699
+Dorados,Morelia,1,0,43,17,8,17,2,5,1,1,0,57,14,5,14,2,7,1,0,0,Local,23 de abr. 09:00 p. m.,Estadio Banorte,15333,1,67,Dorados Local,0.634886704,1.461912068
+Morelia,Dorados,0,1,57,14,5,14,2,7,1,0,0,43,17,8,17,2,5,1,1,0,Visitante,23 de abr. 09:00 p. m.,Estadio Banorte,15333,0,67,Morelia Visitante,1.14274721,0.762333373
+Puebla,Chiapas,2,1,52,17,3,9,7,1,3,2,0,48,10,2,15,2,1,2,3,0,Local,24 de abr. 05:00 p. m.,Estadio Cuauhtemoc,20744,1,40,Puebla Local,0.888841385,0.822325538
+Chiapas,Puebla,1,2,48,10,2,15,2,1,2,3,0,52,17,3,9,7,1,3,2,0,Visitante,24 de abr. 05:00 p. m.,Estadio Cuauhtemoc,20744,0,40,Chiapas Visitante,0.51943055,0.838566711
+Queretaro,Pumas,2,1,47,23,7,14,10,2,1,2,0,53,11,3,8,2,5,2,1,0,Local,29 de abr. 07:30 p. m.,La Corregidora,31276,1,88,Queretaro Local,1.385207354,0.971839273
+Pumas,Queretaro,1,2,53,11,3,8,2,5,2,1,0,47,23,7,14,10,2,1,2,0,Visitante,29 de abr. 07:30 p. m.,La Corregidora,31276,0,88,Pumas Visitante,1.200461716,0.542103732
+Tijuana,Puebla,0,0,52,23,3,10,0,4,0,1,0,48,7,4,15,0,3,0,2,0,Local,29 de abr. 09:30 p. m.,Estadio Caliente,26533,0,90,Tijuana Local,1.206284737,1.397953415
+Puebla,Tijuana,0,0,48,7,4,15,0,3,0,2,0,52,23,3,10,0,4,0,1,0,Visitante,29 de abr. 09:30 p. m.,Estadio Caliente,26533,0,90,Puebla Visitante,1.163524432,0.609866699
+America,Monterrey,3,3,52,14,6,14,4,2,0,4,0,48,15,5,14,3,3,0,3,0,Local,30 de abr. 05:00 p. m.,Azteca Stadium,36147,0,35,America Local,1.385207354,1.121353007
+Monterrey,America,3,3,48,15,5,14,3,3,0,3,0,52,14,6,14,4,2,0,4,0,Visitante,30 de abr. 05:00 p. m.,Azteca Stadium,36147,0,35,Monterrey Visitante,1.385148134,1.084207464
+Tigres,Veracruz,0,0,72,24,6,16,16,2,0,2,0,28,5,2,14,1,7,0,4,0,Local,30 de abr. 07:00 p. m.,Estadio Universitario,41381,0,98,Tigres Local,1.558358273,0.897082406
+Veracruz,Tigres,0,0,28,5,2,14,1,7,0,4,0,72,24,6,16,16,2,0,2,0,Visitante,30 de abr. 07:00 p. m.,Estadio Universitario,41381,0,98,Veracruz Visitante,1.015775298,1.287496364
+Leon,Pachuca,0,0,54,14,4,14,7,4,1,2,0,46,10,4,14,5,4,5,2,0,Local,30 de abr. 08:06 p. m.,Estadio Leon,17262,0,56,Leon Local,0.79360838,0.822325538
+Pachuca,Leon,0,0,46,10,4,14,5,4,5,2,0,54,14,4,14,7,4,1,2,0,Visitante,30 de abr. 08:06 p. m.,Estadio Leon,17262,0,56,Pachuca Visitante,0.646402462,1.490785263
+Morelia,Santos Laguna,3,2,58,13,6,10,4,4,0,1,0,42,9,6,12,9,3,0,3,0,Local,30 de abr. 08:30 p. m.,Estadio Morelos,24013,1,58,Morelia Local,0.872969218,1.027906923
+Santos Laguna,Morelia,2,3,42,9,6,12,9,3,0,3,0,58,13,6,10,4,4,0,1,0,Visitante,30 de abr. 08:30 p. m.,Estadio Morelos,24013,0,58,Santos Laguna Visitante,0.997306656,0.670853368
+Chiapas,Atlas,0,3,35,12,5,8,6,4,0,3,0,65,10,7,16,1,5,0,1,0,Local,30 de abr. 09:00 p. m.,Estadio Victor Manuel Reyna,8716,0,29,Chiapas Local,0.39680419,1.130697615
+Atlas,Chiapas,3,0,65,10,7,16,1,5,0,1,0,35,12,5,8,6,4,0,3,0,Visitante,30 de abr. 09:00 p. m.,Estadio Victor Manuel Reyna,8716,1,29,Atlas Visitante,1.246633321,0.731840038
+Toluca,Cruz Azul,0,2,48,14,3,15,6,6,0,2,0,52,21,8,6,10,3,0,3,0,Local,1 de may. 12:00 p. m.,Estadio Nemesio Diez Riega,14480,0,54,Toluca Local,1.015818726,0.822325538
+Cruz Azul,Toluca,2,0,52,21,8,6,10,3,0,3,0,48,14,3,15,6,6,0,2,0,Visitante,1 de may. 12:00 p. m.,Estadio Nemesio Diez Riega,14480,1,54,Cruz Azul Visitante,1.200461716,1.016444498
+Guadalajara,Dorados,2,1,58,14,4,15,1,5,2,3,0,42,12,6,17,1,2,2,2,0,Local,1 de may. 05:00 p. m.,Estadio Chivas,37862,1,76,Guadalajara Local,0.555525866,1.747441769
+Dorados,Guadalajara,1,2,42,12,6,17,1,2,2,2,0,58,14,4,15,1,5,2,3,0,Visitante,1 de may. 05:00 p. m.,Estadio Chivas,37862,0,76,Dorados Visitante,0.83108888,1.084207464
+Veracruz,Morelia,1,2,36,10,3,14,5,5,1,1,0,64,13,7,20,1,2,1,3,0,Local,6 de may. 07:30 p. m.,Estadio Luis Pirata Fuente,15273,0,51,Veracruz Local,0.775972638,1.736020581
+Morelia,Veracruz,2,1,64,13,7,20,1,2,1,3,0,36,10,3,14,5,5,1,1,0,Visitante,6 de may. 07:30 p. m.,Estadio Luis Pirata Fuente,15273,1,51,Morelia Visitante,1.14274721,0.762333373
+Santos Laguna,Guadalajara,0,1,41,13,4,11,2,3,0,2,1,59,16,4,20,6,4,0,3,0,Local,6 de may. 09:30 p. m.,Estadio Corona,29327,0,98,Santos Laguna Local,0.761864044,0.904558092
+Guadalajara,Santos Laguna,1,0,59,16,4,20,6,4,0,3,0,41,13,4,11,2,3,0,2,1,Visitante,6 de may. 09:30 p. m.,Estadio Corona,29327,1,98,Guadalajara Visitante,0.72720277,1.295966735
+Cruz Azul,Tigres,0,3,45,10,2,16,7,1,2,3,1,55,12,4,16,5,2,2,4,0,Local,7 de may. 05:00 p. m.,Estadio Azul,26920,0,73,Cruz Azul Local,0.917058572,1.370542564
+Tigres,Cruz Azul,3,0,55,12,4,16,5,2,2,4,0,45,10,2,16,7,1,2,3,1,Visitante,7 de may. 05:00 p. m.,Estadio Azul,26920,1,73,Tigres Visitante,2.039945434,0.665309126
+Monterrey,Toluca,1,2,50,20,6,8,7,3,0,1,0,50,12,5,16,8,5,0,1,0,Local,7 de may. 07:00 p. m.,Estadio BBVA Bancomer,48856,0,91,Monterrey Local,1.058144506,1.461912068
+Toluca,Monterrey,2,1,50,12,5,16,8,5,0,1,0,50,20,6,8,7,3,0,1,0,Visitante,7 de may. 07:00 p. m.,Estadio BBVA Bancomer,48856,1,91,Toluca Visitante,1.329742209,0.609866699
+Pachuca,Chiapas,2,1,60,19,4,17,6,1,0,1,1,40,9,2,13,2,2,0,2,0,Local,7 de may. 08:06 p. m.,Estadio Hidalgo,25130,1,84,Pachuca Local,0.49380077,2.010129094
+Chiapas,Pachuca,1,2,40,9,2,13,2,2,0,2,0,60,19,4,17,6,1,0,1,1,Visitante,7 de may. 08:06 p. m.,Estadio Hidalgo,25130,0,84,Chiapas Visitante,0.51943055,0.838566711
+Atlas,Tijuana,0,0,38,9,4,15,1,3,1,1,1,62,14,3,16,10,4,1,2,0,Local,7 de may. 08:30 p. m.,Estadio Jalisco,27061,0,48,Atlas Local,0.952330056,0.986790646
+Tijuana,Atlas,0,0,62,14,3,16,10,4,1,2,0,38,9,4,15,1,3,1,1,1,Visitante,7 de may. 08:30 p. m.,Estadio Jalisco,27061,0,48,Tijuana Visitante,1.579068873,1.036773388
+Dorados,Leon,0,1,49,17,4,10,2,4,5,0,1,51,16,5,18,5,4,4,2,0,Local,7 de may. 09:00 p. m.,Estadio Banorte,13333,0,58,Dorados Local,0.634886704,1.461912068
+Leon,Dorados,1,0,51,16,5,18,5,4,4,2,0,49,17,4,10,2,4,5,0,1,Visitante,7 de may. 09:00 p. m.,Estadio Banorte,13333,1,58,Leon Visitante,1.0388611,0.609866699
+Pumas,America,1,1,41,12,3,13,5,5,0,2,0,59,17,7,20,7,2,0,4,1,Local,8 de may. 12:00 p. m.,Estadio Olimpico Universitario,36719,0,53,Pumas Local,0.917058572,0.730956034
+America,Pumas,1,1,59,17,7,20,7,2,0,4,1,41,12,3,13,5,5,0,2,0,Visitante,8 de may. 12:00 p. m.,Estadio Olimpico Universitario,36719,0,53,America Visitante,1.81328483,0.831636407
+Puebla,Queretaro,3,1,42,16,9,7,1,7,3,0,0,58,29,8,9,7,6,1,0,0,Local,8 de may. 05:00 p. m.,Estadio Cuauhtemoc,17444,1,34,Puebla Local,0.888841385,0.822325538
+Queretaro,Puebla,1,3,58,29,8,9,7,6,1,0,0,42,16,9,7,1,7,3,0,0,Visitante,8 de may. 05:00 p. m.,Estadio Cuauhtemoc,17444,0,34,Queretaro Visitante,1.81328483,0.720751553
+Tigres,Monterrey,1,3,68,20,6,16,11,2,0,3,0,32,6,5,19,1,5,0,3,0,Local,11 de may. 07:00 p. m.,Estadio Universitario,41562,0,98,Tigres Local,1.558358273,0.897082406
+Monterrey,Tigres,3,1,32,6,5,19,1,5,0,3,0,68,20,6,16,11,2,0,3,0,Visitante,11 de may. 07:00 p. m.,Estadio Universitario,41562,1,98,Monterrey Visitante,1.385148134,1.084207464
+Morelia,Leon,1,1,57,11,6,17,3,2,0,1,0,43,10,3,26,5,5,0,4,0,Local,11 de may. 09:00 p. m.,Estadio Morelos,20820,0,50,Morelia Local,0.872969218,1.027906923
+Leon,Morelia,1,1,43,10,3,26,5,5,0,4,0,57,11,6,17,3,2,0,1,0,Visitante,11 de may. 09:00 p. m.,Estadio Morelos,20820,0,50,Leon Visitante,1.0388611,0.609866699
+Santos Laguna,Pachuca,1,1,40,10,1,16,4,0,0,3,0,60,15,2,18,6,0,0,1,0,Local,12 de may. 07:00 p. m.,Estadio Corona,20357,0,68,Santos Laguna Local,0.761864044,0.904558092
+Pachuca,Santos Laguna,1,1,60,15,2,18,6,0,0,1,0,40,10,1,16,4,0,0,3,0,Visitante,12 de may. 07:00 p. m.,Estadio Corona,20357,0,68,Pachuca Visitante,0.646402462,1.490785263
+Guadalajara,America,0,0,60,18,1,15,3,5,0,2,1,40,13,5,18,5,1,0,3,1,Local,12 de may. 09:00 p. m.,Estadio Chivas,42311,0,85,Guadalajara Local,0.555525866,1.747441769
+America,Guadalajara,0,0,40,13,5,18,5,1,0,3,1,60,18,1,15,3,5,0,2,1,Visitante,12 de may. 09:00 p. m.,Estadio Chivas,42311,0,85,America Visitante,1.81328483,0.831636407
+Monterrey,Tigres,1,2,46,20,9,14,4,3,2,1,0,54,9,5,19,6,8,1,4,1,Local,14 de may. 07:00 p. m.,Estadio BBVA Bancomer,50302,0,94,Monterrey Local,1.058144506,1.461912068
+Tigres,Monterrey,2,1,54,9,5,19,6,8,1,4,1,46,20,9,14,4,3,2,1,0,Visitante,14 de may. 07:00 p. m.,Estadio BBVA Bancomer,50302,1,94,Tigres Visitante,2.039945434,0.665309126
+Leon,Morelia,4,1,43,15,9,17,6,4,3,1,0,57,10,5,13,3,5,2,3,0,Local,14 de may. 09:06 p. m.,Estadio Leon,17450,1,56,Leon Local,0.79360838,0.822325538
+Morelia,Leon,1,4,57,10,5,13,3,5,2,3,0,43,15,9,17,6,4,3,1,0,Visitante,14 de may. 09:06 p. m.,Estadio Leon,17450,0,56,Morelia Visitante,1.14274721,0.762333373
+America,Guadalajara,2,1,48,16,4,18,8,2,0,3,0,52,14,3,11,9,2,0,3,0,Local,15 de may. 06:00 p. m.,Azteca Stadium,65075,1,63,America Local,1.385207354,1.121353007
+Guadalajara,America,1,2,52,14,3,11,9,2,0,3,0,48,16,4,18,8,2,0,3,0,Visitante,15 de may. 06:00 p. m.,Azteca Stadium,65075,0,63,Guadalajara Visitante,0.72720277,1.295966735
+Pachuca,Santos Laguna,3,2,51,23,8,14,5,5,3,3,0,49,15,8,12,3,5,1,5,0,Local,15 de may. 08:06 p. m.,Estadio Hidalgo,26577,1,89,Pachuca Local,0.49380077,2.010129094
+Santos Laguna,Pachuca,2,3,49,15,8,12,3,5,1,5,0,51,23,8,14,5,5,3,3,0,Visitante,15 de may. 08:06 p. m.,Estadio Hidalgo,26577,0,89,Santos Laguna Visitante,0.997306656,0.670853368
+America,Monterrey,1,0,42,17,7,17,9,3,3,3,0,58,18,3,15,6,6,3,3,0,Local,18 de may. 08:30 p. m.,Azteca Stadium,61547,1,60,America Local,1.385207354,1.121353007
+Monterrey,America,0,1,58,18,3,15,6,6,3,3,0,42,17,7,17,9,3,3,3,0,Visitante,18 de may. 08:30 p. m.,Azteca Stadium,61547,0,60,Monterrey Visitante,1.385148134,1.084207464
+Leon,Pachuca,1,1,56,15,6,14,4,3,2,2,0,44,12,4,16,3,5,1,3,0,Local,19 de may. 08:06 p. m.,Estadio Leon,18895,0,61,Leon Local,0.79360838,0.822325538
+Pachuca,Leon,1,1,44,12,4,16,3,5,1,3,0,56,15,6,14,4,3,2,2,0,Visitante,19 de may. 08:06 p. m.,Estadio Leon,18895,0,61,Pachuca Visitante,0.646402462,1.490785263
+Monterrey,America,4,2,49,24,7,13,6,3,1,1,0,51,13,5,10,6,3,1,6,2,Local,21 de may. 08:30 p. m.,Estadio BBVA Bancomer,50302,1,94,Monterrey Local,1.058144506,1.461912068
+America,Monterrey,2,4,51,13,5,10,6,3,1,6,2,49,24,7,13,6,3,1,1,0,Visitante,21 de may. 08:30 p. m.,Estadio BBVA Bancomer,50302,0,94,America Visitante,1.81328483,0.831636407
+Pachuca,Leon,2,1,44,16,5,12,3,5,2,3,0,56,13,6,13,7,4,2,4,0,Local,22 de may. 08:06 p. m.,Estadio Hidalgo,27512,1,92,Pachuca Local,0.49380077,2.010129094
+Leon,Pachuca,1,2,56,13,6,13,7,4,2,4,0,44,16,5,12,3,5,2,3,0,Visitante,22 de may. 08:06 p. m.,Estadio Hidalgo,27512,0,92,Leon Visitante,1.0388611,0.609866699

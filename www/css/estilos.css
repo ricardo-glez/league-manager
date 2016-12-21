@@ -14,7 +14,7 @@ sans-serif;
 #F7FAFA
 #99CCCC
 #669999
-#336799
+#1D3457
 #FFCCCC
 #D55619
 
@@ -28,9 +28,9 @@ sans-serif;
 .navbar .categorias {
   width: 100%;
   display: inline-flex;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
-  margin-top: 15%;
+  margin-top: 16%;
 }
 
 .navbar.navbar-custom {
@@ -39,11 +39,7 @@ sans-serif;
   border-bottom: none;
   z-index: 100000;
   border-radius: 0;
-  background-color: rgba(51, 103, 153, 0.3) !important;
-}
-
-.navbar {
-  border-bottom: 4px solid rgba(51, 103, 153, 1);
+  background-color: #1D3457;
 }
 
 a {
@@ -58,12 +54,7 @@ a {
 }
 
 html {
-  background-color: none;
-}
-
-.navbar-custom.navbar-brand {
-  font-size: 24px !important;
-  color: #262626 !important;
+  background-color: #D3D3D3;
 }
 
 #main-header > div:nth-child(1):hover {
@@ -80,10 +71,14 @@ ul.categorias li.activado {
 }
 
 .titulo-t {
-  color: #f7fafa;
-  font-family: 'Exo 2', sans-serif !important;
-  font-weight: 700;
+  color: #1D3457;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 800;
+  font-size: 36px;
   margin-bottom: 2%;
+}
+#graficas_01{
+  background-color: #1D3457;
 }
 
 #tabla-gral > div.row.titulo-t,
@@ -92,7 +87,7 @@ ul.categorias li.activado {
 }
 
 #nav-jugador > ul > li:hover {
-  box-shadow: inset 0px 30px #f7fafa;
+  box-shadow: inset 0px 30px #F7FAFA;
   border-radius: 50%;
   height: 100%;
   -webkit-transition: all .250s ease;
@@ -104,12 +99,12 @@ ul.categorias li.activado {
 
 .imgs-jugador {
   height: auto;
-  margin: 1em 15%;
+  margin: 1em auto;
 }
 
 .img-equipo {
   height: auto;
-  margin: 1em 15%;
+  margin: 1em auto;
 }
 
 li a {
@@ -121,32 +116,41 @@ li a {
 }
 
 th {
+  background-color: #D55619;
+  color: #F7FAFA;
+  text-transform: ;
   text-align: center !important;
 }
 
 table {
-  font-family: 'Lato', sans-serif !important;
-  font-size: 14px;
-  color: #f7fafa;
-  background-color: rgba(255, 255, 255, .2) !important;
+  font-family: '"Helvetica Neue", Helvetica, Arial, sans-serif', sans-serif !important;
+  font-size: 18px;
+  color: #1D3457;
+  background-color: rgba(255, 255, 255, .5);
+  border: none;
 }
 
 tr:hover td {
-  background-color: rgba(213, 86, 25, .5);
+  background: rgba(213, 86, 25, .3) !important;
+}
+
+tr:nth-child(even) {
+  background-color: #ADB5C2;
 }
 
 thead,
 .cat {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .grid {
-  stroke: #262626;
+  stroke: #1D3457;
   stroke-width: 2px;
+  border-radius: 5px;
 }
 
 #left-nav a {
-  background-color: #000000;
+  background-color: #1D3457;
   color: #000;
 }
 
@@ -165,17 +169,21 @@ thead,
   margin-bottom: 10px;
 }
 
+#gral-stats {
+  width: 100%;
+  height: inherit;
+  background-color: rgba(29, 52, 87, .6);
+}
+
 .tabla-stats,
 .tabla-gral {
   background: rgba(247, 250, 250, .6);
 }
 
+#secondary-table {}
+
 html {
   height: 100%;
-  background-image: url("../data/img/fondo02.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed !important;
 }
 
 li {
@@ -191,7 +199,7 @@ li {
 }
 
 #main-table {
-  margin-left: -4em;
+  
 }
 
 
@@ -206,17 +214,18 @@ li {
     height: 90%;
   }
   #left-nav {
-    font-family: 'Lato', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: fixed;
     z-index: -100;
     display: block;
     overflow-x: hidden;
     overflow-y: auto;
-    color: #fff;
-    background-color: rgba(51, 103, 153, .3);
+    color: #f7fafa;
+    background-color: rgba(51, 103, 153, .8);
+    border-radius: 10px;
   }
   #nav-jugador > ul {
-    margin: 0 5% 0 5%;
+    margin: 1em;
     padding: 0;
   }
   .logo-league {
@@ -235,6 +244,10 @@ li {
   #nav-jugador {
     /*background: #063239;*/
   }
+  #nav-partidos{
+    border-radius: 10px !important;
+  }
+
   #nav-partidos > ul > li {
     margin: 0;
     display: inline-flex;
@@ -242,19 +255,22 @@ li {
   #nav-jugador > ul > li {
     margin: 0 2% 0 2%;
   }
-  #left-nav h2 {
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 700;
-  }
   img.img-responsive.img-centered {
     top: 50%;
     left: 50%;
     margin-left: auto;
     margin-right: auto;
   }
+  #cuadro-info {  
+    -webkit-transition: all .125s ease);
+    -moz-transition: all .125s ease);
+    -ms-transition: all .125s ease);
+    -o-transition: all .125s ease);
+    transition: all .125s ease);
+  }
   #info-jugador {
     margin: 20px auto 20px auto;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 2px solid #F7fafa;
   }
   #info-jugador > p {
     text-align: center;
@@ -264,21 +280,34 @@ li {
     background-color: rgba(255, 255, 255, .4);
   }
   .btn-active {
-    color: #fff !important;
+    color: #FFF !important;
     background-color: #D55619 !important;
+    opacity: 1 !important;
   }
   .btn-group {
     display: inline-flex !important;
   }
+  .btn-custom-i {
+    font-family: 'Exo 2', sans-serif !important;
+    opacity:.3 ;
+  }
+
+  .btn-custom-i >p {
+    font-size: 12px !important;
+  }
   .btn-custom {
     font-family: 'Exo 2', sans-serif !important;
+  }
+
+  .btn-custom >p {
+    font-size: 12px !important;
   }
   .btn-visualizar {
     margin-left: 110%;
     margin-top: -1em;
   }
   #controles {
-    color: #f7fafa;
+    color: #F7FAFA;
     font-family: 'Exo 2', sans-serif !important;
     font-weight: 700;
     text-align: center;
@@ -296,11 +325,13 @@ li {
     text-align: center;
     line-height: 1.6em;
   }
+#sliderWrapper{
+  padding:1.5em;
+}
   #acot {
     background-color: rgba(23, 48, 65, .8);
     height: 120px;
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin: 50px 0 ;
   }
   .navbar-brand {
     padding: 0px !important;
@@ -324,13 +355,96 @@ li {
   font-family: 'Exo 2', sans-serif !important;
   font-weight: 500;
   font-size: 18px;
-  color: #fff;
+  color: #FFF;
   margin: 7px 0 0 0;
 }
 
+#info-partido{
+  line-height: .5;
+  margin: 1% 0; 
+}
+
+.lineasP{
+  stroke:#f7fafa;
+  stroke-width: 3px;
+  fill: none; 
+}
+
 #lugar,
-#fecha {
+#fecha, #goles-equipo-casa, #goles-equipo-visita {
   font-family: 'Exo 2', sans-serif !important;
+  font-size: 18px;
+}
+#izquierdaP{
+  height: inherit;
+}
+
+#porcentajeC{
+  text-align: center;
+  font-family: 'Anton', sans-serif !important;
+  font-weight: 500;
+  margin: 0 auto;
+  padding-left: 25px;
+  height:33%;
+}
+
+.row-1{
+  height: 3em;
+}
+#pComp{
+  text-align: center;
+ font-family: 'Exo 2', sans-serif !important;
+  font-size: 18px; 
+  height:33%;
+}
+
+.textSlice{
+font-family: 'Exo 2', sans-serif !important;
+}
+#pCompV{
+  text-align: center;
+ font-family: 'Exo 2', sans-serif !important;
+  font-size: 18px; 
+  margin:0 auto;  
+  height:33%;
+}
+
+#porcentajeV{
+  text-align: center;
+  font-family: 'Anton', sans-serif !important;
+  font-weight: 500;
+   margin: 0 auto;
+padding-right: 25px;
+height:33%;
+}
+
+#golesF, #golesC{
+  text-align: center;
+  font-family: 'Anton', sans-serif !important;
+  font-weight: 500;
+  font-size: 7em;
+  margin: .1em 0;
+  padding: 0; 
+}
+#data-vis, #graficas_01{
+  width:100%;
+  height:30em;
+}
+#grafPorcentajes{
+  width:100%;
+  height:17.5em;
+}
+#grafCompa{
+  width: 100%;
+  height:30em;
+}
+
+.lineasP{
+  opacity: 0.1 !important;
+}
+#grafPorcentajes0{
+  width:100%;
+  height:inherit;
 }
 
 #nombre-equipo-casa,
@@ -339,16 +453,54 @@ li {
   font-family: 'Anton', sans-serif !important;
   font-weight: 500;
 }
+.yaxis{
+  fill:#1D3457;
+  stroke-width:5px;
+}
+
+.yaxis text{
+  display: none;
+}
+#goles-equipo-casa, #goles-equipo-visita{
+  line-height: 1.5;
+}
+
+#goles-equipo-casa{
+text-align:  left;
+}
+
+#goles-equipo-visita{
+text-align: right;
+}
+
+#tit-info{
+    background-color: #D55619 !important;
+    color:#f7fafa;
+
+}
+#info-p{
+  color:#094853;
+  background-color: #f7fafa;
+}
+
+
+#tit-info,
+#info-p {
+  margin:0;
+  line-height: 1.5;
+  font-family: 'Exo 2', sans-serif !important;
+  font-weight: 700;
+}
 
 #titulo-partido {
   background-color: rgba(23, 48, 65, .8);
-  color: #fff !important;
+  color: #FFF !important;
+  border-radius: 10px;
 }
 
 #equipo-casa,
 #equipo-visita {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 20% auto;
 }
 
 #nombre-equipo-casa {
@@ -368,7 +520,7 @@ li {
 }
 
 #col-ac0 {
-  background-color: #c62828;
+  background-color: #C62828;
 }
 
 #col-ac1 {
@@ -385,7 +537,7 @@ li {
 */
 
 #canvasGrafs {
-  fill: #fff;
+  fill: #FFF;
 }
 
 circle.bars {
@@ -393,7 +545,7 @@ circle.bars {
 }
 
 .bars {
-  fill: #fff;
+  fill: #FFF;
   stroke: none;
   stroke-width: 1px;
 }
@@ -406,23 +558,20 @@ rect.axis {
 .axis path,
 .axis line {
   fill: none;
-  stroke: #fff;
+  stroke: #FFF;
   stroke-width: 2;
   shape-rendering: crispEdges;
 }
 
 rect {
   stroke-width: 6px;
-  stroke: #fff;
+  stroke: #FFF;
   fill: none;
 }
 
-#graficas_01 > g > text {
-  color: #fff !important;
-}
 
 .axis text {
-  color: #fff;
+  color: #FFF;
   font-family: sans-serif;
   font-size: 11px;
 }
