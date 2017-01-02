@@ -309,6 +309,11 @@
 							<p id="fecha" class="text-center"></p>
 							<p id="lugar" class="text-center"></p>
 						</div>
+						<div class="resultadoProb text-center ">
+							<p> <strong id="porcentajeResultado">
+								
+								</strong> probabilidad de ocurrencia</p>
+						</div>
 					</div>
 					
 					<div id="derechaP" class="col-sm-2">
@@ -327,10 +332,10 @@
 					</div>
 				</div>
 				<!--Inicio Tabla GRAL-->
-				<div id="dashboard">
-					<div class="row">
+				<div class=" container-fluid" id="dashboard">
+					<div id="porcentajesGP" class="row">
 						<div class="col-sm-4">
-							<div class="row-1 row">
+							<div class="row-C row">
 							</div>
 							<div class="row">
 								<p id="porcentajeC">
@@ -347,7 +352,7 @@
 							</svg>
 						</div>
 						<div class="col-sm-4">
-							<div class="row-1 row">
+							<div class="row-V row">
 								
 							</div>
 							<div class="row">
@@ -362,41 +367,29 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="row-1 row">
-							</div>
-							<div class="row">
-								<p id="porcentajeGolesC">
-									%
-								</p>
-							</div>
-							<div class="row">
-								<p id ="pComp">
-								</p>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<svg id="grafPorcentajes0">
+					<div id="distribucionNumGoles" class="row">
+						
+						<div class="col-sm-6">
+							<svg id="golesClub">
+								
 							</svg>
 						</div>
-						<div class="col-sm-4">
-							<div class="row row-1">
-								
-							</div>
-							<div class="row">
-								<p id="porcentajeGolesV">
-									%
-								</p>
-							</div>
-							<div class="row">
-								<p id="pCompV">	
-								</p>
+						<div class="col-sm-1">
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="row">
+							
+							<div class="col-sm-offset-3 col-sm-6">
+								<svg id="grafPorcentajes0">
+								</svg>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!--Cierra Main Container-->
-		</body>
-	</html>
+		</div>
+		<!--Cierra Main Container-->
+	</body>
+</html>

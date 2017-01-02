@@ -77,8 +77,9 @@ ul.categorias li.activado {
   font-size: 36px;
   margin-bottom: 2%;
 }
-#graficas_01{
-  background-color: #1D3457;
+
+#graficas_01 {
+  background-color: transparent;
 }
 
 #tabla-gral > div.row.titulo-t,
@@ -198,9 +199,7 @@ li {
   background: none !important;
 }
 
-#main-table {
-  
-}
+#main-table {}
 
 
 /*
@@ -244,10 +243,9 @@ li {
   #nav-jugador {
     /*background: #063239;*/
   }
-  #nav-partidos{
+  #nav-partidos {
     border-radius: 10px !important;
   }
-
   #nav-partidos > ul > li {
     margin: 0;
     display: inline-flex;
@@ -261,12 +259,8 @@ li {
     margin-left: auto;
     margin-right: auto;
   }
-  #cuadro-info {  
-    -webkit-transition: all .125s ease);
-    -moz-transition: all .125s ease);
-    -ms-transition: all .125s ease);
-    -o-transition: all .125s ease);
-    transition: all .125s ease);
+  #cuadro-info {
+    margin: 5em 10em;
   }
   #info-jugador {
     margin: 20px auto 20px auto;
@@ -289,16 +283,14 @@ li {
   }
   .btn-custom-i {
     font-family: 'Exo 2', sans-serif !important;
-    opacity:.3 ;
+    opacity: .3;
   }
-
   .btn-custom-i >p {
     font-size: 12px !important;
   }
   .btn-custom {
     font-family: 'Exo 2', sans-serif !important;
   }
-
   .btn-custom >p {
     font-size: 12px !important;
   }
@@ -325,13 +317,13 @@ li {
     text-align: center;
     line-height: 1.6em;
   }
-#sliderWrapper{
-  padding:1.5em;
-}
+  #sliderWrapper {
+    padding: 1.5em;
+  }
   #acot {
     background-color: rgba(23, 48, 65, .8);
     height: 120px;
-    margin: 50px 0 ;
+    margin: 5em 10em;
   }
   .navbar-brand {
     padding: 0px !important;
@@ -359,92 +351,118 @@ li {
   margin: 7px 0 0 0;
 }
 
-#info-partido{
+#info-partido {
   line-height: .5;
-  margin: 1% 0; 
+  margin: 1% 0;
 }
 
-.lineasP{
-  stroke:#f7fafa;
+.lineasP {
+  stroke: #f7fafa;
   stroke-width: 3px;
-  fill: none; 
+  fill: none;
 }
 
 #lugar,
-#fecha, #goles-equipo-casa, #goles-equipo-visita {
+#fecha,
+#goles-equipo-casa,
+#goles-equipo-visita {
   font-family: 'Exo 2', sans-serif !important;
   font-size: 18px;
 }
-#izquierdaP{
+
+#izquierdaP {
   height: inherit;
 }
 
-#porcentajeC{
+#porcentajeC {
   text-align: center;
   font-family: 'Anton', sans-serif !important;
   font-weight: 500;
   margin: 0 auto;
   padding-left: 25px;
-  height:33%;
+  height: 33%;
 }
 
-.row-1{
-  height: 3em;
+.row-C,
+.row-V,
+.row-E {
+  height: 2em;
 }
+
+#porcentajesGP,
+#distribucionNumGoles,
+{
+  margin: 1em 0 !important;
+}
+
 #pComp{
   text-align: center;
- font-family: 'Exo 2', sans-serif !important;
-  font-size: 18px; 
-  height:33%;
+  font-family: 'Exo 2', sans-serif !important;
+  font-size: 18px;
+  height: 33%;
 }
 
-.textSlice{
-font-family: 'Exo 2', sans-serif !important;
+.textSlice {
+  font-family: 'Exo 2', sans-serif !important;
 }
-#pCompV{
+
+#pCompV {
   text-align: center;
- font-family: 'Exo 2', sans-serif !important;
-  font-size: 18px; 
-  margin:0 auto;  
-  height:33%;
+  font-family: 'Exo 2', sans-serif !important;
+  font-size: 18px;
+  margin: 0 auto;
+  height: 33%;
+}
+.resultadoProb{
+    
+    font-size: x-large;
 }
 
-#porcentajeV{
+#porcentajeV,
+#porcentajeResultado {
   text-align: center;
   font-family: 'Anton', sans-serif !important;
   font-weight: 500;
-   margin: 0 auto;
-padding-right: 25px;
-height:33%;
+  fill:#1D3457;
+  margin: 0 auto;
+  height: 33%;
 }
 
-#golesF, #golesC{
+#golesF,
+#golesC {
   text-align: center;
   font-family: 'Anton', sans-serif !important;
   font-weight: 500;
   font-size: 7em;
   margin: .1em 0;
-  padding: 0; 
-}
-#data-vis, #graficas_01{
-  width:100%;
-  height:30em;
-}
-#grafPorcentajes{
-  width:100%;
-  height:17.5em;
-}
-#grafCompa{
-  width: 100%;
-  height:30em;
+  padding: 0;
 }
 
-.lineasP{
+#data-vis,
+#graficas_01 {
+  width: 100%;
+  height: 30em;
+}
+
+#grafPorcentajes {
+  width: 100%;
+  height: 17.5em;
+}
+
+#grafCompa {
+  width: 100%;
+  height: 30em;
+}
+
+.lineasP {
   opacity: 0.1 !important;
 }
-#grafPorcentajes0{
-  width:100%;
-  height:inherit;
+
+#grafPorcentajes0,
+#golesClub,
+#golesVs {
+  width: 100%;
+  height: 20em;
 }
 
 #nombre-equipo-casa,
@@ -453,40 +471,50 @@ height:33%;
   font-family: 'Anton', sans-serif !important;
   font-weight: 500;
 }
-.yaxis{
-  fill:#1D3457;
-  stroke-width:5px;
+
+
+.yaxis {
+  fill: #1D3457;
+  stroke-width: 5px;
 }
 
-.yaxis text{
+.yaxis text {
   display: none;
 }
-#goles-equipo-casa, #goles-equipo-visita{
+
+#goles-equipo-casa,
+#goles-equipo-visita {
   line-height: 1.5;
 }
 
-#goles-equipo-casa{
-text-align:  left;
+#goles-equipo-casa {
+  text-align: left;
 }
 
-#goles-equipo-visita{
-text-align: right;
+#goles-equipo-visita {
+  text-align: right;
 }
 
-#tit-info{
-    background-color: #D55619 !important;
-    color:#f7fafa;
-
+#tit-info {
+  background-color: #D55619 !important;
+  color: #f7fafa;
 }
-#info-p{
-  color:#094853;
+
+#info-p {
+  color: #094853;
   background-color: #f7fafa;
 }
 
+#sliderWrap {
+  margin-top: 1.5em;
+}
 
+#graficas_01 {
+  font-family: 'Exo 2', sans-serif !important;
+}
 #tit-info,
 #info-p {
-  margin:0;
+  margin: 0;
   line-height: 1.5;
   font-family: 'Exo 2', sans-serif !important;
   font-weight: 700;
@@ -558,20 +586,19 @@ rect.axis {
 .axis path,
 .axis line {
   fill: none;
-  stroke: #FFF;
+  stroke: #1D3457;
   stroke-width: 2;
   shape-rendering: crispEdges;
 }
 
 rect {
   stroke-width: 6px;
-  stroke: #FFF;
-  fill: none;
+  stroke: #1D3457;
+  fill: rgba(255, 255, 255, .4);
 }
 
-
 .axis text {
-  color: #FFF;
+  color: #1D3457;
   font-family: sans-serif;
   font-size: 11px;
 }

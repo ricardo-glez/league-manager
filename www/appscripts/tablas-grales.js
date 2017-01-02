@@ -33,6 +33,7 @@
  var tarjetasAmarillasJug;
  var tarjetasRojasJug;
  var porcetajes = [];
+ var probabilidadGoles = [];
  var fontScale;
  /*/////////////////////////////////////
  Variables de las graficas
@@ -75,7 +76,7 @@
          $('button').removeClass('btn-active');
          $(this).attr('class', 'btn btn-active btn-custom-i');
          var wich = par["0"].id;
-         //console.log('wich', wich);
+         console.log('wich', wich);
          cargarTituloPartido('Toluca', wich);
      });
      //Finaliza Carga de Datos Nuevos
@@ -85,15 +86,17 @@
      d3.select('#grafPorcentajes').selectAll('g.slice').remove()
      d3.select('#grafPorcentajes').selectAll('g.slice text').remove()
      d3.select('#grafPorcentajes0').selectAll('rect').remove()
-     d3.select('.yaxis').remove()
+     d3.select('#grafPorcentajes0').selectAll('.yaxis').remove()
+     d3.select('#golesClub').selectAll('.lineasP').remove()
+     d3.select('#golesClub').selectAll('.axis').remove()
      d3.select('#grafCompa').selectAll('.lineasP').remove()
-
  }
 
  function cargarTituloPartido(quien, cual) {
      var csv_partidos = d3.csv("/data/partidosRe.csv", function(error, data) {
          var contador = 0;
-         //tipo 0  es Casa tipo 1 es vistiante
+         datosPartidos = []
+             //tipo 0  es Casa tipo 1 es vistiante
          var tipo;
          var eC, eV, ataqueC, defensaC, ataqueV, defensaV;
          if (error) {
@@ -113,6 +116,7 @@
                      //console.log('filtrado',contador, d, i);
                  }
              });
+             //console.log('REp',datosPartidos.length)
              var neCasa = $('#nombre-equipo-casa').text(datosPartidos[cual].Club);
              var golesFav = $('#golesF').text(datosPartidos[cual].GolFavor);
              var golesContra = $('#golesC').text(datosPartidos[cual].GolContra);
@@ -147,6 +151,8 @@
              var tarjAV = datosPartidos[cual].TAmarillaCont;
              var tarjRC = datosPartidos[cual].TRojaCl;
              var tarjRV = datosPartidos[cual].TRojaCont;
+             var rowCasa = d3.select('.row-C').style('border-radius', '15px').style('height', '2em').style('box-shadow', 'inset 0 -2em' + colores_g[0])
+             var rowVisita = d3.select('.row-V').style('border-radius', '15px').style('height', '2em').style('box-shadow', 'inset 0 -2em' + colores_g[2])
              comparaciones = [
                  [{
                      'key': 'Pos',
@@ -228,6 +234,23 @@
                  "key": "DefV",
                  'value': dV
              }, ];
+             stackdata = [
+                 [{
+                     x: 0,
+                     y: aL
+                 }, {
+                     x: 0,
+                     y: aV
+                 }],
+                 [{
+                     x: 0,
+                     y: dL
+                 }, {
+                     x: 0,
+                     y: dV
+                 }]
+             ]
+             
              fontScale = d3.scale.linear().domain(d3.extent(porcentajes, function(d) {
                  return d.value;
              })).range([2, 6]);
@@ -240,16 +263,20 @@
              drawPorcentajes(porcentajes, '#grafPorcentajes');
              if ('Toluca' == datosPartidos[cual].Club) {
                  tipo = 0;
-                 //console.log('Tipo', tipo, "CASA", porcentajes);
-                 cargarProbabilidades(datosPartidos[cual].Vs, +datosPartidos[cual].GolFavor);
+                 //console.log("CASA", datosPartidos[cual]);
+                 cargarProbabilidades(datosPartidos[cual].Vs, +datosPartidos[cual].GolFavor, +datosPartidos[cual].GolContra, tipo);
+                 //cargarProbabilidades(datosPartidos[cual]).Club +datosPartidos[cual].GolContra,tipo);
+                 //console.log('Prob', cargarProbabilidades(datosPartidos[cual].Vs, +datosPartidos[cual].GolFavor) + '%');
              } else if ('Toluca' == datosPartidos[cual].Vs) {
                  tipo = 1;
-                 //onsole.log('Tipo', tipo, "VISITA", +datosPartidos[cual].GolContra);
-                 cargarProbabilidades(datosPartidos[cual].Club, +datosPartidos[cual].GolContra);
+                 //console.log("VISITA", datosPartidos[cual]);
+                 cargarProbabilidades(datosPartidos[cual].Club, +datosPartidos[cual].GolFavor, +datosPartidos[cual].GolContra, tipo);
              }
-             drawAtDef(varEquipo, '#grafPorcentajes0')
+             //drawAtDef(varEquipo, '#grafPorcentajes0')
+             drawStacked(stackdata, 'grafPorcentajes0');
              drawCompE(comparaciones[0], "#grafCompa", 0);
-             drawCompE(comparaciones[1], "#grafCompa",1);
+             drawCompE(comparaciones[1], "#grafCompa", 1);
+             //console.log('PG', probabilidadGoles)
              //Finaliza Carga de Datos Nuevos
          }
      });
@@ -319,8 +346,9 @@
      var porcentajeG = d3.select('#porcentajeC').data([nD]).text(Math.round(nD[0].value) + '%').style('font-size', function(d, i) {
          return fontScale(Math.round(d[0].value)) + 'em'; // body... 
      });
-     var porcentajeV = d3.select('#porcentajeV').data([nD]).text(Math.round(nD[2].value) + '%').style('font-size', function(d, i) {
-         return fontScale(Math.round(d[2].value)) + 'em'; // body... 
+     var porcentajeV = d3.select('#porcentajeV').data([nD]).text(Math.round(nD[2].value) + '%').style({'font-size', function(d, i) {
+              return fontScale(Math.round(d[2].value)) + 'em', 'fill','#1D3457'
+          }
      });
  }
 
@@ -344,10 +372,8 @@
      }).y1(function(d) {
          //console.log('Y', h - yScaleH(+d.value), d.value)
          return yScaleH(+d.value);
-     }).y0(h).interpolate("basis");
-;
-     grafica.append('g').selectAll('lineasP').data(nD).enter().append('svg:path').attr('class', 'lineasP')
-     .style('fill', colores_g[cu]).attr('d', lineas(nD));
+     }).y0(h).interpolate("basis");;
+     grafica.append('g').selectAll('lineasP').data(nD).enter().append('svg:path').attr('class', 'lineasP').style('fill', colores_g[cu]).attr('d', lineas(nD));
      //grafica.append("g").attr("class", "yaxis").attr("transform", "translate(" + w / 2 + ',' + margin.top + ")").call(yAxisH);
  }
 
@@ -360,7 +386,7 @@
      var xScaleH = d3.scale.linear().domain(d3.extent(nD, function(d) {
          return d.value;
      })).range([w / 20, w / 3]);
-     var yScaleH = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([0, h]);
+     var yScaleH = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([margin.top, h - margin.bottom * 4]);
      var yScaleA = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([0 - margin.bottom, h + margin.bottom]);
      var yAxisH = d3.svg.axis().scale(yScaleA).orient("left").ticks(4);
      var grafica = d3.select(idDiv).attr('w', w).attr('h', h);
@@ -398,15 +424,67 @@
      grafica.append('line').attr('class', 'divider').attr('x1', -w / 2).attr('y1', 0).attr('x2', -w / 2).attr('y2', h).style('fill', '#000').style('stroke-width', 5);
  }
 
- function cargarProbabilidades(versus, cuantos) {
+  function drawStacked(nD, idDiv) {
+     //console.log('DAD', nD, idDiv)
+     w = $(idDiv).width();
+     h = $(idDiv).height();
+     w = w - margin.left - margin.right;
+     h = h - margin.top - margin.bottom;
+     var xScaleH = d3.scale.linear().domain(d3.extent(nD, function(d) {
+         return d.value;
+     })).range([w / 20, w / 3]);
+     var yScaleH = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([margin.top, h - margin.bottom * 4]);
+     var yScaleA = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([0 - margin.bottom, h + margin.bottom]);
+     var yAxisH = d3.svg.axis().scale(yScaleA).orient("left").ticks(4);
+     var grafica = d3.select(idDiv).attr('w', w).attr('h', h);
+     grafica.append('g').attr("transform", "translate(" + w / 2 + ",0)").attr('id', 'bars-AD').selectAll('rect').data(nD).enter().append('rect').attr("class", function(d) {
+         return 'rect-' + d.key
+     }).attr('height', h / 2 - margin.top).attr({
+         'x': function(d, i) {
+             if (d.key == "AttC") {
+                 return -(xScaleH(d.value))
+             } else if (d.key == "AttV") {
+                 return 0
+             } else if (d.key == "DefV") {
+                 return 0
+             } else if (d.key == "DefC") {
+                 return -(xScaleH(d.value))
+             }
+         },
+         'y': function(d, i) {
+             return yScaleH(d.key);
+         }
+     }).style('fill', function(d, i) {
+         if (d.key == "AttC") {
+             return colores_g[0]
+         } else if (d.key == "AttV") {
+             return colores_g[2]
+         } else if (d.key == "DefV") {
+             return colores_g[2]
+         } else if (d.key == "DefC") {
+             return colores_g[0]
+         }
+     }).style('stroke-width', 0).attr('width', function(d) {
+         return xScaleH(d.value)
+     }).append('p').text('some text');
+     grafica.append("g").attr("class", "yaxis").attr("transform", "translate(" + w / 2 + ',' + margin.top + ")").call(yAxisH);
+     grafica.append('line').attr('class', 'divider').attr('x1', -w / 2).attr('y1', 0).attr('x2', -w / 2).attr('y2', h).style('fill', '#000').style('stroke-width', 5);
+ }
+
+ function cargarProbabilidades(versus, favor, contra, tip) {
      // body...
      var csv_probalilidades = d3.csv("/data/probabilidad_toluca_equipos.csv", function(error, data) {
          var contador = 0;
-         var probSuc = [];
-         var probabilidad;
+         var probGolesC = [];
+         var probGolesV = [];
+         var probabilidadC = [];
+         var probabilidadV = [];
          var porcentajeG, porcentajeE, porcentajeP;
          var pGane = [];
          var pCont = [];
+         var resultado = [];
+         probabilidadGoles = [];
+         probPartidos = [];
          if (error) {
              //Error Print
              console.log(error);
@@ -414,22 +492,87 @@
              //Revisar datos
              data.forEach(function(d, i) {
                  //Condicional para conocer la probabilidad de que se de el resultado que sucedio
-                 if ((versus == d.Contrincante) && (+d.GE == cuantos)) {
+                 if ((versus == d.Contrincante) && (+d.GE != "" && +d.GE <= 6)) {
                      probPartidos.push(d);
-                     probSuc[0] = +d.GC0
-                     probSuc[1] = +d.GC1;
-                     probSuc[2] = +d.GC2;
-                     probSuc[3] = +d.GC3;
-                     probSuc[4] = +d.GC4;
-                     probSuc[5] = +d.GC5;
-                     probSuc[6] = +d.GC6;
-                     probSuc[7] = +d.GC7;
-                     probSuc[8] = +d.GC8;
-                     probSuc[9] = +d.GC9;
-                     probSuc[10] = +d.GC10;
+                     //console.log('ProbP', d)
                  }
              });
-             probabilidad = probabilidad_suceso(probSuc);
+             console.log('DATOS PROB', probPartidos.length);
+             for (i in probPartidos) {
+                 probGolesC = [
+                     [0, +probPartidos[i].GC0],
+                     [1, +probPartidos[i].GC1],
+                     [2, +probPartidos[i].GC2],
+                     [3, +probPartidos[i].GC3],
+                     [4, +probPartidos[i].GC4],
+                     [5, +probPartidos[i].GC5],
+                 ];
+                 probGolesV = [
+                     [
+                         [0, +probPartidos[0].GC0],
+                         [1, +probPartidos[1].GC0],
+                         [2, +probPartidos[2].GC0],
+                         [3, +probPartidos[3].GC0],
+                         [4, +probPartidos[4].GC0],
+                         [5, +probPartidos[5].GC0],
+                     ],
+                     [
+                         [0, +probPartidos[0].GC1],
+                         [1, +probPartidos[1].GC1],
+                         [2, +probPartidos[2].GC1],
+                         [3, +probPartidos[3].GC1],
+                         [4, +probPartidos[4].GC1],
+                         [5, +probPartidos[5].GC1],
+                     ],
+                     [
+                         [0, +probPartidos[0].GC2],
+                         [1, +probPartidos[1].GC2],
+                         [2, +probPartidos[2].GC2],
+                         [3, +probPartidos[3].GC2],
+                         [4, +probPartidos[4].GC2],
+                         [5, +probPartidos[5].GC2],
+                     ],
+                     [
+                         [0, +probPartidos[0].GC3],
+                         [1, +probPartidos[1].GC3],
+                         [2, +probPartidos[2].GC3],
+                         [3, +probPartidos[3].GC3],
+                         [4, +probPartidos[4].GC3],
+                         [5, +probPartidos[5].GC3],
+                     ],
+                     [
+                         [0, +probPartidos[0].GC4],
+                         [1, +probPartidos[1].GC4],
+                         [2, +probPartidos[2].GC4],
+                         [3, +probPartidos[3].GC4],
+                         [4, +probPartidos[4].GC4],
+                         [5, +probPartidos[5].GC4],
+                     ],
+                     [
+                         [0, +probPartidos[0].GC5],
+                         [1, +probPartidos[1].GC5],
+                         [2, +probPartidos[2].GC5],
+                         [3, +probPartidos[3].GC5],
+                         [4, +probPartidos[4].GC5],
+                         [5, +probPartidos[5].GC5],
+                     ]
+                 ]
+                 probabilidadC.push(probabilidad_suceso(probGolesC));
+             }
+             for (i in probGolesV) {
+                 //console.log('PV',probGolesV[i], i);
+                 probabilidadV.push(probabilidad_suceso(probGolesV[i]));
+             }
+             var resultado = Math.round((probGolesV[favor][contra][1] * 100) * 10) / 10;
+             var result = d3.select('#porcentajeResultado').style('font-size', fontScale(resultado * 2)).text(resultado + '%');
+             //console.log('Prob de resultado', resultado * 100)
+             //console.log('PV', probabilidadV)
+             //console.log('PC', probabilidadC)
+             probabilidadGoles = probabilidadC;
+             //console.log('DATOS PROBGC,', probabilidadC)
+             drawProbabilidad(probabilidadGoles, '#golesClub', 0)
+             probabilidadGoles = probabilidadV;
+             drawProbabilidad(probabilidadGoles, '#golesClub', 2);
              //$('#porcentajeC').text(probabilidad + '%');
              //Por cada objeto cr
              //Finaliza Carga de Datos Nuevos
@@ -438,11 +581,41 @@
  }
 
  function probabilidad_suceso(nD) {
+     //console.log('prob suceso',nD)
      var probabilidad = 0;
      for (i in nD) {
-         //console.log('Probabilidad:',probabilidad, i);
-         probabilidad += nD[i];
+         //console.log('Probabilidad:',probabilidad, i, nD);
+         probabilidad += nD[i][1];
      }
+     //console.log('prob Goles:',nD, probabilidad*100)
      return probabilidad * 100
          // body...
+ }
+
+ function drawProbabilidad(nD, idDiv, cual) {
+     wG = $(idDiv).width();
+     hG = $(idDiv).height();
+     wG = wG - margin.left - margin.right;
+     hG = hG - margin.bottom - margin.top;
+     //console.log("Draw Prob", nD,wG,hG)
+     canvasGrafs = d3.select(idDiv);
+     xScale = d3.scale.linear().domain([0, 5]).range([margin.left, wG]);
+     xAxis = d3.svg.axis().scale(xScale).orient('bottom').ticks(5);
+     yScale = d3.scale.linear().domain(d3.extent(nD, function(d, i) {
+         return d;
+     })).range([hG, 0])
+     yAxis = d3.svg.axis().scale(yScale).orient('left').ticks(5);
+     var lineasArea = d3.svg.area().x(function(d, i) {
+         //console.log('XCALE', xScale(i),i)
+         return xScale(i) + margin.left
+     }).y(function(d, i) {
+         //console.log('YCALE', yScale(d),i)          
+         return yScale(d)
+     }).y0(hG).interpolate("basis");
+     canvasGrafs.selectAll('lineasP').data(nD).enter().append('svg:path').attr('class', 'lineasP').style('fill', colores_g[cual]).style('stroke-width', 0).attr('d', lineasArea(nD))
+     if (cual == 0) {
+         canvasGrafs.append("g").attr("class", "axis").attr("transform", "translate(" + margin.left * 2 + "," + 0 + ")").call(yAxis);
+     }
+     canvasGrafs.append("g").attr("class", "axis").attr("transform", "translate(" + margin.bottom + "," + hG + ")").call(xAxis);
+     canvasGrafs.selectAll('.axis path').style({'fill','#1D3457'})
  }

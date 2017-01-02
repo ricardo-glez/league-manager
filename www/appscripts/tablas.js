@@ -8,10 +8,10 @@ var p2 = "P2";
 var t1 = "T1";
 var t2 = "T2";
 var margin = {
-    top: 50,
-    right: 50,
-    bottom: 50,
-    left: 50
+    top: 10,
+    right: 30,
+    bottom: 30,
+    left: 20
 };
 var colores_g = ["#3366cc", "#dc3912", "#ff9900", "#109618", "#990099", "#0099c6", "#dd4477", "#66aa00", "#b82e2e", "#316395", "#994499", "#22aa99", "#aaaa11", "#6633cc", "#e67300", "#8b0707", "#651067", "#329262", "#5574a6", "#3b3eac"];
 /*///////////////////////////////////////////////////
@@ -86,6 +86,7 @@ var csv_final = d3.csv("/data/toluca_final_por_tiempos.csv", function(error, dat
         //console.log('clicked', wich)
         cargarDatosJugador(wich);
         cargarInfoGral(wich);
+        
     });
     //Finaliza Carga de Datos Nuevos
 });
@@ -93,7 +94,8 @@ var csv_final = d3.csv("/data/toluca_final_por_tiempos.csv", function(error, dat
 function drawGralStats(nD, idName) {
     var hG = $(idName).height();
     var wG = $(idName).width();
-    hG = hG - margin.top;
+    hG = hG - margin.top -margin.bottom;
+    wG = wG -margin.left - margin.right;
     console.log('w , h', wG, hG, nD)
     barWidth = wG / nD.length;
     xScaleAxis = d3.scale.ordinal().domain(["PJ", "G", "D", "DA", "F", "FC", "FR", "TA", "TR"]).rangeBands([padding, wG - padding]);
@@ -106,6 +108,11 @@ function drawGralStats(nD, idName) {
     //console.log('max', d3.max(costoS));
     yScaleAxis = d3.scale.linear().domain([50, 0]).range([hG, padding * 2]);
     yAxis = d3.svg.axis().scale(yScaleAxis).orient("left").ticks(5);
+    
+    canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 4);
+    canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 2);
+    canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 4 - hG / 2);
+    canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', 0);
     var lineas = d3.svg.area().x(function(d, i) {
         switch (d[0]) {
             case "Partidos Jugados":
@@ -136,9 +143,11 @@ function drawGralStats(nD, idName) {
                 return xScaleAxis("TR") + margin.right / 2;
                 break;
         }
-    }).y1(function(d, i) {
-        return hG - yScale(d[1, 1]);
-    }).y0(hG);
+    }).y(function(d, i) {
+        //console.log('HG', d)
+        return hG - yScale(d[1, 1]) +margin.top;
+    }).y0(hG -margin.top)
+    .interpolate("cardinal");
 ;
     canvasGrafs = d3.select(idName);
     //console.log('bW', barWidth);
@@ -229,7 +238,7 @@ function drawGralStats(nD, idName) {
         }
     })
         .attr('cy', function(d, i) {
-        return hG - yScale(d[1, 1]);
+        return hG - yScale(d[1, 1]) +margin.top;
     }) 
         .attr('r', 5 )
         .style('fill', '#D55619')
@@ -245,10 +254,6 @@ function drawGralStats(nD, idName) {
         $('#info-p').text();
     })
         ;
-    canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 4);
-    canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 2);
-    canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', hG - hG / 4 - hG / 2);
-    canvasGrafs.append("rect").attr("class", "axis").attr('width', wG).attr('height', hG / 4).attr('x', 0).attr('y', 0);
     canvasGrafs.append('g').attr("class", "axis").attr("transform", "translate(0," + (hG) + ")").call(xAxis);
 }
 
@@ -295,7 +300,7 @@ function cargarDatosJugador(jugador) {
             }
         });
         //grafGral = seleccion;
-        //console.log(seleccion[0])
+        console.log(grafGral)
         drawGralStats(grafGral, '#gral-stats');
         datosJugadores = data;
         //console.log('select', datosJugadores, 'data/perfil-jugadores/' + numeroJug + '.jpg')
@@ -315,6 +320,8 @@ function cargarDatosJugador(jugador) {
         var faltasRecibidasJug = d3.select('#faltas_r ').data(datosJugadores).text(faltasRecibidasJug).enter();
         var tarjetasAmarillasJ = d3.select('#tarjetas_a ').data(datosJugadores).text(tarjetasAmarillasJug).enter();
         var tarjetasRojasJ = d3.select('#tarjetas_r ').data(datosJugadores).text(tarjetasRojasJug).enter();
+        $('#tit-info').text(grafGral[0][0]);
+        $('#info-p').text(grafGral[0][1]);
     });
 }
 
