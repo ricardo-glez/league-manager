@@ -16,6 +16,7 @@
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<!--Mi Script-->
 		<script type="text/javascript" src="/appscripts/tablas.js"></script>
+		
 	</head>
 	<body>
 		<nav class="navbar navbar-custom">
@@ -41,14 +42,20 @@
 							<li>
 								<a  href="desempeno.html">Desempeño</a>
 							</li>
-							<li>
-								<a href="analiticos.html">Analíticos</a>
+							<li class=" dropdown">
+								 <a href="analiticos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analíticos </a>
+								 <ul class="dropdown-menu">
+								 	<li >
+								 		<a href="analiticosequipo.html">Equipo</a>
+								 	</li>
+								 	<li>
+								 		<a href="analiticosjugadores.html">Jugador</a>
+								 	</li>
+								 </ul>
+
 							</li>
 							<li>
 								<a href="encuesta.html">Encuesta</a>
-							</li>
-							<li>
-								<a href="equipo.html">Equipo</a>
 							</li>
 						</ul>
 					</div>
@@ -58,184 +65,165 @@
 		</nav>
 		<!--Inicio PRINCIPA-->
 		<div id="principal" class="container-fluid">
-			<div class="  col-sm-2 col-md-offset-1 col-md-1  sidebar " id="left-nav">
-				<div class="row">
-					<img class="imgs-jugador img-responsive img-circle " src="data/perfil-jugadores/01.png" width="100px" alt="Perfil Jugador">
-				</div>
-				<div id="info-jugador" class="row">
-					<p class="nombre"><strong>Nombre</strong></p>
-					<p class="numero"><strong>Número</strong></p>
-					<p class="posicion"><strong>Posición</strong></p>
-					<p class="edad"><strong>Edad</strong></p>
-				</div>
-				<div class="row">
-					<nav id="nav-jugador" >
-						<ul >
-							<li>
-								<a href="#" class="active" id="1">
-									<img src="/data/icons/num1.png" class="img-responsive" alt="#1">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="2">
-									<img src="/data/icons/num2.png" class="img-responsive" alt="#2">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="3">
-									<img src="/data/icons/num3.png" class="img-responsive" alt="#3">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="4">
-									<img src="/data/icons/num4.png" class="img-responsive" alt="#4">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="5">
-									<img src="/data/icons/num5.png" class="img-responsive" alt="#5">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="6">
-									<img src="/data/icons/num6.png" class="img-responsive" alt="#6">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="7">
-									<img src="/data/icons/num7.png" class="img-responsive" alt="#7">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="8">
-									<img src="/data/icons/num8.png" class="img-responsive" alt="#8">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="9">
-									<img src="/data/icons/num9.png" class="img-responsive" alt="#9">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="10">
-									<img src="/data/icons/num10.png" class="img-responsive" alt="#10">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="11">
-									<img src="/data/icons/num11.png" class="img-responsive" alt="#11">
-								</a>
-							</li>
-							
-						</ul>
-					</nav>
-					<div class="row ">
-						<img class ="img-equipo img-responsive" src="data/logos/e01.png"  alt="Logo Equipo ">
+			<div class="row">
+				
+				<div class="wrapper col-sm-offset-1 col-sm-10 ">
+					<div class="row" id="left-nav">
+						<div class="col-sm-2">
+							<img class="imgs-jugador img-responsive img-circle " src="data/perfil-jugadores/01.png" width="150px" alt="Perfil Jugador">
+						</div>
+						<div id="info-jugador" class="col-sm-1">
+							<p class="nombre"><strong>Nombre</strong></p>
+							<p class="numero"><strong>Número</strong></p>
+							<p class="posicion"><strong>Posición</strong></p>
+							<p class="edad"><strong>Edad</strong></p>
+						</div>
+						<div class=" col-sm-offset-2 col-sm-3">
+							<nav id="nav-jugador" >
+								<ul >
+									<li>
+										<a href="#" class="active" id="1">
+											<img src="/data/icons/num1.png" class="img-responsive" alt="#1">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="2">
+											<img src="/data/icons/num2.png" class="img-responsive" alt="#2">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="3">
+											<img src="/data/icons/num3.png" class="img-responsive" alt="#3">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="4">
+											<img src="/data/icons/num4.png" class="img-responsive" alt="#4">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="5">
+											<img src="/data/icons/num5.png" class="img-responsive" alt="#5">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="6">
+											<img src="/data/icons/num6.png" class="img-responsive" alt="#6">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="7">
+											<img src="/data/icons/num7.png" class="img-responsive" alt="#7">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="8">
+											<img src="/data/icons/num8.png" class="img-responsive" alt="#8">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="9">
+											<img src="/data/icons/num9.png" class="img-responsive" alt="#9">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="10">
+											<img src="/data/icons/num10.png" class="img-responsive" alt="#10">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="11">
+											<img src="/data/icons/num11.png" class="img-responsive" alt="#11">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="12">
+											<img src="/data/icons/num12.png" class="img-responsive" alt="#12">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="13">
+											<img src="/data/icons/num13	.png" class="img-responsive" alt="#13">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="14">
+											<img src="/data/icons/num14.png" class="img-responsive" alt="#14">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="15">
+											<img src="/data/icons/num15.png" class="img-responsive" alt="#15">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="16">
+											<img src="/data/icons/num16.png" class="img-responsive" alt="#16">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="17">
+											<img src="/data/icons/num17.png" class="img-responsive" alt="#17">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="18">
+											<img src="/data/icons/num18.png" class="img-responsive" alt="#18">
+										</a>
+									</li>
+									<li>
+										<a href="#" id="19">
+											<img src="/data/icons/num19.png" class="img-responsive" alt="#19">
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="logotipo col-sm-2 col-sm-offset-2 ">
+							<img class ="img-equipo img-responsive" src="data/logos/e01.png" width="150px" alt="Logo Equipo ">
+						</div>
 					</div>
+					<!-- Cierra el menu de jugadores -->
+					
 				</div>
 			</div>
-			<!-- Cierra el sidebar -->
-			
-			<!--Inicio Main Container-->
-			<div class="col-md-offset-2 col-md-8  col-xs-offset-1 col-xs-11 " id="main-container">
-				<!--Inicio Tabla GRAL-->
-				<div id="tabla-gral">
-					<h2 class="titulo-t text-center	">Estadisticas generales por jugador Liga MX Apertura 2017 </h2>
+			<!--Inicio Tabla GRAL-->
+			<div class="row">
+				<div class="col-sm-offset-2 col-sm-8">					
+						<h3 class="titulo-t text-center	">Estadisticas generales por jugador Liga MX Apertura 2017 </h3>
+					</div>
 					<br>
 					<br>
+				<div class="col-sm-6" id="tabla-gral">
+					
 					<div class="row">
 						<div class=" col-sm-offset-2 col-sm-8 ">
 							<svg id="gral-stats">
 							</svg>
 						</div>
-						<div id="cuadro-info" class="col-md-offset-3 col-md-6">
+						<div id="cuadro-g" class="col-md-offset-3 col-md-6">
 							<div class="row">
-								<h2 class ="text-center" id="tit-info">Partidos Jugados</h2>
+								<h2 class ="text-center" id="tit-g">Partidos Jugados</h2>
 							</div>
 							<div class="row">
-								<h2 class="text-center" id="info-p">14</h2>
+								<h2 class="text-center" id="info-g">14</h2>
 							</div>
 						</div>
 					</div>
-					<!--
-					<div class="row">
-							<div class="col-md-offset-3 col-md-8  table-responsive">
-									<table id="secondary-table" class="table text-center">
-											<thead>
-													<tr>
-															<th>Partidos Jugados</th>
-															<th>Goles</th>
-															<th>Disparos</th>
-															<th>Disparos al Arco</th>
-															<th>Faltas</th>
-															<th>Faltas Cometidas</th>
-															<th>Faltas Recibidas</th>
-															<th>Tarjetas Amarillas</th>
-															<th>Tarjetas Rojas</th>
-													</tr>
-											</thead>
-											<tbody>
-													<tr >
-															<td id="partidos_i"></td>
-															<td id="goles"></td>
-															<td id="disp"></td>
-															<td id="disparos_a"></td>
-															<td id="faltas"></td>
-															<td id="faltas_c"></td>
-															<td id="faltas_r"></td>
-															<td id="tarjetas_a"></td>
-															<td id="tarjetas_r"></td>
-													</tr>
-											</tbody>
-									</table>
-							</div>
-					</div>
-					-->
 				</div>
 				<!--Cierra Tabla GRAL-->
-				<br>
-				<br>
-				<br>
-				<br>
 				<!--Inicia Tabla STATS-->
-				<div id="tabla-stats">
+				<div class="col-sm-6" id="tabla-stats">
 					<div class="row">
-						<div class="col-md-offset-2	 col-md-8 table-responsive">
-							<table id="main-table" class="table text-center table-condensed">
-								<thead>
-									<tr>
-									</tr>
-								</thead>
-								<tbody>
-									<tr id="dist">
-										<td class="cat">Distancia</td>
-										<td class="t1"></td>
-									</tr>
-									<tr id="esf">
-										<td class="cat">Esfuerzo</td>
-										<td class="t1"></td>
-									</tr>
-									<tr id="int">
-										<td class="cat">Intensidad</td>
-										<td class="t1"></td>
-									</tr>
-									<tr id="vel">
-										<td class="cat">Velocidad</td>
-										<td class="t1"></td>
-									</tr>
-									<tr id="spr">
-										<td class="cat">Sprint</td>
-										<td class="t1"></td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="col-sm-offset-1 col-sm-8">
+						<svg id="gral-stats-max">
+							</svg>
 						</div>
 					</div>
 				</div>
 				<!--Cierra Tabla STATS-->
 			</div>
-			<!--Cierra Main Container-->
 		</div>
+		<!--Cierra Main Container-->
 	</body>
-	
 </html>

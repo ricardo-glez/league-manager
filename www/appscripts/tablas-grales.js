@@ -4,6 +4,7 @@
  var probPartidos = [];
  var datosG;
  var colores_g = ['#fc8d59', '#ffffbf', '#91cf60'];
+ var colores_g_op = ['rgba(252, 141, 89, 0.4)', 'rgba(255, 255, 191, 0.4)', 'rgba(145, 207, 96, 0.4)'];
  /*///////////////////////////////////////////////////
  Variables del desempeño individual por partido/tiempo
  */ ///////////////////////////////////////////////////
@@ -43,7 +44,7 @@
      top: 20,
      right: 20,
      bottom: 20,
-     left: 20
+     left: 50
  };
  var wG, hG;
  //Get data from csv and converet the strings to numbers
@@ -151,8 +152,15 @@
              var tarjAV = datosPartidos[cual].TAmarillaCont;
              var tarjRC = datosPartidos[cual].TRojaCl;
              var tarjRV = datosPartidos[cual].TRojaCont;
-             var rowCasa = d3.select('.row-C').style('border-radius', '15px').style('height', '2em').style('box-shadow', 'inset 0 -2em' + colores_g[0])
-             var rowVisita = d3.select('.row-V').style('border-radius', '15px').style('height', '2em').style('box-shadow', 'inset 0 -2em' + colores_g[2])
+             var rowCasa = d3.select('.row-C').style({
+                 'height': '100%',
+                 'height': '2em',
+                 'background-color': colores_g_op[0]
+             })
+             var rowVisita = d3.select('.row-V').style({
+                 'height': '2em',
+                 'background-color': colores_g_op[2]
+             })
              comparaciones = [
                  [{
                      'key': 'Pos',
@@ -250,7 +258,6 @@
                      y: dV
                  }]
              ]
-             
              fontScale = d3.scale.linear().domain(d3.extent(porcentajes, function(d) {
                  return d.value;
              })).range([2, 6]);
@@ -272,8 +279,8 @@
                  //console.log("VISITA", datosPartidos[cual]);
                  cargarProbabilidades(datosPartidos[cual].Club, +datosPartidos[cual].GolFavor, +datosPartidos[cual].GolContra, tipo);
              }
-             //drawAtDef(varEquipo, '#grafPorcentajes0')
-             drawStacked(stackdata, 'grafPorcentajes0');
+             drawAtDef(varEquipo, '#grafAtDef')
+             drawStacked(stackdata, '#grafPorcentajes0');
              drawCompE(comparaciones[0], "#grafCompa", 0);
              drawCompE(comparaciones[1], "#grafCompa", 1);
              //console.log('PG', probabilidadGoles)
@@ -346,9 +353,8 @@
      var porcentajeG = d3.select('#porcentajeC').data([nD]).text(Math.round(nD[0].value) + '%').style('font-size', function(d, i) {
          return fontScale(Math.round(d[0].value)) + 'em'; // body... 
      });
-     var porcentajeV = d3.select('#porcentajeV').data([nD]).text(Math.round(nD[2].value) + '%').style({'font-size', function(d, i) {
-              return fontScale(Math.round(d[2].value)) + 'em', 'fill','#1D3457'
-          }
+     var porcentajeV = d3.select('#porcentajeV').data([nD]).text(Math.round(nD[2].value) + '%').style('font-size', function(d, i) {
+         return fontScale(Math.round(d[2].value)) + 'em';
      });
  }
 
@@ -357,7 +363,7 @@
      w = $(idDiv).width();
      h = $(idDiv).height();
      w = w - margin.left - margin.right,
-         h = h + margin.top - margin.bottom;
+     h = h + margin.top - margin.bottom;
      yScaleH = d3.scale.linear().domain(d3.extent(nD, function(d) {
          //console.log('EXtent',d.value)
          return d.value;
@@ -368,7 +374,7 @@
      var grafica = d3.select(idDiv).attr('w', w).attr('h', h);
      var lineas = d3.svg.area().x(function(d) {
          //console.log('X', xScaleH(d.key), d.key)
-         return xScaleH(d.key)
+         return xScaleH(d.key) + margin.left
      }).y1(function(d) {
          //console.log('Y', h - yScaleH(+d.value), d.value)
          return yScaleH(+d.value);
@@ -386,13 +392,14 @@
      var xScaleH = d3.scale.linear().domain(d3.extent(nD, function(d) {
          return d.value;
      })).range([w / 20, w / 3]);
-     var yScaleH = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([margin.top, h - margin.bottom * 4]);
-     var yScaleA = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([0 - margin.bottom, h + margin.bottom]);
-     var yAxisH = d3.svg.axis().scale(yScaleA).orient("left").ticks(4);
+     var yScaleH = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([margin.top *2, h - margin.bottom]);
+     var yScaleA = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([-margin.top , h - margin.bottom]);
+     var yAxisH = d3.svg.axis().scale(yScaleA).orient("left");
      var grafica = d3.select(idDiv).attr('w', w).attr('h', h);
      grafica.append('g').attr("transform", "translate(" + w / 2 + ",0)").attr('id', 'bars-AD').selectAll('rect').data(nD).enter().append('rect').attr("class", function(d) {
          return 'rect-' + d.key
-     }).attr('height', h / 2 - margin.top).attr({
+     }).attr('height', h / 4 - margin.top)
+     .attr({
          'x': function(d, i) {
              if (d.key == "AttC") {
                  return -(xScaleH(d.value))
@@ -405,7 +412,15 @@
              }
          },
          'y': function(d, i) {
-             return yScaleH(d.key);
+            if (d.key == "AttC") {
+                 return margin.top*2
+             } else if (d.key == "AttV") {
+                 return margin.top*2
+             } else if (d.key == "DefV") {
+                 return margin.top*8
+             } else if (d.key == "DefC") {
+                 return margin.top*8
+             }
          }
      }).style('fill', function(d, i) {
          if (d.key == "AttC") {
@@ -424,36 +439,25 @@
      grafica.append('line').attr('class', 'divider').attr('x1', -w / 2).attr('y1', 0).attr('x2', -w / 2).attr('y2', h).style('fill', '#000').style('stroke-width', 5);
  }
 
-  function drawStacked(nD, idDiv) {
-     //console.log('DAD', nD, idDiv)
+ function drawStacked(nD, idDiv) {
+     console.log('StackedData', nD, idDiv)
      w = $(idDiv).width();
      h = $(idDiv).height();
      w = w - margin.left - margin.right;
      h = h - margin.top - margin.bottom;
-     var xScaleH = d3.scale.linear().domain(d3.extent(nD, function(d) {
+     var yScaleH = d3.scale.linear().domain(d3.extent(nD, function(d) {
          return d.value;
      })).range([w / 20, w / 3]);
-     var yScaleH = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([margin.top, h - margin.bottom * 4]);
-     var yScaleA = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([0 - margin.bottom, h + margin.bottom]);
-     var yAxisH = d3.svg.axis().scale(yScaleA).orient("left").ticks(4);
+     var xScale = d3.scale.ordinal().domain(['Ataque', 'Defensa']).range([margin.top, h - margin.bottom]);
+     var xAxis = d3.svg.axis().scale(xScale).orient("left").ticks(4);
      var grafica = d3.select(idDiv).attr('w', w).attr('h', h);
      grafica.append('g').attr("transform", "translate(" + w / 2 + ",0)").attr('id', 'bars-AD').selectAll('rect').data(nD).enter().append('rect').attr("class", function(d) {
          return 'rect-' + d.key
-     }).attr('height', h / 2 - margin.top).attr({
-         'x': function(d, i) {
-             if (d.key == "AttC") {
-                 return -(xScaleH(d.value))
-             } else if (d.key == "AttV") {
-                 return 0
-             } else if (d.key == "DefV") {
-                 return 0
-             } else if (d.key == "DefC") {
-                 return -(xScaleH(d.value))
-             }
-         },
-         'y': function(d, i) {
-             return yScaleH(d.key);
-         }
+     }).attr('height', h - margin.top).attr('x', function(d, i) {
+         return xScale(i)
+     }).attr('width','20px')
+     .attr('y', function(d, i) {
+         return yScaleH(d[i].y)
      }).style('fill', function(d, i) {
          if (d.key == "AttC") {
              return colores_g[0]
@@ -464,10 +468,8 @@
          } else if (d.key == "DefC") {
              return colores_g[0]
          }
-     }).style('stroke-width', 0).attr('width', function(d) {
-         return xScaleH(d.value)
-     }).append('p').text('some text');
-     grafica.append("g").attr("class", "yaxis").attr("transform", "translate(" + w / 2 + ',' + margin.top + ")").call(yAxisH);
+     }).style('stroke-width', 0).append('p').text('some text');
+     //grafica.append("g").attr("class", "yaxis").attr("transform", "translate(" + w / 2 + ',' + margin.top + ")").call(yAxisH);
      grafica.append('line').attr('class', 'divider').attr('x1', -w / 2).attr('y1', 0).attr('x2', -w / 2).attr('y2', h).style('fill', '#000').style('stroke-width', 5);
  }
 
@@ -497,7 +499,6 @@
                      //console.log('ProbP', d)
                  }
              });
-             console.log('DATOS PROB', probPartidos.length);
              for (i in probPartidos) {
                  probGolesC = [
                      [0, +probPartidos[i].GC0],
@@ -563,9 +564,22 @@
                  //console.log('PV',probGolesV[i], i);
                  probabilidadV.push(probabilidad_suceso(probGolesV[i]));
              }
+             //console.log('DATOS PROB', probGolesC, probGolesV);
              var resultado = Math.round((probGolesV[favor][contra][1] * 100) * 10) / 10;
              var result = d3.select('#porcentajeResultado').style('font-size', fontScale(resultado * 2)).text(resultado + '%');
-             //console.log('Prob de resultado', resultado * 100)
+             /* var sumaVisita = 0;   
+              var sumaClub = 0;
+                     for (var i = 0; i<= favor;i++){
+                         for(var j = 0; j <= contra; j++){
+                         sumaVisita = sumaVisita + probGolesV[i][j][1];
+                         }
+                         sumaClub = sumaClub +probGolesC[i][1]
+                         console.log('Sumando ',i, j,sumaVisita, sumaClub)
+                         }
+                     console.log('Sumas', sumaVisita + sumaClub*100 *10 /10 )
+             var resultado = Math.round((sumaClub+sumaVisita * 100) * 10) / 10;
+             var result = d3.select('#porcentajeResultado').style('font-size', fontScale(resultado * 2)).text(resultado + '%');             
+              //console.log('Prob de resultado', resultado * 100)*/
              //console.log('PV', probabilidadV)
              //console.log('PC', probabilidadC)
              probabilidadGoles = probabilidadC;
@@ -617,5 +631,8 @@
          canvasGrafs.append("g").attr("class", "axis").attr("transform", "translate(" + margin.left * 2 + "," + 0 + ")").call(yAxis);
      }
      canvasGrafs.append("g").attr("class", "axis").attr("transform", "translate(" + margin.bottom + "," + hG + ")").call(xAxis);
-     canvasGrafs.selectAll('.axis path').style({'fill','#1D3457'})
+     canvasGrafs.selectAll('.axis path').style({
+         'stroke': '#1D3457',
+         'stroke-width': '1'
+     })
  }

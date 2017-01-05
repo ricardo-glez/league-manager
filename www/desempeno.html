@@ -14,12 +14,12 @@
 		<!--D3, Js, Bootstrap Javascripts-->
 		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<!--Mi Script-->
 		<script type="text/javascript" src="/appscripts/uiscripts.js"></script>
 		<script type="text/javascript" src="/appscripts/visualization.js"></script>
+		<script type="text/javascript" src="/appscripts/tablas-grales.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-custom">
@@ -39,20 +39,26 @@
 					</div>
 					<div class="col-sm-2 ">
 						<ul class="nav navbar-nav categorias">
-							<li>
+							<li >
 								<a href="index.html">General</a>
 							</li>
 							<li class="activado">
-								<a href="desempeno.html">Desempeño</a>
+								<a  href="desempeno.html">Desempeño</a>
 							</li>
-							<li>
-								<a href="analiticos.html">Analíticos</a>
+							<li class=" dropdown">
+								 <a href="analiticos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analíticos </a>
+								 <ul class="dropdown-menu">
+								 	<li >
+								 		<a href="analiticosequipo.html">Equipo</a>
+								 	</li>
+								 	<li>
+								 		<a href="analiticosjugadores.html">Jugador</a>
+								 	</li>
+								 </ul>
+
 							</li>
 							<li>
 								<a href="encuesta.html">Encuesta</a>
-							</li>
-							<li>
-								<a href="equipo.html">Equipo</a>
 							</li>
 						</ul>
 					</div>
@@ -60,171 +66,605 @@
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
-		<div class="container-fluid">
-			<div class="  col-sm-2 col-md-offset-1 col-md-1  sidebar " id="left-nav">
-				<div class="row">
-					<img class="imgs-jugador img-responsive img-circle " src="data/perfil-jugadores/01.png" width="100px" alt="Perfil Jugador">
-				</div>
-				<div id="info-jugador" class="row">
-					<p class="nombre"><strong>Nombre</strong></p>
-					<p class="numero"><strong>Número</strong></p>
-					<p class="posicion"><strong>Posición</strong></p>
-					<p class="edad"><strong>Edad</strong></p>
-				</div>
-				<div class="row">
-					<nav id="nav-jugador">
-						<ul>
-							<li>
-								<a href="#" class="active" id="1">
-									<img src="/data/icons/num1.png" class="img-responsive" alt="#1">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="2">
-									<img src="/data/icons/num2.png" class="img-responsive" alt="#2">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="3">
-									<img src="/data/icons/num3.png" class="img-responsive" alt="#3">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="4">
-									<img src="/data/icons/num4.png" class="img-responsive" alt="#4">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="5">
-									<img src="/data/icons/num5.png" class="img-responsive" alt="#5">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="6">
-									<img src="/data/icons/num6.png" class="img-responsive" alt="#6">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="7">
-									<img src="/data/icons/num7.png" class="img-responsive" alt="#7">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="8">
-									<img src="/data/icons/num8.png" class="img-responsive" alt="#8">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="9">
-									<img src="/data/icons/num9.png" class="img-responsive" alt="#9">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="10">
-									<img src="/data/icons/num10.png" class="img-responsive" alt="#10">
-								</a>
-							</li>
-							<li>
-								<a href="#" id="11">
-									<img src="/data/icons/num11.png" class="img-responsive" alt="#11">
-								</a>
-							</li>
-						</ul>
-					</nav>
+		<div id ="principal" class="container-fluid">
+			<div class="  col-sm-1 col-md-2 sidebar-partido" >
+				<div id="nav-partidos" class="btn-group-md btn-group-vertical">
+					<button type="button" class=" btn btn-custom-i btn-active">
 					<div class="row">
-						<img class="img-equipo img-responsive" src="data/logos/e01.png" alt="Logo Equipo ">
+						<div class="col-sm-2">
+							<img id="eC0" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="0"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV0" src="" alt="">
+						</div>
 					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i "><div class="row">
+						<div class="col-sm-2">
+							<img id="eC1" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="1"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV1" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC2" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="2"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV2" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn-custom-i btn ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC3" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="3"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV3" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC4" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="4"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV4" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC5" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="5"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV5" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC6" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="6"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV6" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC7" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="7"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV7" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC8" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="8"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV8" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC9" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="9"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV9" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button"  class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC10" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="10"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV10" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC11" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="11"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV11" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button"  class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC12" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="12"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV12" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC13" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="13"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV13" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC14" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="14"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV14" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC15" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="15"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV15" src="" alt="">
+						</div>
+					</div>
+					</button>
+					<button type="button" class=" btn btn-custom-i ">
+					<div class="row">
+						<div class="col-sm-2">
+							<img id="eC16" src="" alt="">
+						</div>
+						<div class="col-sm-7">
+							<p id="16"></p>
+						</div>
+						<div class="col-sm-2">
+							<img id="eV16" src="" alt="">
+						</div>
+					</div>
+					</button>
 				</div>
 			</div>
 			<!-- Cierra el sidebar -->
-			<div id="titulos-V" class="col-sm-offset-3 col-sm-9  col-md-offset-2 col-md-10 col-xs-offset-1 col-xs-11 " id="main-container">
-				<div class="row">
-					<div class="col-sm-offset-1 col-sm-10">
-						<div class="col-sm-offset-1 col-sm-4">
-							<h2 class="text-center titulo-t">
-							Desempeño por partido
-							</h2>
+			<div class="wrapper col-sm-8 col-md-9">
+				<div class=" row">
+					<div id="titulo-partido" class="row">
+						<div id="izquierdaP" class="col-sm-1">
+							<h2 id="golesF"></h2>
 						</div>
-						<div class=" col-sm-offset-1 sm-4">
-							<h2 class="text-center titulo-t">
-							Trayectoria y velocidad
-							</h2>
+						<div id="izquierdaP" class="col-sm-1">
+							<img id="equipo-casa" class="img-responsive" src="" alt="Casa">
 						</div>
-					</div>
-					<div id="UI" class="col-md-offset-1 col-md-10 ">
-						<div id="controles"  class="col-sm-offset-1 col-sm-4 btn-group">
-							<button id="velocidad_C" type="button" class="btn btn-active btn-custom">Velocidad</button>
-							<button id="distancia_C" type="button" class="btn btn-custom">Distancia</button>
-							<button id="esfuerzo_C" type="button" class="btn btn-custom">Esfuerzo</button>
-							<button id="intensidad_C" type="button" class="btn btn-custom">Intensidad</button>
-							<button id="sprint_C" type="button" class="btn btn-custom">Sprint</button>
-						</div>
-						<div id="sliderWrap" class="col-sm-offset-2 col-sm-4">
-							<div class="hidden">
-								<p id="init-amount"></p>
-								<p id="fin-amount"></p>
-							</div>
-							<div id="slider-range">
-								<div id="custom-handleI" class="ui-slider-handle"></div>
-								<div id="custom-handleF" class="ui-slider-handle"></div>
-								<button id="visualizar_B" type="button" class="btn btn-active btn-visualizar btn-custom">Go</button>
-							</div>
-						</div>
-					</div>
-					<div id="visualizaciones" class="col-sm-offset-1 col-sm-10 main-vis">
-						<div id="graficas_individuales" class=" col-sm-6">
-							<svg id="graficas_01">
-							</svg>
-							<div id="cuadro-info" class=" col-sm-offset-2 col-sm-8">
-								<h2 class ="text-center" id="tit-info">Minuto</h2>
-								<h3 class="text-center" id="info-p">Vel Max:</h3>
-							</div>
-						</div>
-						<div class="col-sm-offset- col-sm-6">
+						<div id="izquierdaP" class="col-sm-2">
 							<div class="row">
-								<svg id="data-vis">
-								</svg>
+								<h2 id="nombre-equipo-casa"></h2>
 							</div>
-							<div id="acot" class="row">
-								<div class="col-sm-offset-3  col-ms-4">
-									<div class="row">
-										<div id="col-ac0" class="col-sm-offset-1 col-sm-1">
-										</div>
-										<div class="text-acot col-sm-7">
-											<p>
-												Lento: 2 m/s
-											</p>
-										</div>
+							<div class="row">
+								<h4 id="goles-equipo-casa"> Goles Casa</h4>
+							</div>
+						</div>
+						
+						<div id="centroP" class="col-sm-4">
+							<div class="row">
+								<h2 id="vs" class="text-center">VS</h2>
+							</div>
+							<div id="info-partido" class="row">
+								<p id="fecha" class="text-center"></p>
+								<p id="lugar" class="text-center"></p>
+							</div>
+						</div>
+						
+						<div id="derechaP" class="col-sm-2">
+							<div class="row">
+								<h2 id="nombre-equipo-visita"></h2>
+							</div>
+							<div class="row">
+								<h4 id="goles-equipo-visita"> Goles Visitante</h4>
+							</div>
+						</div>
+						<div id="derechaP" class="col-sm-1">
+							<img id="equipo-visita" class="img-responsive" src="" alt="Visitante">
+						</div>
+						<div id="derechaP" class="col-sm-1">
+							<h2 id="golesC"></h2>
+						</div>
+					</div>
+					<div class="row" id="left-nav">
+						<div id="equipo01" class="col-sm-6">
+							
+							<div class="col-sm-2">
+								<img class="imgs-jugador img-responsive img-circle " src="data/perfil-jugadores/01.png" width="150px" alt="Perfil Jugador">
+								
+							</div>
+							<div id="info-jugador" class="col-sm-2">
+								<p class="nombre"><strong>Nombre</strong></p>
+								<p class="numero"><strong>Número</strong></p>
+								<p class="posicion"><strong>Posición</strong></p>
+								<p class="edad"><strong>Edad</strong></p>
+							</div>
+							<div class="col-sm-7">
+								<nav id="nav-jugador" >
+									<ul >
+										<li>
+											<a href="#" class="active" id="1">
+												<img src="/data/icons/num1.png" class="img-responsive" alt="#1">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="2">
+												<img src="/data/icons/num2.png" class="img-responsive" alt="#2">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="3">
+												<img src="/data/icons/num3.png" class="img-responsive" alt="#3">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="4">
+												<img src="/data/icons/num4.png" class="img-responsive" alt="#4">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="5">
+												<img src="/data/icons/num5.png" class="img-responsive" alt="#5">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="6">
+												<img src="/data/icons/num6.png" class="img-responsive" alt="#6">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="7">
+												<img src="/data/icons/num7.png" class="img-responsive" alt="#7">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="8">
+												<img src="/data/icons/num8.png" class="img-responsive" alt="#8">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="9">
+												<img src="/data/icons/num9.png" class="img-responsive" alt="#9">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="10">
+												<img src="/data/icons/num10.png" class="img-responsive" alt="#10">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="11">
+												<img src="/data/icons/num11.png" class="img-responsive" alt="#11">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="12">
+												<img src="/data/icons/num12.png" class="img-responsive" alt="#12">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="13">
+												<img src="/data/icons/num13	.png" class="img-responsive" alt="#13">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="14">
+												<img src="/data/icons/num14.png" class="img-responsive" alt="#14">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="15">
+												<img src="/data/icons/num15.png" class="img-responsive" alt="#15">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="16">
+												<img src="/data/icons/num16.png" class="img-responsive" alt="#16">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="17">
+												<img src="/data/icons/num17.png" class="img-responsive" alt="#17">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="18">
+												<img src="/data/icons/num18.png" class="img-responsive" alt="#18">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="19">
+												<img src="/data/icons/num19.png" class="img-responsive" alt="#19">
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div id="equipo02" class="col-sm-6">
+							
+							<div class="col-sm-offset-1 col-sm-7">
+								<nav id="nav-jugador" >
+									<ul >
+										<li>
+											<a href="#" class="active" id="1">
+												<img src="/data/icons/num1.png" class="img-responsive" alt="#1">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="2">
+												<img src="/data/icons/num2.png" class="img-responsive" alt="#2">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="3">
+												<img src="/data/icons/num3.png" class="img-responsive" alt="#3">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="4">
+												<img src="/data/icons/num4.png" class="img-responsive" alt="#4">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="5">
+												<img src="/data/icons/num5.png" class="img-responsive" alt="#5">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="6">
+												<img src="/data/icons/num6.png" class="img-responsive" alt="#6">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="7">
+												<img src="/data/icons/num7.png" class="img-responsive" alt="#7">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="8">
+												<img src="/data/icons/num8.png" class="img-responsive" alt="#8">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="9">
+												<img src="/data/icons/num9.png" class="img-responsive" alt="#9">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="10">
+												<img src="/data/icons/num10.png" class="img-responsive" alt="#10">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="11">
+												<img src="/data/icons/num11.png" class="img-responsive" alt="#11">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="12">
+												<img src="/data/icons/num12.png" class="img-responsive" alt="#12">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="13">
+												<img src="/data/icons/num13	.png" class="img-responsive" alt="#13">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="14">
+												<img src="/data/icons/num14.png" class="img-responsive" alt="#14">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="15">
+												<img src="/data/icons/num15.png" class="img-responsive" alt="#15">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="16">
+												<img src="/data/icons/num16.png" class="img-responsive" alt="#16">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="17">
+												<img src="/data/icons/num17.png" class="img-responsive" alt="#17">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="18">
+												<img src="/data/icons/num18.png" class="img-responsive" alt="#18">
+											</a>
+										</li>
+										<li>
+											<a href="#" id="19">
+												<img src="/data/icons/num19.png" class="img-responsive" alt="#19">
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							
+							<div id="info-jugador" class="col-sm-2">
+								<p class="nombre"><strong>Nombre</strong></p>
+								<p class="numero"><strong>Número</strong></p>
+								<p class="posicion"><strong>Posición</strong></p>
+								<p class="edad"><strong>Edad</strong></p>
+							</div>
+							<div class="col-sm-2">
+								<img class="imgs-jugador img-responsive img-circle " src="data/perfil-jugadores/01.png" width="150px" alt="Perfil Jugador">
+								
+							</div>
+						</div>
+					</div>
+					<!-- Cierra el navbardejugadores -->
+					<div id="titulos-V" class=" row " id="main-container">
+						
+						<div class=" col-sm-12">
+							<div class=" col-sm-6">
+								<h2 class="text-center titulo-t">
+								Desempeño por partido
+								</h2>
+							</div>
+							<div class=" col-sm-6">
+								<h2 class="text-center titulo-t">
+								Trayectoria y velocidad
+								</h2>
+							</div>
+						</div>
+						<div id="UI" class="row ">
+							<div id="controles"  class="col-sm-push-1 col-sm-4 btn-group">
+								<button id="velocidad_C" type="button" class="btn btn-active btn-custom">Velocidad</button>
+								<button id="distancia_C" type="button" class="btn btn-custom">Distancia</button>
+								<button id="esfuerzo_C" type="button" class="btn btn-custom">Esfuerzo</button>
+								<button id="intensidad_C" type="button" class="btn btn-custom">Intensidad</button>
+								<button id="sprint_C" type="button" class="btn btn-custom">Sprint</button>
+							</div>
+							<div id="sliderWrap" class="col-sm-offset-2 col-sm-5">
+								<div class="hidden">
+									<p id="init-amount"></p>
+									<p id="fin-amount"></p>
+								</div>
+								<div id="slider-range">
+									<div id="custom-handleI" class="ui-slider-handle"></div>
+									<div id="custom-handleF" class="ui-slider-handle"></div>
+									<button id="visualizar_B" type="button" class="btn btn-active btn-visualizar btn-custom">Go</button>
+								</div>
+							</div>
+						</div>
+						<div id="visualizaciones" class=" row main-vis">
+							<div id="graficas_individuales" class=" col-sm-6">
+								<div class="row">
+									<svg id="graficas_01">
+									</svg>
+								</div>
+								<div class="row">
+									<div id="cuadro-info01" class=" col-sm-6">
+										<h2 class ="text-center" id="tit-info01">Minuto</h2>
+										<h3 class="text-center" id="info-p01">Vel Max:</h3>
 									</div>
-									<div class="row">
-										<div id="col-ac1" class="col-md-offset-1 col-md-1">
-										</div>
-										<div class="text-acot col-sm-7">
-											<p>
-												Medio: 6 m/s
-											</p>
-										</div>
-									</div>
-									<div class="row">
-										<div id="col-ac2" class="col-md-offset-1 col-md-1">
-										</div>
-										<div class="text-acot col-md-7">
-											<p>
-												Rapido: 10 m/s
-											</p>
-										</div>
+									<div id="cuadro-info02" class="  col-sm-6">
+										<h2 class ="text-center" id="tit-info02">Minuto</h2>
+										<h3 class="text-center" id="info-p02">Vel Max:</h3>
 									</div>
 								</div>
 							</div>
-							<!--Cierre de Acotaciones-->
+							<div class="col-sm-offset- col-sm-6">
+								<div class="row">
+									<svg id="data-vis">
+									</svg>
+								</div>
+								<div id="acot" class="row">
+									<div class="col-sm-offset-3  col-ms-4">
+										<div class="row">
+											<div id="col-ac0" class="col-sm-offset-1 col-sm-1">
+											</div>
+											<div class="text-acot col-sm-7">
+												<p>
+													Lento: 2 m/s
+												</p>
+											</div>
+										</div>
+										<div class="row">
+											<div id="col-ac1" class="col-md-offset-1 col-md-1">
+											</div>
+											<div class="text-acot col-sm-7">
+												<p>
+													Medio: 6 m/s
+												</p>
+											</div>
+										</div>
+										<div class="row">
+											<div id="col-ac2" class="col-md-offset-1 col-md-1">
+											</div>
+											<div class="text-acot col-md-7">
+												<p>
+													Rapido: 10 m/s
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Cierre de Acotaciones-->
+							</div>
+							<!--Cierre de Graficas derecha-->
 						</div>
-						<!--Cierre de Graficas derecha-->
+						<!--CierarVisualizaciones-->
+						
+						<!--Cierra  MainRow-->
 					</div>
-					<!--CierarVisualizaciones-->
+					<!--Cierra Main container-->
 				</div>
-				<!--Cierra  MainRow-->
 			</div>
-			<!--Cierra Main container-->
 		</div>
 	</body>
 </html>

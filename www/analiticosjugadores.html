@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>League Manager</title>
+		<!--Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Anton|Exo+2|Lato" rel="stylesheet">
+		<!--Mis Cascadas-->
+		<link rel="stylesheet" href="/css/estilos.css">
+		<!--Bootstrap y glyphicons-->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+		<!--D3, Js, Bootstrap Javascripts-->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<!--Mi Script-->
+		<script type="text/javascript" src="/appscripts/tablas-grales.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-custom">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#colapsable" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<div class="row" id="main-header">
+					<div class="col-sm-2">
+						<a class="logo-league navbar-brand " href="index.html">
+							<img class="img-responsive" src="data/logos/lm-bco.png" alt="League Manager Header">
+						</a>
+					</div>
+					<div class="col-sm-2 ">
+						<ul class="nav navbar-nav categorias">
+							<li >
+								<a href="index.html">General</a>
+							</li>
+							<li>
+								<a  href="desempeno.html">Desempeño</a>
+							</li>
+							<li class="activado dropdown">
+								 <a href="analiticos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analíticos </a>
+								 <ul class="dropdown-menu">
+								 	<li >
+								 		<a href="analiticosequipo.html">Equipo</a>
+								 	</li>
+								 	<li>
+								 		<a href="analiticosjugadores.html">Jugador</a>
+								 	</li>
+								 </ul>
+
+							</li>
+							<li>
+								<a href="encuesta.html">Encuesta</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--Inicio PRINCIPA-->
+		<div id="principal" class="container-fluid">
+		<h2 class="titulo-t text-center">Analíticos por Jugador</h2>
+			<div class="col-sm-offset-1 col-sm-4">
+				<img class="img-responsive" src="../data/img/F1.png" alt="">
+			</div>
+			<div class="col-sm-offset-1 col-sm-4">
+				<img class="img-responsive" src="../data/img/F2.png" alt="">
+			</div>
+		</div>
+		<!--Cierra Main Container-->
+	</body>
+</html>
