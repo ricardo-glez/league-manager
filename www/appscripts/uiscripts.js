@@ -23,7 +23,6 @@ $(function() {
     $("#fin-amount").val($("#slider-range").slider("values", 1));
     var axisScale = d3.scale().linear().domain([range(0,5400)]).range([0,90])
     var axisTime = d3.axis.scale(axisScale);
-console.log('Slider',axisTime)
+    console.log('Slider',axisTime)
     var axiSlider = d3.select('#sliderWrap').append(g).attr('class','axis').attr('transform','translate(0,'+(this.height)+')').call(axiSlider);
-
 });

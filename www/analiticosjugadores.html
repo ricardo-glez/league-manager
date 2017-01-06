@@ -15,7 +15,35 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<!--Mi Script-->
-		<script type="text/javascript" src="/appscripts/tablas-grales.js"></script>
+		<script type="text/javascript" src="/appscripts/box.js"></script>
+		<script type="text/javascript" src="/appscripts/boxplot.js"></script>
+		<style type="text/css" media="screen">
+			
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.box {
+  font: 10px sans-serif;
+}
+
+.box line,
+.box rect,
+.box circle {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.box .center {
+  stroke-dasharray: 3,3;
+}
+
+.box .outlier {
+  fill: none;
+  stroke: #ccc;
+}
+		</style>
 	</head>
 	<body>
 		<nav class="navbar navbar-custom">
@@ -63,20 +91,10 @@
 			<!-- /.container-fluid -->
 		</nav>
 		<!--Inicio PRINCIPA-->
-		<div id="principal" class="container-fluid">
-		<h2 class="titulo-t text-center">Analíticos para Jugador</h2>
-			<div class="col-sm-offset-1 col-sm-4">
-				<img class="img-responsive" src="../data/img/F1.png" alt="">
-			</div>
-			<div class="col-sm-offset-1 col-sm-4">
-				<img class="img-responsive" src="../data/img/F2.png" alt="">
-			</div>
-			<div class="col-sm-offset-1 col-sm-4">
-				<img class="img-responsive" src="../data/img/F3.png" alt="">
-			</div>
-			<div class="col-sm-offset-1 col-sm-4">
-				<img class="img-responsive" src="../data/img/F4.png" alt="">
-			</div>
+		<div id="plots">
+			<svg id="box">
+				
+			</svg>
 		</div>
 		<!--Cierra Main Container-->
 	</body>

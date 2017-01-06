@@ -443,7 +443,10 @@ li {
   margin: 0 auto;
   height: 33%;
 }
-
+#box{
+width:80%;
+height:25em;
+}
 #golesF,
 #golesC {
   text-align: center;
